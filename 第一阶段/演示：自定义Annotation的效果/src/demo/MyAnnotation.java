@@ -1,0 +1,5 @@
+package demo;
+
+@interface MyAnnotation {
+	
+}
