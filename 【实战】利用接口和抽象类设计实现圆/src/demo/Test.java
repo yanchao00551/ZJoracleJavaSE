@@ -7,29 +7,29 @@ public class Test {
 	public static void main(String[] args) {
 		double rad = 0;
 		double wigth = 0;
-		//¿ØÖÆÌ¨ÊäÈë
+		//æ§åˆ¶å°è¾“å…¥
 		InputStreamReader stdin = new InputStreamReader(System.in);
 		BufferedReader bufin = new BufferedReader(stdin);
 		try {
-			System.out.println("ÇëÊäÈëÔ²°ë¾¶£º");
+			System.out.println("è¯·è¾“å…¥åœ†åŠå¾„ï¼š");
 			String str = bufin.readLine();
 			rad = Double.valueOf(str);
-			System.out.println("ÇëÊäÈëÔ²Öù¸ß£º");
+			System.out.println("è¯·è¾“å…¥åœ†æŸ±é«˜ï¼š");
 			str = bufin.readLine();
 			wigth = Double.valueOf(str);
 			
 			CircleShape cir = new Circle(rad);
-			System.out.println("Ô²Ãæ»ı£º"+cir.area(rad));
-			System.out.println("Ô²ÖÜ³¤£º"+cir.perimeter());
+			System.out.println("åœ†é¢ç§¯ï¼š"+cir.area(rad));
+			System.out.println("åœ†å‘¨é•¿ï¼š"+cir.perimeter());
 			
 			Cylinder cir1 = new Cylinder(rad,wigth);
-			System.out.println("Ô²Öùµ×Ãæ»ı£º"+cir1.area(rad));
-			System.out.println("Ô²Öù±íÃæ»ı£º"+cir1.periphery());
-			System.out.println("Ìå»ı£º"+cir1.volume());
+			System.out.println("åœ†æŸ±åº•é¢ç§¯ï¼š"+cir1.area(rad));
+			System.out.println("åœ†æŸ±è¡¨é¢ç§¯ï¼š"+cir1.periphery());
+			System.out.println("ä½“ç§¯ï¼š"+cir1.volume());
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.err.println("·¢ÉúI/O´íÎó");
+			System.err.println("å‘ç”ŸI/Oé”™è¯¯");
 			e.printStackTrace();
 		}
 		

@@ -4,9 +4,9 @@ public class ClassTestInstant {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Book book = null;  //ÉùÃ÷¶ÔÏó
-		book = new Book();    //ÊµÀı»¯Ò»¸ö¶ÔÏó
-		book.title = "Java³ÌĞò";
+		Book book = null;  //å£°æ˜å¯¹è±¡
+		book = new Book();    //å®ä¾‹åŒ–ä¸€ä¸ªå¯¹è±¡
+		book.title = "Javaç¨‹åº";
 		book.price = 39.8;
 		book.printInfo();
 	}

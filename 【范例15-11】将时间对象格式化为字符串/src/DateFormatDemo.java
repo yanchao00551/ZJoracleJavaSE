@@ -5,9 +5,9 @@ public class DateFormatDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//»ñÈ¡µ±Ç°Ê±¼ä
+		//è·å–å½“å‰æ—¶é—´
 		LocalDate localDate = LocalDate.now();
-		//Ö¸¶¨¸ñÊ½»¯¹æÔò
+		//æŒ‡å®šæ ¼å¼åŒ–è§„åˆ™
 		DateTimeFormatter f = DateTimeFormatter.ofPattern("uuuu/MM/dd");
 		String s = localDate.format(f);
 		System.out.println(s);

@@ -2,15 +2,15 @@ package demo;
 
 
 /*
- * Êı×éµÄ²åÈëÀà
+ * æ•°ç»„çš„æ’å…¥ç±»
  */
 public class ArrayInsert {
 	
 	/*
-	 * Êı×éÒÆÎ»
-	 * arr Êı×éÒıÓÃ
-	 * index ÒÆÎ»ÆğÊ¼ÏÂ±ê
-	 * num  ÒÆÎ»Êı
+	 * æ•°ç»„ç§»ä½
+	 * arr æ•°ç»„å¼•ç”¨
+	 * index ç§»ä½èµ·å§‹ä¸‹æ ‡
+	 * num  ç§»ä½æ•°
 	 */
 	public static void arrInsert(int[] arr,int index,int num) {
 		for(int j = arr.length -1 ; j>= index+num; j--) {
@@ -23,7 +23,7 @@ public class ArrayInsert {
 	}
 	
 	/*
-	 * ºóÒÆËã·¨  ÒÆ¶¯1¸öÎ»ÖÃ
+	 * åç§»ç®—æ³•  ç§»åŠ¨1ä¸ªä½ç½®
 	 */
 	public static void arrInsert(int[] arr,int index) {
 		for(int j = arr.length; j < index; j--) {
@@ -33,13 +33,13 @@ public class ArrayInsert {
 	
 	
 	/*
-	 * ½«Êı×éaµÄÖ¸¶¨³¤¶ÈÄÚÈİ¸³Öµ¸øÊı×éb
+	 * å°†æ•°ç»„açš„æŒ‡å®šé•¿åº¦å†…å®¹èµ‹å€¼ç»™æ•°ç»„b
 	 * a[] 
 	 * b[]
-	 * len Ö¸¶¨³¤¶È
-	 * index  Ö¸¶¨´ÓÄÄ¸öÏÂ±ê¿ªÊ¼
+	 * len æŒ‡å®šé•¿åº¦
+	 * index  æŒ‡å®šä»å“ªä¸ªä¸‹æ ‡å¼€å§‹
 	 * 
-	 * µ±  ĞÎ²Î indexÎª 7  µÄÊ±ºò  ÆğÊ¼Î»ÖÃ£¬  µ«ÊÇÕâ¸öÎ»ÖÃ ¾ø²»ÄÜÊÇaµÄ £¬¾ø¶ÔÊı×éÏÂÔ½½ç  b[i] = a[7]
+	 * å½“  å½¢å‚ indexä¸º 7  çš„æ—¶å€™  èµ·å§‹ä½ç½®ï¼Œ  ä½†æ˜¯è¿™ä¸ªä½ç½® ç»ä¸èƒ½æ˜¯açš„ ï¼Œç»å¯¹æ•°ç»„ä¸‹è¶Šç•Œ  b[i] = a[7]
 	 */
 	public static void arrToDetails(int a[],int[] b,int len,int index) {
 		for(int i=index; i < len; i++) {
@@ -48,12 +48,12 @@ public class ArrayInsert {
 	}
 	
 	/*
-	 * ½«Êı×éaµÄÖ¸¶¨³¤¶ÈÄÚÈİ¸³Öµ¸øÊı×éb   Êı×é¾Ö²¿¸²¸Ç
-	 * a Ìæ»»Êı¾İ
-	 * b Ô­Ê¼Êı¾İ
-	 * len ³¤¶È
-	 * index ÆğÊ¼Î»ÖÃ
-	 * n  ÏÂ±ê²»Ò»ÖÂÇé¿öÏÂ£¬ÆôÓÃnÏÂ±êÎªÊı×éaµÄÏÂ±ê
+	 * å°†æ•°ç»„açš„æŒ‡å®šé•¿åº¦å†…å®¹èµ‹å€¼ç»™æ•°ç»„b   æ•°ç»„å±€éƒ¨è¦†ç›–
+	 * a æ›¿æ¢æ•°æ®
+	 * b åŸå§‹æ•°æ®
+	 * len é•¿åº¦
+	 * index èµ·å§‹ä½ç½®
+	 * n  ä¸‹æ ‡ä¸ä¸€è‡´æƒ…å†µä¸‹ï¼Œå¯ç”¨nä¸‹æ ‡ä¸ºæ•°ç»„açš„ä¸‹æ ‡
 	 */
 	public static void arrToDetails(int a[],int[] b,int len,int index,int n) {
 		for(int i=index; i <= len; i++) {

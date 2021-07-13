@@ -7,44 +7,49 @@ import java.util.ListIterator;
 
 public class Test {
 	public static void main(String[] args) {
-		//´´½¨Ò»¸ö¼¯ºÏÈİÆ÷£¬ÈİÆ÷Àï×°DogÀàĞÍµÄ¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªé›†åˆå®¹å™¨ï¼Œå®¹å™¨é‡Œè£…Dogç±»å‹çš„å¯¹è±¡
 		List<Dog> list = new ArrayList<Dog>();
 		Dog dog1 = new Dog();
-		dog1.setStrain("Ñ©ÄÉÈğ");
+		dog1.setStrain("é›ªçº³ç‘");
 		Dog dog2 = new Dog();
-		dog1.setStrain("À­²¼À­¶à");
+		dog1.setStrain("æ‹‰å¸ƒæ‹‰å¤š");
 		list.add(dog1);
 		list.add(dog2);
 		
-		//Ñ­»·±éÀú ·½Ê½1  forÑ­»·
+		//å¾ªç¯éå† æ–¹å¼1  forå¾ªç¯
 		for(int i=0; i< list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 		
-		//Ñ­»·±éÀú  ·½Ê½2    foreachÔöÇ¿Ñ­»·
+		//å¾ªç¯éå†  æ–¹å¼2    foreachå¢å¼ºå¾ªç¯
 		for(Dog s:list) {
 			System.out.println(s);
 		}
 		
-		//Ñ­»·±éÀú  ·½Ê½3  Iterator µü´úÆ÷
+		//å¾ªç¯éå†  æ–¹å¼3  Iterator è¿­ä»£å™¨
 		Iterator<Dog> itr = list.iterator();
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+
+		//å¾ªç¯éå† æ–¹å¼4  streamæµ
+		list.forEach((item) -> {
+            System.out.println(item);
+        });
 		
 		
-		//¸ù¾İÏÂ±ê»ñÈ¡Ö¸¶¨µÄ¶ÔÏó
+		//æ ¹æ®ä¸‹æ ‡è·å–æŒ‡å®šçš„å¯¹è±¡
 		Dog dog3 = list.get(1);
 		System.out.println(dog3);
 
-		//»ñÈ¡¼¯ºÏµÄ³¤¶È
+		//è·å–é›†åˆçš„é•¿åº¦
 		System.out.println(list.size());
 		
 		
-		//»ñÈ¡Ë«Ïòµü´úÆ÷
+		//è·å–åŒå‘è¿­ä»£å™¨
 		ListIterator<Dog> listItr = list.listIterator();
 		while(listItr.hasPrevious()) {
-			Dog d = (Dog) listItr.previous();  //»ñÈ¡ÉÏÒ»¸ö
+			Dog d = (Dog) listItr.previous();  //è·å–ä¸Šä¸€ä¸ª
 			System.out.println(d);
 		}
 		

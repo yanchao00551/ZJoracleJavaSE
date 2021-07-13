@@ -5,7 +5,7 @@ public class Stringed extends Instrument {
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		System.out.println("ÏÒÀÖÆ÷¸²Ğ´£¡");
+		System.out.println("ÃÃ’Ã€Ã–Ã†Ã·Â¸Â²ÄÂ´Â£Â¡");
 	}
 	
 

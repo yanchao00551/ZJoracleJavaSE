@@ -7,27 +7,27 @@ import java.util.Properties;
 import java.util.Set;
 
 /*
- * classpath:  resources(Ô´ÎÄ¼ş¼Ğ)/lib/clases/bin/
+ * classpath:  resources(æºæ–‡ä»¶å¤¹)/lib/clases/bin/
  */
 public class PropertiesDemo {
 	public static void main(String[] args) throws Exception {
-		//PropertiesÀàµÄÊ¹ÓÃ  HashTable ÊµÏÖMap
+		//Propertiesç±»çš„ä½¿ç”¨  HashTable å®ç°Map
 		Properties ps = new Properties();
 		Class clazz = PropertiesDemo.class;
 		InputStream inputStream  = clazz.getResourceAsStream("/database.properties.txt");
 		ps.load(inputStream);
 		
 		
-	    //ps  Map Ñ­»· entrySet() ÖªÊ¶µã
-		//ĞèÇó  £º  °Ñ¼üÖµ¶ÔÊä³ö¿ØÖÆÌ¨
+	    //ps  Map å¾ªç¯ entrySet() çŸ¥è¯†ç‚¹
+		//éœ€æ±‚  ï¼š  æŠŠé”®å€¼å¯¹è¾“å‡ºæ§åˆ¶å°
 		Set<Entry<Object,Object>> sList = ps.entrySet();
 	    Iterator<Entry<Object,Object>> itr = sList.iterator();
 	    while(itr.hasNext()) {
 	    	Entry<Object,Object> e = itr.next();
-	    	System.out.println("¼ü" + e.getKey() + "\tÖµ£º" + e.getValue());
+	    	System.out.println("é”®" + e.getKey() + "\tå€¼ï¼š" + e.getValue());
 	    }
 	    
-	    //CLASSPATHÄ¿Â¼
+	    //CLASSPATHç›®å½•
 	    
 	}
 }

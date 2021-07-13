@@ -1,13 +1,13 @@
 package demo;
 
 public class Pet {
-	private String name = "ÎŞÃûÊÏ";
+	private String name = "æ— åæ°";
     private int health = 100;
     private int love = 0;
     
     public Pet() {
     	this.health = 95;
-    	System.out.println("Ö´ĞĞ³èÎïµÄÎŞ²Î¹¹Ôì·½·¨");
+    	System.out.println("æ‰§è¡Œå® ç‰©çš„æ— å‚æ„é€ æ–¹æ³•");
     }
     
     public Pet(String name) {
@@ -40,11 +40,11 @@ public class Pet {
     
     
 	/**
-	 * Êä³ö¹·µÄĞÅÏ¢
+	 * è¾“å‡ºç‹—çš„ä¿¡æ¯
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name +
-				",½¡¿µÖµÊÇ" + this.health + ",ºÍÖ÷ÈÎµÄÇ×ÃÜ¶ÈÊÇ"
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name +
+				",å¥åº·å€¼æ˜¯" + this.health + ",å’Œä¸»ä»»çš„äº²å¯†åº¦æ˜¯"
 				+ this.love);
 	}
 }

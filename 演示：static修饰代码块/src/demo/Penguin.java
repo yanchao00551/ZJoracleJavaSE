@@ -1,19 +1,19 @@
 package demo;
 
 /**
- * ³èÎïÆó¶ìÀà
+ * å® ç‰©ä¼é¹…ç±»
  * @author 10947
  *
  */
 public class Penguin {
 
-	String name = "ÎŞÃûÊÏ";   //êÇ³Æ¡¢Ä¬ÈÏÖµÊÇ¡°ÎŞÃûÊÏ¡±
-	int health = 100;    //½¡¿µÖµ£¬Ä¬ÈÏÖµ100
-	int love = 0;        //Ç×ÃÜ¶È
+	String name = "æ— åæ°";   //æ˜µç§°ã€é»˜è®¤å€¼æ˜¯â€œæ— åæ°â€
+	int health = 100;    //å¥åº·å€¼ï¼Œé»˜è®¤å€¼100
+	int love = 0;        //äº²å¯†åº¦
 	
-	static final String SEX_MALE = "Q×Ğ";
-	static final String SEX_FEMALE = "QÃÃ";
-	String sex = SEX_MALE;   //ĞÔ±ğ
+	static final String SEX_MALE = "Qä»”";
+	static final String SEX_FEMALE = "Qå¦¹";
+	String sex = SEX_MALE;   //æ€§åˆ«
 	
 	
 	static {
@@ -21,11 +21,11 @@ public class Penguin {
 	
 	
 	/**
-	 * Êä³öÆó¶ìµÄĞÅÏ¢
+	 * è¾“å‡ºä¼é¹…çš„ä¿¡æ¯
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name +
-				",½¡¿µÖµÊÇ" + this.health + ",ºÍÖ÷ÈÎµÄÇ×ÃÜ¶ÈÊÇ"
-				+ this.love +",ĞÔ±ğÊÇ " + this.sex + ".");
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name +
+				",å¥åº·å€¼æ˜¯" + this.health + ",å’Œä¸»ä»»çš„äº²å¯†åº¦æ˜¯"
+				+ this.love +",æ€§åˆ«æ˜¯ " + this.sex + ".");
 	}
 }

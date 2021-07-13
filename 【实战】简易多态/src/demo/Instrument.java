@@ -2,13 +2,13 @@ package demo;
 
 /**
  * 
- *  ÀÖÆ÷Àà
+ *  ä¹å™¨ç±»
  * @author 10947
  *
  */
 public class Instrument {
 	public void play() {
-		System.out.println("ÀÖÆ÷Àà£¬ÓµÓĞ×î»ù±¾µÄ·¢Òô");
+		System.out.println("ä¹å™¨ç±»ï¼Œæ‹¥æœ‰æœ€åŸºæœ¬çš„å‘éŸ³");
 	}
 }
 

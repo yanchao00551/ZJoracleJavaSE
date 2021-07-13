@@ -1,13 +1,13 @@
 package demo;
 
 /**
- * ÃèÊöÁË ²Ù×÷orderÊı¾İ¿â±íµÄËùÓĞ ÔöÉ¾¸Ä²éµÄĞĞÎª
+ * æè¿°äº† æ“ä½œorderæ•°æ®åº“è¡¨çš„æ‰€æœ‰ å¢åˆ æ”¹æŸ¥çš„è¡Œä¸º
  * @author 10947
  *
  */
 public interface OrderDao {
 	
-	public void save();    //ĞÂÔöÒ»Ìõ¼ÇÂ¼
+	public void save();    //æ–°å¢ä¸€æ¡è®°å½•
 	
 	public void save2();
 

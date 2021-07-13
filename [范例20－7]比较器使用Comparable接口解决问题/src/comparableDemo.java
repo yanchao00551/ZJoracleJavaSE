@@ -5,12 +5,12 @@ import java.util.List;
 public class comparableDemo {
 	public static void main(String[] args) {
 		List<Book> bookList = new ArrayList<Book>();
-		bookList.add(new Book("Oracl¿ª·¢ÊµÕ½",60));
-		bookList.add(new Book("Java¿ª·¢ÊµÕ½",69.8));
-		bookList.add(new Book("Java Web¿ª·¢ÊµÕ½",59.8));
-		bookList.add(new Book("Android¿ª·¢ÊµÕ½",58));
+		bookList.add(new Book("Oraclå¼€å‘å®æˆ˜",60));
+		bookList.add(new Book("Javaå¼€å‘å®æˆ˜",69.8));
+		bookList.add(new Book("Java Webå¼€å‘å®æˆ˜",59.8));
+		bookList.add(new Book("Androidå¼€å‘å®æˆ˜",58));
 		Object obj[] = bookList.toArray();
-		Arrays.sort(obj);   //Îª¶ÔÏóÊı×éÅÅĞò
+		Arrays.sort(obj);   //ä¸ºå¯¹è±¡æ•°ç»„æ’åº
 		System.out.println(Arrays.toString(obj));
 	}
 }

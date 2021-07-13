@@ -1,15 +1,15 @@
 package demo;
 
 /*
- * Êı¾İÅäÖÃÀà
+ * æ•°æ®é…ç½®ç±»
  */
 public class Config {
-	public static final int[] A = new int[] {7,9,13,1,15,11,17,19};  //Êı×éA
-	public static final int NUMBER = 5;  //Êı×é¹Ì¶¨À©Èİ³¤¶È
-	public int[] C = new int[A.length + NUMBER];  //Êı×éC
+	public static final int[] A = new int[] {7,9,13,1,15,11,17,19};  //æ•°ç»„A
+	public static final int NUMBER = 5;  //æ•°ç»„å›ºå®šæ‰©å®¹é•¿åº¦
+	public int[] C = new int[A.length + NUMBER];  //æ•°ç»„C
 	
 	/*
-	 * ³õÊ¼»¯Êı×éC
+	 * åˆå§‹åŒ–æ•°ç»„C
 	 */
 	public Config() {
 		ArrayInsert.arrToDetails(A, C, A.length,0);

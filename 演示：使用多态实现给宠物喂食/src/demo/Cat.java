@@ -1,7 +1,7 @@
 package demo;
 
 public class Cat extends Pet{
-	private String color;//ÑÕÉ«
+	private String color;//é¢œè‰²
 	public Cat(String name, String color) {
 		super(name);
 		this.color = color;
@@ -15,14 +15,14 @@ public class Cat extends Pet{
 		return color;
 	}
 	/**
-	 *  ÊµÏÖ³Ô·¹·½·¨ 
+	 *  å®ç°åƒé¥­æ–¹æ³• 
 	 */
 	public void eat() {
 		if(getHealth()>=100){
-			System.out.println("¹·¹·"+this.getName() +"³Ô±¥ÁË£¬²»ĞèÒªÎ¹Ê³ÁË£¡");
+			System.out.println("ç‹—ç‹—"+this.getName() +"åƒé¥±äº†ï¼Œä¸éœ€è¦å–‚é£Ÿäº†ï¼");
 		}else{
 			this.setHealth(this.getHealth()+4);
-			System.out.println("Ã¨ßä"+this.getName() + "³Ô±¥À²£¡ÌåÁ¦Ôö¼Ó4¡£");
+			System.out.println("çŒ«å’ª"+this.getName() + "åƒé¥±å•¦ï¼ä½“åŠ›å¢åŠ 4ã€‚");
 		}
 	}
 }

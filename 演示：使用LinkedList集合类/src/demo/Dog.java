@@ -2,12 +2,12 @@ package demo;
 
 public class Dog extends Pet{
 
-	private String strain; //Æ·ÖÖ
+	private String strain; //å“ç§
 	
 	/**
-	 * super¹Ø¼ü×Ö µ÷ÓÃ¸¸Àà·½·¨£ºsuper.·½·¨Ãû()   µ÷ÓÃ¸¸ÀàÓĞ²Î¹¹Ôì:super(²ÎÊı...)    
-	 *    µ÷ÓÃ¸¸ÀàÎŞ²Î¹¹Ôì:  super();   
-	 *     µ÷ÓÃ¸¸ÀàÊôĞÔ£º  super.ÊôĞÔÃû
+	 * superå…³é”®å­— è°ƒç”¨çˆ¶ç±»æ–¹æ³•ï¼šsuper.æ–¹æ³•å()   è°ƒç”¨çˆ¶ç±»æœ‰å‚æ„é€ :super(å‚æ•°...)    
+	 *    è°ƒç”¨çˆ¶ç±»æ— å‚æ„é€ :  super();   
+	 *     è°ƒç”¨çˆ¶ç±»å±æ€§ï¼š  super.å±æ€§å
 	 * @param name
 	 * @param strain
 	 */
@@ -17,23 +17,23 @@ public class Dog extends Pet{
 	}
 	
 	
-	//¸²Ğ´¸¸ÀàµÄprint·½·¨
+	//è¦†å†™çˆ¶ç±»çš„printæ–¹æ³•
 	@Override
 	public void print() {
 		// TODO Auto-generated method stub
-		super.print();  //µ÷ÓÃ¸¸ÀàµÄprint·½·¨
-		System.out.println("ÎÒÊÇÒ»Ö»£º" + this.strain + "¡£");
+		super.print();  //è°ƒç”¨çˆ¶ç±»çš„printæ–¹æ³•
+		System.out.println("æˆ‘æ˜¯ä¸€åªï¼š" + this.strain + "ã€‚");
 	}
 
 
 	/**
-	 * ÊµÏÖ³Ô·¹·½·¨
+	 * å®ç°åƒé¥­æ–¹æ³•
 	 */
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
 		super.health = super.health + 3;
-		System.out.println("¹·¹·" + super.name + "³Ô±¥À²£¡½¡¿µÖµÔö¼Ó3");
+		System.out.println("ç‹—ç‹—" + super.name + "åƒé¥±å•¦ï¼å¥åº·å€¼å¢åŠ 3");
 	}
 
 

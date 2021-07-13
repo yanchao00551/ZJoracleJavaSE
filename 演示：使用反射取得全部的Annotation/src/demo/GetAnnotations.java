@@ -9,7 +9,7 @@ public class GetAnnotations {
 		// TODO Auto-generated method stub
 		 Class<?> cls = Class.forName("demo.Info");
 		 Method  toStringMethod = cls.getMethod("toString");
-		 //取得该方法的Annotation
+		 //鍙栧緱璇ユ柟娉曠殑Annotation
 		 Annotation ans[] = toStringMethod.getAnnotations();
 		 
 		 for(int i=0; i<ans.length; i++) {

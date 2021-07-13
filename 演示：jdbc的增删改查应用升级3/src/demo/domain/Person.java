@@ -6,13 +6,13 @@ import java.util.Date;
 import com.crezyman.annotation.Table;
 
 /**
- * ±íÍø¹ØÉè¼ÆÄ£Ê½   1¸ö±í ¶ÔÓ¦ Ò»¸öÊµÌåÀà  ¶ÔÓ¦ person±í
+ * è¡¨ç½‘å…³è®¾è®¡æ¨¡å¼   1ä¸ªè¡¨ å¯¹åº” ä¸€ä¸ªå®ä½“ç±»  å¯¹åº” personè¡¨
  * @author 10947
  *
  */
 @Table(name = "person")
 public class Person {
-	/* Ö÷±í×Ö¶Î */
+	/* ä¸»è¡¨å­—æ®µ */
 	private Integer pid;
 	private String name;
 	private Integer age;

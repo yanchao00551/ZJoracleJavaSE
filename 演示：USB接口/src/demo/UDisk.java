@@ -5,7 +5,7 @@ public class UDisk implements UsbInterface{
 	@Override
 	public void service() {
 		// TODO Auto-generated method stub
-		System.out.println("Á¬½ÓUSB½Ó¿Ú£¬¿ªÊ¼´«ÊäÊı¾İ");
+		System.out.println("è¿æ¥USBæ¥å£ï¼Œå¼€å§‹ä¼ è¾“æ•°æ®");
 	}
 	
 }

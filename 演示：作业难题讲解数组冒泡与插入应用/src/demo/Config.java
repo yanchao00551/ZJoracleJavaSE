@@ -1,18 +1,18 @@
 package demo;
 
 /*
- * Êı¾İÅäÖÃÀà
+ * æ•°æ®é…ç½®ç±»
  * 
  */
 public class Config {
-	public static final int[] A = new int[] {7,9,13,1,15,11,17,19};  //Êı×éA
-	public static final int NUMBER = 12;    //Êı×é¹Ì¶¨À©Èİ³¤¶È
-	public static int[] C = new int[A.length + NUMBER];    //Êı×éC  ÀûÓÃ¹¹Ôì·½·¨½øĞĞ³õÊ¼»¯
+	public static final int[] A = new int[] {7,9,13,1,15,11,17,19};  //æ•°ç»„A
+	public static final int NUMBER = 12;    //æ•°ç»„å›ºå®šæ‰©å®¹é•¿åº¦
+	public static int[] C = new int[A.length + NUMBER];    //æ•°ç»„C  åˆ©ç”¨æ„é€ æ–¹æ³•è¿›è¡Œåˆå§‹åŒ–
 	
 	
 	
 	/*
-	 *³õÊ¼»¯Êı×éC  ¹¹Ôì·½·¨
+	 *åˆå§‹åŒ–æ•°ç»„C  æ„é€ æ–¹æ³•
 	 */
 	public Config() {
 		ArrayInsert.arrToDetails(A, C, A.length, 0);

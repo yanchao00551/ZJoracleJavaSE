@@ -1,8 +1,6 @@
 package org.proxy;
 
-//代理请求
+//麓煤脌铆脟毛脟贸
 public abstract class Subject {
-	abstract public void request_add();    
-	abstract public void request_update();    
-    
+	abstract public void request();
 }

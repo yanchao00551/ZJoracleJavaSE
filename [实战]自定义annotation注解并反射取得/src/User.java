@@ -4,9 +4,9 @@ public class User {
 	@Logininfo(name="yanchao",password="123")
 	public static boolean login(String name,String password) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+		System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 		String u = scan.next();
-		System.out.println("ÇëÊäÈëÃÜÂë£º");
+		System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 		String p = scan.next();
 		if(u.equals(name) && p.equals(password)) {
 			return true;

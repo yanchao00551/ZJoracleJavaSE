@@ -2,18 +2,18 @@ package demo;
 
 
 /**
- * ³èÎïÀà£¬¹·¹·ºÍÆó¶ìµÄ¸¸Àà
- * ³éÏóÀà¿ÉÒÔ´æÔÚÆÕÍ¨·½·¨£¬Ò²¿ÉÒÔ´æÔÚ³éÏó·½·¨
+ * å® ç‰©ç±»ï¼Œç‹—ç‹—å’Œä¼é¹…çš„çˆ¶ç±»
+ * æŠ½è±¡ç±»å¯ä»¥å­˜åœ¨æ™®é€šæ–¹æ³•ï¼Œä¹Ÿå¯ä»¥å­˜åœ¨æŠ½è±¡æ–¹æ³•
  * @author 10947
  *
  */
 public abstract class Pet{
-	protected String name = "ÎŞÃûÊÏ";  //êÇ³Æ£¬Ä¬ÈÏÖµ
-	protected int health = 100;  //½¡¿µÖµ
-	protected int love = 0;   //Ç×ÃÜ¶È
+	protected String name = "æ— åæ°";  //æ˜µç§°ï¼Œé»˜è®¤å€¼
+	protected int health = 100;  //å¥åº·å€¼
+	protected int love = 0;   //äº²å¯†åº¦
 	
 	
-	public abstract void eat();     //³éÏó·½·¨eat(),¸ºÔğ³èÎï³Ô·¹¹¦ÄÜ
+	public abstract void eat();     //æŠ½è±¡æ–¹æ³•eat(),è´Ÿè´£å® ç‰©åƒé¥­åŠŸèƒ½
 	
 	
 	public Pet() {

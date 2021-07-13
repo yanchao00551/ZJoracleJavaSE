@@ -2,7 +2,7 @@ package demo;
 
 
 /*
- * ¸ø±äÁ¿Ìí¼ÓÄ¬ÈÏÖµ default
+ * ç»™å˜é‡æ·»åŠ é»˜è®¤å€¼ default
  */
 @interface VarDefault {
 	public String key() default "var1";

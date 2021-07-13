@@ -35,7 +35,7 @@ public class JDBCMySQL {
 			System.out.println("salary =" + salary + ";");
 		}
 		
-		//4.�ر����ݿ�
+		//4.¹Ø±ÕÊý¾Ý¿â
 		result.close();
 		stmt.close();
 		conn.close();

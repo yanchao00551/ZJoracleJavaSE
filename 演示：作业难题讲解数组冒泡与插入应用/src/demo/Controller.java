@@ -3,29 +3,29 @@ package demo;
 import java.util.Arrays;
 
 /*
- * ÏµÍ³¿ØÖÆÆ÷
+ * ç³»ç»Ÿæ§åˆ¶å™¨
  */
 public class Controller extends Config{
 	
 	/*
-	 * ÔËĞĞ¿ª¹Ø Æô¶¯
+	 * è¿è¡Œå¼€å…³ å¯åŠ¨
 	 */
 	public void run() {
-		//µÚÒ»²½£º½ÓÊÕÓÃ»§ÊäÈë
+		//ç¬¬ä¸€æ­¥ï¼šæ¥æ”¶ç”¨æˆ·è¾“å…¥
 		int[] b = User.inputArr();
-		//µÚ¶ş²½ £º½«ÓÃ»§Â¼ÈëÉıĞòÅÅĞò
+		//ç¬¬äºŒæ­¥ ï¼šå°†ç”¨æˆ·å½•å…¥å‡åºæ’åº
 		ArraySort.bubbleSort(b, 1);
-		//µÚÈı²½£ºÓÃ»§ÊäÈëindex
+		//ç¬¬ä¸‰æ­¥ï¼šç”¨æˆ·è¾“å…¥index
 		int index = User.inputIndex();
-		//µÚËÄ²½£ºÊı×é²åÈëËã·¨
+		//ç¬¬å››æ­¥ï¼šæ•°ç»„æ’å…¥ç®—æ³•
 		ArrayInsert.arrInsert(C, index, NUMBER);
-		//µÚÎå²½£ºbÊı×éÌæ»»ÀÏÊı¾İ
+		//ç¬¬äº”æ­¥ï¼šbæ•°ç»„æ›¿æ¢è€æ•°æ®
 		ArrayInsert.arrToDetails(b, C, index + NUMBER - 1, index, 0);
-	    //µÚÁù²½£ºÇ°Êı¾İÅÅĞò ½µĞò ,¾Ö²¿ÅÅĞò
+	    //ç¬¬å…­æ­¥ï¼šå‰æ•°æ®æ’åº é™åº ,å±€éƒ¨æ’åº
 		ArraySort.bubbleSort(C, 0,  index-1, 2);
-		//µÚÆß²½£ººóÊı¾İÅÅĞò ÉıĞò£¬¾Ö²¿ÅÅĞò
+		//ç¬¬ä¸ƒæ­¥ï¼šåæ•°æ®æ’åº å‡åºï¼Œå±€éƒ¨æ’åº
 		ArraySort.bubbleSort(C, index + NUMBER, C.length - 1, 1);
-		//µÚ°Ë²½£ºArrays.toString()·½·¨Êä³öC
+		//ç¬¬å…«æ­¥ï¼šArrays.toString()æ–¹æ³•è¾“å‡ºC
 		System.out.println(Arrays.toString(C));
 	}
 }

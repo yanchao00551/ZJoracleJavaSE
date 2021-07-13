@@ -5,7 +5,7 @@ public class ArraysDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<String> all = Arrays.asList("Hello","World","你好","世界");//将多个元素变为List集合
+		List<String> all = Arrays.asList("Hello","World","浣犲ソ","涓栫晫");//灏嗗涓厓绱犲彉涓篖ist闆嗗悎
 		System.out.println(all);
 	}
 

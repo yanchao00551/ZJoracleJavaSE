@@ -6,19 +6,19 @@ public class AvgTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] scores = new int[5];  //³É¼¨Êı×é
+		int[] scores = new int[5];  //æˆç»©æ•°ç»„
 		
 	
-		int sum = 0;  //³É¼¨×ÜºÍ
+		int sum = 0;  //æˆç»©æ€»å’Œ
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë5Î»Ñ§Ô±µÄ³É¼¨£º");
+		System.out.println("è¯·è¾“å…¥5ä½å­¦å‘˜çš„æˆç»©ï¼š");
 		for(int i=0; i< scores.length; i++) {
 			scores[i] = input.nextInt();
-			sum = sum + scores[i];   //³É¼¨ÀÛ¼Ó
+			sum = sum + scores[i];   //æˆç»©ç´¯åŠ 
 			//  sum += scores[i];   
 		}
 		
-		System.out.println("Æ½¾ù·Ö£º" + (double)sum/scores.length);
+		System.out.println("å¹³å‡åˆ†ï¼š" + (double)sum/scores.length);
 	}
 
 }

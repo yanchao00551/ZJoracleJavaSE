@@ -1,5 +1,5 @@
 package proxy;
 
-abstract class Subject{   //代理请求
+abstract class Subject{   //麓煤脌铆脟毛脟贸
 	abstract public void request();
 }

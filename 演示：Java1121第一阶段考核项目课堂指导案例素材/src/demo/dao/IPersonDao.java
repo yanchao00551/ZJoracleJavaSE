@@ -8,7 +8,7 @@ import demo.domain.Person;
 
 public interface IPersonDAO {
 	/**
-	 * 查找员工详情
+	 * 鏌ユ壘鍛樺伐璇︽儏
 	 * @param params
 	 * @return
 	 */

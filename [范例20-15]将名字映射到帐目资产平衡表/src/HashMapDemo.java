@@ -8,30 +8,30 @@ public class HashMapDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨HashMap¶ÔÏó
+		//åˆ›å»ºHashMapå¯¹è±¡
 		HashMap<String,Double> hm = new HashMap<String,Double>();
-		//¼ÓÈëÔªËØµ½HashMapÖĞ
+		//åŠ å…¥å…ƒç´ åˆ°HashMapä¸­
 		hm.put("John Doe", new Double(3434.34));
 		hm.put("Tom Smith", new Double(123.22));
 		hm.put("Jane Baker", new Double(1378.00));
 		hm.put("Todd Hall", new Double(99.22));
 		hm.put("Ralph Smith", new Double(-19.08));
-		//·µ»Ø°üº¬Ó³ÉäÖĞÏîµÄ¼¯ºÏ
+		//è¿”å›åŒ…å«æ˜ å°„ä¸­é¡¹çš„é›†åˆ
 		Set<Entry<String,Double>> set = hm.entrySet();
-		//ÓÃiteratorµÃµ½HashMapÖĞµÄÄÚÈİ
+		//ç”¨iteratorå¾—åˆ°HashMapä¸­çš„å†…å®¹
 		Iterator<Entry<String,Double>> itr = set.iterator();
-		//ÏÔÊ¾ÔªËØ
+		//æ˜¾ç¤ºå…ƒç´ 
 		while(itr.hasNext()) {
-			//Map.Entry ¿ÉÒÔ²Ù×÷Ó³ÉäµÄÊı¾İ
+			//Map.Entry å¯ä»¥æ“ä½œæ˜ å°„çš„æ•°æ®
 			Map.Entry<String, Double> me = (Map.Entry<String,Double>)itr.next(); 
 			System.out.print(me.getKey() + ":");
 			System.out.println(me.getValue());
 		}
 		System.out.println();
-		//ÈÃJohn DoeÖĞµÄÖµÔö¼Ó1000
+		//è®©John Doeä¸­çš„å€¼å¢åŠ 1000
 		double balance =((Double) hm.get("John Doe")).doubleValue();
 		hm.put("John Doe", new Double(balance + 1000));
-		System.out.println("John Does'sÏÖÔÚµÄ×Ê½ğ£º" + hm.get("John Doe"));
+		System.out.println("John Does'sç°åœ¨çš„èµ„é‡‘ï¼š" + hm.get("John Doe"));
 	}
 
 }

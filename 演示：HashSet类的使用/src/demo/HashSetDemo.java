@@ -15,9 +15,7 @@ public class HashSetDemo {
 		hs.add("F");
 		hs.add("F");
 		System.out.println(hs);
-		
-		
-		
+
 	}
 
 }

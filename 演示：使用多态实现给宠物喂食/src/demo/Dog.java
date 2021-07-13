@@ -1,11 +1,11 @@
 package demo;
 
 public class Dog extends Pet{
-	private String strain;// Æ·ÖÖ
+	private String strain;// å“ç§
 	/**
-	 * ÓĞ²Î¹¹Ôì·½·¨¡£
-	 * @param name   êÇ³Æ
-	 * @param strain   Æ·ÖÖ
+	 * æœ‰å‚æ„é€ æ–¹æ³•ã€‚
+	 * @param name   æ˜µç§°
+	 * @param strain   å“ç§
 	 */
 	public Dog(String name, String strain) {
 		super(name); 
@@ -15,22 +15,22 @@ public class Dog extends Pet{
 		return strain;
 	}
 	/**
-	 * ÖØĞ´¸¸ÀàµÄprint·½·¨¡£
+	 * é‡å†™çˆ¶ç±»çš„printæ–¹æ³•ã€‚
 	 */
 	public void print(){
-		super.print(); //µ÷ÓÃ¸¸ÀàµÄprint·½·¨
-		System.out.println("ÎÒÊÇÒ»Ö» " + this.strain + "¡£");
+		super.print(); //è°ƒç”¨çˆ¶ç±»çš„printæ–¹æ³•
+		System.out.println("æˆ‘æ˜¯ä¸€åª " + this.strain + "ã€‚");
 	}
 	
 	/**
-	 * ÊµÏÖ³ÔÊ³·½·¨¡£ 
+	 * å®ç°åƒé£Ÿæ–¹æ³•ã€‚ 
 	 */
 	public void eat() {
 		if(getHealth()>=100){
-			System.out.println("¹·¹·"+this.getName() +"³Ô±¥ÁË£¬²»ĞèÒªÎ¹Ê³ÁË£¡");
+			System.out.println("ç‹—ç‹—"+this.getName() +"åƒé¥±äº†ï¼Œä¸éœ€è¦å–‚é£Ÿäº†ï¼");
 		}else{
 			this.setHealth(this.getHealth()+3);
-			System.out.println("¹·¹·"+this.getName() + "³Ô±¥À²£¡½¡¿µÖµÔö¼Ó3¡£");
+			System.out.println("ç‹—ç‹—"+this.getName() + "åƒé¥±å•¦ï¼å¥åº·å€¼å¢åŠ 3ã€‚");
 		}
 	}
 }

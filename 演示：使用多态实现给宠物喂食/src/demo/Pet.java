@@ -2,23 +2,23 @@ package demo;
 
 
 /**
- * ³éÏóÀà×¨ÃÅ×ö¸¸Àà
+ * æŠ½è±¡ç±»ä¸“é—¨åšçˆ¶ç±»
  * @author 10947
  *
  */
 public abstract class Pet {
-	private String name = "ÎŞÃûÊÏ";// êÇ³Æ
-	private int health = 100;// ½¡¿µÖµ
-	private int love = 0;// Ç×ÃÜ¶È
+	private String name = "æ— åæ°";// æ˜µç§°
+	private int health = 100;// å¥åº·å€¼
+	private int love = 0;// äº²å¯†åº¦
 	
 	/**
-	 * ³éÏó·½·¨eat(),¸ºÔğ³èÎï³Ô·¹¹¦ÄÜ¡£
+	 * æŠ½è±¡æ–¹æ³•eat(),è´Ÿè´£å® ç‰©åƒé¥­åŠŸèƒ½ã€‚
 	 */
 	public abstract void eat();
 	
 	/**
-	 * ÓĞ²Î¹¹Ôì·½·¨¡£
-	 * @param name  êÇ³Æ
+	 * æœ‰å‚æ„é€ æ–¹æ³•ã€‚
+	 * @param name  æ˜µç§°
 	 */
 	public Pet(){
 		
@@ -50,11 +50,11 @@ public abstract class Pet {
 		return love;
 	}
 	/**
-	 * Êä³ö³èÎïĞÅÏ¢¡£
+	 * è¾“å‡ºå® ç‰©ä¿¡æ¯ã€‚
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name + 
-				"£¬½¡¿µÖµÊÇ"	+ this.health + "£¬ºÍÖ÷ÈËµÄÇ×ÃÜ¶ÈÊÇ"
-				+ this.love + "¡£");
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name + 
+				"ï¼Œå¥åº·å€¼æ˜¯"	+ this.health + "ï¼Œå’Œä¸»äººçš„äº²å¯†åº¦æ˜¯"
+				+ this.love + "ã€‚");
 	}
 }

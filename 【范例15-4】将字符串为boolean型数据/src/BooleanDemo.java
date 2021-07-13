@@ -6,9 +6,9 @@ public class BooleanDemo {
 		String str = "true";
 		boolean flag = Boolean.parseBoolean(str);
 		if(flag) {
-			System.out.println("Ìõ¼şÂú×ã£¡");
+			System.out.println("æ¡ä»¶æ»¡è¶³ï¼");
 		}else {
-			System.out.println("Ìõ¼ş²»Âú×ã£¡");
+			System.out.println("æ¡ä»¶ä¸æ»¡è¶³ï¼");
 		}
 	}
 

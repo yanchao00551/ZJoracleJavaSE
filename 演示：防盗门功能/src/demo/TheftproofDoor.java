@@ -2,7 +2,7 @@ package demo;
 
 
 /**
- * ·ÀµÁÃÅÀà
+ * é˜²ç›—é—¨ç±»
  * @author 10947
  *
  */
@@ -11,25 +11,25 @@ public class TheftproofDoor extends Door implements Lock{
 	@Override
 	public void lockUp() {
 		// TODO Auto-generated method stub
-		System.out.println("²å½øÔ¿³×£¬Ïò×óĞı×ªÔ¿³×ÈıÈ¦£¬ËøÉÏÁË£¬°Î³öÔ¿³×");
+		System.out.println("æ’è¿›é’¥åŒ™ï¼Œå‘å·¦æ—‹è½¬é’¥åŒ™ä¸‰åœˆï¼Œé”ä¸Šäº†ï¼Œæ‹”å‡ºé’¥åŒ™");
 	}
 
 	@Override
 	public void openLock() {
 		// TODO Auto-generated method stub
-		System.out.println("²å½øÔ¿³×£¬ÏòÓÒĞı×ªÔ¿³×ÈıÈ¦£¬Ëø´ò¿ªÁË£¬°Î³öÔ¿³×");
+		System.out.println("æ’è¿›é’¥åŒ™ï¼Œå‘å³æ—‹è½¬é’¥åŒ™ä¸‰åœˆï¼Œé”æ‰“å¼€äº†ï¼Œæ‹”å‡ºé’¥åŒ™");
 	}
 
 	@Override
 	public void open() {
 		// TODO Auto-generated method stub
-		System.out.println("ÓÃÁ¦ÍÆ£¬ÃÅ´ò¿ªÁË");
+		System.out.println("ç”¨åŠ›æ¨ï¼Œé—¨æ‰“å¼€äº†");
 	}
 
 	@Override
 	public void close() {
 		// TODO Auto-generated method stub
-		System.out.println("ÇáÇáÀ­ÃÅ£¬ÃÅ¹ØÉÏÁË");
+		System.out.println("è½»è½»æ‹‰é—¨ï¼Œé—¨å…³ä¸Šäº†");
 	}
 
 }

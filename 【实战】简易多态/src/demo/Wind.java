@@ -5,7 +5,7 @@ public class Wind extends Instrument{
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		System.out.println("¹ÜÀÖÆ÷ÖØĞ´£¡");
+		System.out.println("Â¹ÃœÃ€Ã–Ã†Ã·Ã–Ã˜ÄÂ´Â£Â¡");
 	}
 	
 	

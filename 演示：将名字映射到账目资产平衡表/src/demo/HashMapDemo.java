@@ -9,22 +9,22 @@ public class HashMapDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨HashMap¶ÔÏó
+		//åˆ›å»ºHashMapå¯¹è±¡
 		Map<String,Double> hm = new HashMap<String,Double>();
-		//¼ÓÈëÔªËØµ½HashMapÖĞ
-		hm.put("ÕÅÈı", new Double(3434.34));
-		hm.put("ÀîËÄ", new Double(13.22));
-		hm.put("ÍõÎå", new Double(1378.00));
-		hm.put("ÕÔÁù", new Double(99.22));
+		//åŠ å…¥å…ƒç´ åˆ°HashMapä¸­
+		hm.put("å¼ ä¸‰", new Double(3434.34));
+		hm.put("æå››", new Double(13.22));
+		hm.put("ç‹äº”", new Double(1378.00));
+		hm.put("èµµå…­", new Double(99.22));
 		
-		//·µ»Ø°üº¬Ó³ÉäÖĞÏî(entry)µÄ¼¯ºÏ
+		//è¿”å›åŒ…å«æ˜ å°„ä¸­é¡¹(entry)çš„é›†åˆ
 		Set<Map.Entry<String,Double>> set = hm.entrySet();
 		
-		//ÓÃIteratorµÃµ½HashMapÖĞµÄÄÚÈİ
+		//ç”¨Iteratorå¾—åˆ°HashMapä¸­çš„å†…å®¹
 		Iterator<Map.Entry<String,Double>> i = set.iterator();
-		//ÏÔÊ¾ÔªËØ
+		//æ˜¾ç¤ºå…ƒç´ 
 		while(i.hasNext()) {
-			//Map.entry¿ÉÒÔ²Ù×÷Ó³ÉäµÄÊäÈë
+			//Map.entryå¯ä»¥æ“ä½œæ˜ å°„çš„è¾“å…¥
 			Map.Entry<String,Double> me =  i.next();
 			System.out.print(me.getKey() + ":");
 			System.out.println( me.getValue());
@@ -32,11 +32,11 @@ public class HashMapDemo {
 		
 		System.out.println();
 		
-		//ÈÃÕÅÈıÖĞµÄÖµÔö¼Ó1000
-		double balance = hm.get("ÕÅÈı").doubleValue();
-		//ÓÃĞÂµÄÖµÌæ»»µô¾ÉµÄÖµ
-		hm.put("ÕÅÈı", new Double(balance + 1000));
-		System.out.println("ÕÅÈıÏÖÔÚµÄ×Ê½ğ£º" + hm.get("ÕÅÈı"));
+		//è®©å¼ ä¸‰ä¸­çš„å€¼å¢åŠ 1000
+		double balance = hm.get("å¼ ä¸‰").doubleValue();
+		//ç”¨æ–°çš„å€¼æ›¿æ¢æ‰æ—§çš„å€¼
+		hm.put("å¼ ä¸‰", new Double(balance + 1000));
+		System.out.println("å¼ ä¸‰ç°åœ¨çš„èµ„é‡‘ï¼š" + hm.get("å¼ ä¸‰"));
 		
 	}
 

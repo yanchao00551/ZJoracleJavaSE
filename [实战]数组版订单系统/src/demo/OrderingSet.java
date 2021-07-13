@@ -1,16 +1,16 @@
 package demo;
 
 /**
- * ¶©µ¥ÊµÌåÀà
+ * è®¢å•å®ä½“ç±»
  * @author 10947
  *
  */
 public class OrderingSet {
-	//Êı¾İÖ÷Ìå Ò»×é¶©µ¥ĞÅÏ¢
-	String[] names = new String[4];   //¶©²ÍÈËĞÕÃû
-	String[] dishMsg = new String[4]; //ËùÑ¡²ËÆ·
-	Integer[] times = new Integer[4]; //ËÍ²ÍÊ±¼ä
-	String[] addresses = new String[4];  //ËÍ²ÍµØÖ·
-	int[] states = new int[4];   //¶©µ¥×´Ì¬£ºÒÑÔ¤¶¨  1£ºÒÑÍê³É
-	Double[] sumPrices = new Double[4];   //×Ü½ğ¶î
+	//æ•°æ®ä¸»ä½“ ä¸€ç»„è®¢å•ä¿¡æ¯
+	String[] names = new String[4];   //è®¢é¤äººå§“å
+	String[] dishMsg = new String[4]; //æ‰€é€‰èœå“
+	Integer[] times = new Integer[4]; //é€é¤æ—¶é—´
+	String[] addresses = new String[4];  //é€é¤åœ°å€
+	int[] states = new int[4];   //è®¢å•çŠ¶æ€ï¼šå·²é¢„å®š  1ï¼šå·²å®Œæˆ
+	Double[] sumPrices = new Double[4];   //æ€»é‡‘é¢
 }

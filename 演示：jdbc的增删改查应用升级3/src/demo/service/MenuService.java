@@ -6,7 +6,7 @@ import demo.dao.MenuDao;
 import demo.domain.Menu;
 
 /**
- * ҵ���߼�
+ * ÒµÎñÂß¼­
  * @author 10947
  *
  */

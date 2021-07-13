@@ -20,7 +20,7 @@ public class IteratorDemo {
 		Iterator<String> itr = al.iterator();
 	    while(itr.hasNext()) {
 	    	Object elment = itr.next();
-	    	System.out.print(elment + "\t"); //ת��String
+	    	System.out.print(elment + "\t"); //×ª»»String
 	    }
 		
 	}

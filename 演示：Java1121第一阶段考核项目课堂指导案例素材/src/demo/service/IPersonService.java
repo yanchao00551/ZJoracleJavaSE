@@ -7,14 +7,14 @@ import com.crezyman.utils.Params;
 import demo.domain.Person;
 
 /**
- * ¿ò¼Ü²»Âú×ãÁ¬±í²éÑ¯£¬ÎÒĞèÒª×Ô¼ºÀ©Õ¹Á¬±í²é£¬×Ô¶¨ÒåÒµÎñÂß¼­
+ * æ¡†æ¶ä¸æ»¡è¶³è¿è¡¨æŸ¥è¯¢ï¼Œæˆ‘éœ€è¦è‡ªå·±æ‰©å±•è¿è¡¨æŸ¥ï¼Œè‡ªå®šä¹‰ä¸šåŠ¡é€»è¾‘
  * @author 10947
  *
  */
 public interface IPersonService {
 	
 	/**
-	 * ºóÌ¨ÏÔÊ¾Ô±¹¤ÁĞ±íÍ¬Ê±ÏÔÊ¾Ô±¹¤Ï²°®µÄÊé¼®Ãû³Æ£¨Á¬±í£©
+	 * åå°æ˜¾ç¤ºå‘˜å·¥åˆ—è¡¨åŒæ—¶æ˜¾ç¤ºå‘˜å·¥å–œçˆ±çš„ä¹¦ç±åç§°ï¼ˆè¿è¡¨ï¼‰
 	 */
 	public List<Object> queryPersonAndBookList(Params params);
 }

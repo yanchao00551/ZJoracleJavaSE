@@ -3,7 +3,7 @@ package demo;
 import java.util.Scanner;
 
 /**
- * ÁìÑø³èÎï
+ * é¢†å…»å® ç‰©
  * @author 10947
  *
  */
@@ -12,45 +12,45 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		System.out.println("»¶Ó­À´µ½³èÎïµê£¡");
-		//1¡¢ÊäÈë³èÎïµÄÃû×Ö
-		System.out.print("ÇëÊäÈëÒªÁìÑø³èÎïµÄÃû×Ö£º");
+		System.out.println("æ¬¢è¿æ¥åˆ°å® ç‰©åº—ï¼");
+		//1ã€è¾“å…¥å® ç‰©çš„åå­—
+		System.out.print("è¯·è¾“å…¥è¦é¢†å…»å® ç‰©çš„åå­—ï¼š");
 		String name = input.next();
-		//2¡¢Ñ¡Ôñ³èÎïÀàĞÍ
-		System.out.print("ÇëÑ¡ÔñÒªÁìÑøµÄ³èÎïÀàĞÍ£º(1¡¢¹·¹· 2¡¢Æó¶ì)");
+		//2ã€é€‰æ‹©å® ç‰©ç±»å‹
+		System.out.print("è¯·é€‰æ‹©è¦é¢†å…»çš„å® ç‰©ç±»å‹ï¼š(1ã€ç‹—ç‹— 2ã€ä¼é¹…)");
 		switch(input.nextInt()) {
 		case 1:
-			//1  Èç¹ûÊÇ¹·¹·£¬Ñ¡Ôñ¹·µÄÆ·ÖÖ
-			System.out.print("ÇëÑ¡Ôñ¹·¹·µÄÆ·ÖÖ£º£¨1¡¢´ÏÃ÷µÄÀ­²¼À­¶àÈ®"
-					+ " 2¡¢¿á¿áµÄÑ©ÄÉÈğ)");
+			//1  å¦‚æœæ˜¯ç‹—ç‹—ï¼Œé€‰æ‹©ç‹—çš„å“ç§
+			System.out.print("è¯·é€‰æ‹©ç‹—ç‹—çš„å“ç§ï¼šï¼ˆ1ã€èªæ˜çš„æ‹‰å¸ƒæ‹‰å¤šçŠ¬"
+					+ " 2ã€é…·é…·çš„é›ªçº³ç‘)");
 			String strain = null;
 			if(input.nextInt() == 1) {
-				strain = "´ÏÃ÷µÄÀ­²¼À­¶àÈ®";
+				strain = "èªæ˜çš„æ‹‰å¸ƒæ‹‰å¤šçŠ¬";
 			}else {
-				strain = "¿á¿áµÄÑ©ÄÉÈğ";
+				strain = "é…·é…·çš„é›ªçº³ç‘";
 			}
-			//´´½¨¹·¹·¶ÔÏó²¢¸³Öµ
+			//åˆ›å»ºç‹—ç‹—å¯¹è±¡å¹¶èµ‹å€¼
 			Dog dog = new Dog();
 			dog.name = name;
 			dog.strain = strain;
-			//Êä³ö¹·µÄĞÅÏ¢
+			//è¾“å‡ºç‹—çš„ä¿¡æ¯
 			dog.print();
 			break;
 		case 2:
-			//2 Èç¹ûÊÇÆó¶ì£¬Ñ¡ÔñÆó¶ìĞÔ±ğ
-			System.out.print("ÇëÑ¡ÔñÆó¶ìµÄĞÔ±ğ£º£¨1¡¢Q×Ğ"
-					+ " 2¡¢QÃÃ)");
+			//2 å¦‚æœæ˜¯ä¼é¹…ï¼Œé€‰æ‹©ä¼é¹…æ€§åˆ«
+			System.out.print("è¯·é€‰æ‹©ä¼é¹…çš„æ€§åˆ«ï¼šï¼ˆ1ã€Qä»”"
+					+ " 2ã€Qå¦¹)");
 			String sex = null;
 			if(input.nextInt() == 1) {
-				sex = "Q×Ğ";
+				sex = "Qä»”";
 			}else {
-				sex = "QÃÃ";
+				sex = "Qå¦¹";
 			}
-			//´´½¨Æó¶ì¶ÔÏó²¢¸³Öµ
+			//åˆ›å»ºä¼é¹…å¯¹è±¡å¹¶èµ‹å€¼
 			Penguin pgn = new Penguin();
 			pgn.name = name;
 			pgn.sex = sex;
-			//Êä³öÆó¶ìµÄĞÅÏ¢
+			//è¾“å‡ºä¼é¹…çš„ä¿¡æ¯
 			pgn.print();
 			break;
 		}

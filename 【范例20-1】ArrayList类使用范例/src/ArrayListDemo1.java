@@ -4,26 +4,26 @@ public class ArrayListDemo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öArrayList¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªArrayListå¯¹è±¡
 		ArrayList<String> al = new ArrayList<String>();
-		System.out.println("alÖĞÔªËØµÄ¸öÊı£º"+al.size());
-		//ÏòArrayListÖĞÌí¼ÓĞÂÄÚÈİ
+		System.out.println("alä¸­å…ƒç´ çš„ä¸ªæ•°ï¼š"+al.size());
+		//å‘ArrayListä¸­æ·»åŠ æ–°å†…å®¹
 		al.add("C");
 		al.add("A");
 		al.add("E");
 		al.add("B");
 		al.add("D");
 		al.add("F");
-		//°ÑA2¼ÓÔÚArrayList¶ÔÏóµÄµÚ2¸öÎ»ÖÃ
+		//æŠŠA2åŠ åœ¨ArrayListå¯¹è±¡çš„ç¬¬2ä¸ªä½ç½®
 		al.add(1, "A2");
-		System.out.println("al¼ÓÈëÔªËØÖ®ºóµÄÔªËØ¸öÊı£º"+al.size());
-		//ÏÔÊ¾ArrayListµÄÊı¾İ
+		System.out.println("alåŠ å…¥å…ƒç´ ä¹‹åçš„å…ƒç´ ä¸ªæ•°ï¼š"+al.size());
+		//æ˜¾ç¤ºArrayListçš„æ•°æ®
 		System.out.println(al);
-		//´ÓArrayListÖĞÒÆ³ıÔªËØ
-		al.remove("F"); //É¾³ıÔªËØF
-		al.remove(2); //É¾³ıÏÂ±êÎª¶şµÄÔªËØ
-		System.out.println("É¾³ıÔªËØÖ®ºóµÄ¸öÊı£º"+al.size());
-		System.out.println("alµÄÄÚÈİ£º"+al);
+		//ä»ArrayListä¸­ç§»é™¤å…ƒç´ 
+		al.remove("F"); //åˆ é™¤å…ƒç´ F
+		al.remove(2); //åˆ é™¤ä¸‹æ ‡ä¸ºäºŒçš„å…ƒç´ 
+		System.out.println("åˆ é™¤å…ƒç´ ä¹‹åçš„ä¸ªæ•°ï¼š"+al.size());
+		System.out.println("alçš„å†…å®¹ï¼š"+al);
 		
 		
 	}

@@ -6,22 +6,22 @@ public class ArrayListToArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öArrayList¶ÔÏóal
+		//åˆ›å»ºä¸€ä¸ªArrayListå¯¹è±¡al
 		ArrayList<Integer> al = new ArrayList<Integer>();
-		//ÏòArrayListÖĞ¼ÓÈë¶ÔÏó
+		//å‘ArrayListä¸­åŠ å…¥å¯¹è±¡
 		al.add(new Integer(1));
 		al.add(new Integer(2));
 		al.add(new Integer(3));
 		al.add(new Integer(4));
-		System.out.println("alÖĞµÄÄÚÈİ£º" + al);
-		//µÃµ½¶ÔÏóÊı×é
+		System.out.println("alä¸­çš„å†…å®¹ï¼š" + al);
+		//å¾—åˆ°å¯¹è±¡æ•°ç»„
 		Object[]  ia = al.toArray();
-		//¼ÆËãÊı×éÄÚÈİ
+		//è®¡ç®—æ•°ç»„å†…å®¹
 		int sum = 0;
 		for(int i =0; i<ia.length; i++) {
-			sum +=((Integer) ia[i]).intValue(); //½«ÔªËØ×ª»»ÎªIntegerÀàĞÍ²¢²ğÏä³Éint»ù±¾Êı¾İÀàĞÍ
+			sum +=((Integer) ia[i]).intValue(); //å°†å…ƒç´ è½¬æ¢ä¸ºIntegerç±»å‹å¹¶æ‹†ç®±æˆintåŸºæœ¬æ•°æ®ç±»å‹
 		}
-		System.out.println("Êı×éÀÛ¼ÓµÄ½á¹ûÊÇ£º" + sum);
+		System.out.println("æ•°ç»„ç´¯åŠ çš„ç»“æœæ˜¯ï¼š" + sum);
 	}
 
 }

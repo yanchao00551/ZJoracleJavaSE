@@ -7,17 +7,17 @@ public class ArraysSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] scores = new int[5];  //³É¼¨Êı×é
+		int[] scores = new int[5];  //æˆç»©æ•°ç»„
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë5Î»Ñ§Ô±µÄ³É¼¨£º");
-		//Ñ­»·Â¼ÈëÑ§Ô±³É¼¨
+		System.out.println("è¯·è¾“å…¥5ä½å­¦å‘˜çš„æˆç»©ï¼š");
+		//å¾ªç¯å½•å…¥å­¦å‘˜æˆç»©
 		for(int i=0; i <scores.length; i++) {
 			scores[i] = input.nextInt();
 		}
 		
-		Arrays.sort(scores);   //¶ÔÊı×é½øĞĞÉıĞòÅÅĞò
-		System.out.println("Ñ§Ô±³É¼¨°´ÉıĞòÅÅÁĞ£º");
-		/*ÀûÓÃÑ­»·Êä³öÑ§Ô±³É¼¨*/
+		Arrays.sort(scores);   //å¯¹æ•°ç»„è¿›è¡Œå‡åºæ’åº
+		System.out.println("å­¦å‘˜æˆç»©æŒ‰å‡åºæ’åˆ—ï¼š");
+		/*åˆ©ç”¨å¾ªç¯è¾“å‡ºå­¦å‘˜æˆç»©*/
 		
 		for(int i = 0; i< scores.length; i++) {
 			System.out.println(scores[i] + " ");

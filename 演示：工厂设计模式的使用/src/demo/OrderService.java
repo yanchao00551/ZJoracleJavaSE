@@ -3,23 +3,23 @@ package demo;
 public class OrderService {
 	
 	/**
-	 * Éú³É¶©µ¥ V1.0
-	 * µ±ÏÂ´ÎÉý¼¶°æ±¾
-	 * add·½·¨½øÐÐ¸Ä±ä£¬ÒÔÇ°µÄOrderDaoImplÊµÏÖÀàµÄsave
-	 * ÒÑ¾­²¿ÃÅÂú×ãÎÒµÄÐèÇóÁË£¬Èç¹û¸Ä¶¯ºÜ¶à£¬
-	 * service²ãµÄ¸Ä¶¯¾Þ´óµÄ
+	 * ç”Ÿæˆè®¢å• V1.0
+	 * å½“ä¸‹æ¬¡å‡çº§ç‰ˆæœ¬
+	 * addæ–¹æ³•è¿›è¡Œæ”¹å˜ï¼Œä»¥å‰çš„OrderDaoImplå®žçŽ°ç±»çš„save
+	 * å·²ç»éƒ¨é—¨æ»¡è¶³æˆ‘çš„éœ€æ±‚äº†ï¼Œå¦‚æžœæ”¹åŠ¨å¾ˆå¤šï¼Œ
+	 * serviceå±‚çš„æ”¹åŠ¨å·¨å¤§çš„
 	 * 
-	 * service²ã¸ß¶ÈÒÀÀµdao²ãÊµÏÖÀà
+	 * serviceå±‚é«˜åº¦ä¾èµ–daoå±‚å®žçŽ°ç±»
 	 * 
-	 * ¹¤³§Éè¼ÆÄ£Ê½ÄÜ¹»½« service²ãºÍdaoÊµÏÖÀà½âñî
+	 * å·¥åŽ‚è®¾è®¡æ¨¡å¼èƒ½å¤Ÿå°† serviceå±‚å’Œdaoå®žçŽ°ç±»è§£è€¦
 	 */
 	public void add() {
-		//´¦Àí¶©µ¥ÐÅÏ¢µÄÒµÎñÂß¼­  
+		//å¤„ç†è®¢å•ä¿¡æ¯çš„ä¸šåŠ¡é€»è¾‘  
 		//....
 		
-		//´¦ÀíÍê³É£¬°Ñ¶©µ¥Êý¾Ý±£´æÊý¾Ý¿â
+		//å¤„ç†å®Œæˆï¼ŒæŠŠè®¢å•æ•°æ®ä¿å­˜æ•°æ®åº“
 
-		//ÒµÎñÂß¼­²ã µ÷  DAO²ã
+		//ä¸šåŠ¡é€»è¾‘å±‚ è°ƒ  DAOå±‚
 		OrderDao orderDao = new OrderDaoImpl();
 		orderDao.save2();   
 	}

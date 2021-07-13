@@ -11,13 +11,13 @@ public class StreamInTest3_3 {
 		InputStreamReader stdin = new InputStreamReader(System.in);
 		BufferedReader bufin = new BufferedReader(stdin);
 		try {
-			System.out.println("ÇëÊäÈë×Ö·û£º");
+			System.out.println("è¯·è¾“å…¥å­—ç¬¦ï¼š");
 			str = bufin.readLine();
-			System.out.println("ÄãÊäÈëµÄ×Ö·ûÎª£º"+str);
+			System.out.println("ä½ è¾“å…¥çš„å­—ç¬¦ä¸ºï¼š"+str);
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.err.println("·¢ÉúI/O´íÎó");
+			System.err.println("å‘ç”ŸI/Oé”™è¯¯");
 			e.printStackTrace();
 		}
 	}

@@ -2,10 +2,10 @@ package demo;
 
 
 /**
- * 门铃接口
+ * 闂ㄩ搩鎺ュ彛
  * @author 10947
  *
  */
 public interface DoorDell {
-	void takePrictures();   //拍照存档功能
+	void takePrictures();   //鎷嶇収瀛樻。鍔熻兘
 }

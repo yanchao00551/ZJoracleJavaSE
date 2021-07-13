@@ -1,7 +1,7 @@
 package demo;
 
 /**
- *  圆类接口
+ *  鍦嗙被鎺ュ彛
  * @param rad
  * @return
  */
@@ -9,14 +9,14 @@ public interface CircleShape {
 	public static final double PI = 3.141597;
 	
 	/**
-	 * 求圆周长
+	 * 姹傚渾鍛ㄩ暱
 	 * @param per
 	 * @return
 	 */
 	public abstract double perimeter();
 	
 	/**
-	 * 计算面积
+	 * 璁＄畻闈㈢Н
 	 * @param rad
 	 * @return
 	 */

@@ -1,13 +1,13 @@
 package demo;
 
 /**
- * usb接口
+ * usb鎺ュ彛
  * @author 10947
  *
  */
 public interface UsbInterface {
 	/**
-	 * usb接口提供服务
+	 * usb鎺ュ彛鎻愪緵鏈嶅姟
 	 */
 	void service();
 }

@@ -3,23 +3,23 @@ package demo;
 import java.util.Scanner;
 
 /*
- * ÓÃ»§²Ù×÷Àà
+ * ç”¨æˆ·æ“ä½œç±»
  */
 public class User {
 	
 	/*
-	 * ÉèÖÃ¼üÅÌÊäÈë³ÉÔ±¶ÔÏó
+	 * è®¾ç½®é”®ç›˜è¾“å…¥æˆå‘˜å¯¹è±¡
 	 */
 	public static final Scanner input = new Scanner(System.in);
 	
 	
 	
 	/*
-	 * ÓÃ»§ Êı×éb Êı¾İ²É¼¯
+	 * ç”¨æˆ· æ•°ç»„b æ•°æ®é‡‡é›†
 	 */
 	public static int[] inputArr() {
 		int[] b = new int[Config.NUMBER];
-		System.out.print("Êı×éa:[");
+		System.out.print("æ•°ç»„a:[");
 		for(int i=0; i< Config.NUMBER; i++) {
 			System.out.print(Config.A[i]);
 			if(i != Config.NUMBER - 1) {
@@ -29,7 +29,7 @@ public class User {
 		System.out.println("]");
 		
 		for(int i=0; i< Config.NUMBER; i++) {
-			System.out.println("ÇëÊäÈë³¤¶ÈÎª" + Config.NUMBER + "µÄÊı×é " +i+"ÏÂ±êÊı×ébÄÚÈİ£º");
+			System.out.println("è¯·è¾“å…¥é•¿åº¦ä¸º" + Config.NUMBER + "çš„æ•°ç»„ " +i+"ä¸‹æ ‡æ•°ç»„bå†…å®¹ï¼š");
 			b[i] = input.nextInt();
 		}
 		return b;
@@ -37,10 +37,10 @@ public class User {
 	
 	
 	/*
-	 * µİ¹éÑéÖ¤£¬ÓÃ»§ÏÂ±êÂ¼Èë
+	 * é€’å½’éªŒè¯ï¼Œç”¨æˆ·ä¸‹æ ‡å½•å…¥
 	 */
 	public static int inputIndex() {
-		System.out.println("ÇëÊäÈë²åÈëµ½Êı×éaµÄÎ»ÖÃ£º");
+		System.out.println("è¯·è¾“å…¥æ’å…¥åˆ°æ•°ç»„açš„ä½ç½®ï¼š");
 		int i = input.nextInt();
 		if(i <0 && i >= 8)
 			inputIndex();

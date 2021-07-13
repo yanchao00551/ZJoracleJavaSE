@@ -6,8 +6,8 @@ public class TestJava3_1 {
 		// TODO Auto-generated method stub
 		int num;
 		num =5;
-		System.out.println("这是数字 " + num);
-		System.out.println("我有 " + num + "本书");
+		System.out.println("杩欐槸鏁板瓧 " + num);
+		System.out.println("鎴戞湁 " + num + "鏈功");
 	}
 
 }

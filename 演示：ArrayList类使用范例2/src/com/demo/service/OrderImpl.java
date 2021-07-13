@@ -15,12 +15,12 @@ public class OrderImpl implements IOrder{
 		List<Menu> menuList = new ArrayList<Menu>();
 		Menu m1 = new Menu();
 		m1.setId(1);
-		m1.setName("ÓãÏãÈâË¿");
+		m1.setName("é±¼é¦™è‚‰ä¸");
 		m1.setPrice(28.8);
 		m1.setZan(0);
 		Menu m2 = new Menu();
 		m2.setId(2);
-		m2.setName("ºìÉÕ´øÓã");
+		m2.setName("çº¢çƒ§å¸¦é±¼");
 		m2.setPrice(58.8);
 		m2.setZan(2);
 		
@@ -28,20 +28,20 @@ public class OrderImpl implements IOrder{
 		menuList.add(m2);
 		
 		
-		//Àà¼¯µÄÊä³ö  
+		//ç±»é›†çš„è¾“å‡º  
 		Iterator<?> itr = menuList.iterator();
-		while(itr.hasNext()) { //ÅĞ¶ÏÊÇ·ñ´æÔÚÏÂÒ»¸öÖµ
+		while(itr.hasNext()) { //åˆ¤æ–­æ˜¯å¦å­˜åœ¨ä¸‹ä¸€ä¸ªå€¼
 			Menu m = (Menu)itr.next();
 			System.out.println(m);
 		}
 		
-		//ÔöÇ¿ĞÍforÑ­»·
+		//å¢å¼ºå‹forå¾ªç¯
 		for(Menu m:menuList) {
 			System.out.println(m);
 		}
 		
 		
-		//ÆÕÍ¨forÑ­»·
+		//æ™®é€šforå¾ªç¯
 		for(int i=0; i < menuList.size(); i++) {
 			System.out.println(menuList.get(i));
 		}

@@ -10,54 +10,54 @@ public class Test {
 	public static Object objNew(String className,String c) throws Exception {
 		Object result = null;
 		
-		//µÚÈıÖÖ·½Ê½»ñÈ¡Class¶ÔÏó
+		//ç¬¬ä¸‰ç§æ–¹å¼è·å–Classå¯¹è±¡
 		try {
 			Class<?> p = Class.forName(className);
 
-			//Í¨¹ı·´ÉäÄÃµ½¶ÔÏó£¬per1ÔËĞĞÆÚÊ±ºò²úÉúÁË,per1·Ç±àÒëÆ÷²úÉú
+			//é€šè¿‡åå°„æ‹¿åˆ°å¯¹è±¡ï¼Œper1è¿è¡ŒæœŸæ—¶å€™äº§ç”Ÿäº†,per1éç¼–è¯‘å™¨äº§ç”Ÿ
 			Object per1 = p.newInstance();    
 			
 			
 //			Constructor<?> con = p.getConstructor(String.class);
-//			Object per = con.newInstance(c); //Í¨¹ı·´ÉäÄÃµ½¶ÔÏó
+//			Object per = con.newInstance(c); //é€šè¿‡åå°„æ‹¿åˆ°å¯¹è±¡
 			
 //			System.out.println(per.name);
 			
 
-			//¹¹Ôì±ØĞëÒªÓĞpublicĞŞÊÎ·û
+			//æ„é€ å¿…é¡»è¦æœ‰publicä¿®é¥°ç¬¦
 //			Constructor[] arr = p.getConstructors();
 //			for(Constructor c1:arr) {
 //				System.out.println(c1);
 //			}
 			
-			//»ñÈ¡ËùÓĞµÄ¹¹Ôì·½·¨(°üÀ¨Ë½ÓĞ¡¢ÊÜ±£»¤¡¢Ä¬ÈÏ¡¢¹«ÓĞ)
+			//è·å–æ‰€æœ‰çš„æ„é€ æ–¹æ³•(åŒ…æ‹¬ç§æœ‰ã€å—ä¿æŠ¤ã€é»˜è®¤ã€å…¬æœ‰)
 //   		   Constructor[] arr1 = p.getDeclaredConstructors();  
 //		   for(Constructor c2:arr1) {
 //				System.out.println(c2);
 //			}
 //   		   
-//		   arr1[2].newInstance("ÕÅÈı",30);
-//		   //Èç¹ûÒªÖ´ĞĞË½ÓĞ¹¹Ôì£¬¿ÉÒÔÊ¹ÓÃ±©Á¦·ÃÎÊ£¬ºöÂÔµôĞŞÊÎ·û
-//		   arr1[0].setAccessible(true);  //±©Á¦·ÃÎÊ(ºöÂÔµô·ÃÎÊĞŞÊÎ·û)
+//		   arr1[2].newInstance("å¼ ä¸‰",30);
+//		   //å¦‚æœè¦æ‰§è¡Œç§æœ‰æ„é€ ï¼Œå¯ä»¥ä½¿ç”¨æš´åŠ›è®¿é—®ï¼Œå¿½ç•¥æ‰ä¿®é¥°ç¬¦
+//		   arr1[0].setAccessible(true);  //æš´åŠ›è®¿é—®(å¿½ç•¥æ‰è®¿é—®ä¿®é¥°ç¬¦)
 //		   arr1[0].newInstance(30);
 //		   
-//		   arr1[1].setAccessible(true);  //±©Á¦·ÃÎÊ
+//		   arr1[1].setAccessible(true);  //æš´åŠ›è®¿é—®
 //		   arr1[1].newInstance(true);
 //		   
-//		   arr1[4].newInstance();  //Ä¬ÈÏ¹¹Ôì·½·¨
+//		   arr1[4].newInstance();  //é»˜è®¤æ„é€ æ–¹æ³•
 		   
-		 //2.»ñÈ¡×Ö¶Î
-		 System.out.println("************»ñÈ¡ËùÓĞ¹«ÓĞµÄ×Ö¶Î********************");
+		 //2.è·å–å­—æ®µ
+		 System.out.println("************è·å–æ‰€æœ‰å…¬æœ‰çš„å­—æ®µ********************");
 		 Field[] fieldArray =  p.getFields();
 	     for(Field s:fieldArray) {
 	    	 System.out.println(s);
 	     }
-	     System.out.println("************»ñÈ¡ËùÓĞµÄ×Ö¶Î(°üÀ¨Ë½ÓĞ¡¢ÊÜ±£»¤¡¢Ä¬ÈÏµÄ)********************");
+	     System.out.println("************è·å–æ‰€æœ‰çš„å­—æ®µ(åŒ…æ‹¬ç§æœ‰ã€å—ä¿æŠ¤ã€é»˜è®¤çš„)********************");
 	     Field[] fieldArray1 = p.getDeclaredFields();
 	     for(Field s:fieldArray1) {
 	    	 System.out.println(s);
 	     }
-	     System.out.println("*************»ñÈ¡¹«ÓĞ×Ö¶Î**²¢µ÷ÓÃ***********************************");
+	     System.out.println("*************è·å–å…¬æœ‰å­—æ®µ**å¹¶è°ƒç”¨***********************************");
 	    
 	     Field f = p.getField("name");
 	     Constructor<?> con = p.getConstructor();
@@ -65,19 +65,19 @@ public class Test {
 	     Object per2 = con.newInstance();
 	     
 
-	     f.set(per2, "ÕÅÈı");
+	     f.set(per2, "å¼ ä¸‰");
 	     
 	
 		 
 		 
-		//2.»ñÈ¡ËùÓĞ¹«ÓĞ·½·¨
-		System.out.println("***************»ñÈ¡ËùÓĞµÄ¡±¹«ÓĞ¡°·½·¨*******************");
+		//2.è·å–æ‰€æœ‰å…¬æœ‰æ–¹æ³•
+		System.out.println("***************è·å–æ‰€æœ‰çš„â€å…¬æœ‰â€œæ–¹æ³•*******************");
 		Method[] methodArray = p.getMethods();
 		for(Method s:methodArray) {
 			System.out.println(s);
 		}
 		
-		System.out.println("***************»ñÈ¡ËùÓĞµÄ·½·¨£¬°üÀ¨Ë½ÓĞµÄ*******************");
+		System.out.println("***************è·å–æ‰€æœ‰çš„æ–¹æ³•ï¼ŒåŒ…æ‹¬ç§æœ‰çš„*******************");
 		Method[] methodArray2 = p.getDeclaredMethods();
 		
 		Method m = p.getMethod("show1",String.class);
@@ -85,7 +85,7 @@ public class Test {
 		System.out.println(m);
 		
 		
-	    m.invoke(per2, "Hello World!");   //µ÷ÓÃ·½·¨²¢´«²Î
+	    m.invoke(per2, "Hello World!");   //è°ƒç”¨æ–¹æ³•å¹¶ä¼ å‚
 		  
 	    
 		result = per2;

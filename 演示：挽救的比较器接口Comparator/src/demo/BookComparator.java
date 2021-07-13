@@ -3,7 +3,7 @@ package demo;
 import java.util.Comparator;
 
 /*
- *额外建立，比较规则类，实现Comparator接口 覆写compare方法
+ *棰濆寤虹珛锛屾瘮杈冭鍒欑被锛屽疄鐜癈omparator鎺ュ彛 瑕嗗啓compare鏂规硶
  */
 class BookComparator implements Comparator<Book> {
 

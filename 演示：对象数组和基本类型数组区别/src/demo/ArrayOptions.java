@@ -7,7 +7,7 @@ public class ArrayOptions {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Arrays of objects
-		Person[] a;   //尚未初始化数组变量a
+		Person[] a;   //灏氭湭鍒濆鍖栨暟缁勫彉閲廰
 		Person[] b = new Person[5];
 		
 		System.out.println("b: " + Arrays.toString(b));

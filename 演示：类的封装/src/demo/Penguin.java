@@ -1,16 +1,16 @@
 package demo;
 
 /**
- * ³èÎïÆó¶ìÀà
+ * å® ç‰©ä¼é¹…ç±»
  * @author 10947
  *
  */
 public class Penguin {
 
-	private String name = "ÎŞÃûÊÏ";   //êÇ³Æ¡¢Ä¬ÈÏÖµÊÇ¡°ÎŞÃûÊÏ¡±
-	private int health = 100;    //½¡¿µÖµ£¬Ä¬ÈÏÖµ100
-	private int love = 0;        //Ç×ÃÜ¶È
-	private String sex = "Q×Ğ";    //ĞÔ±ğ
+	private String name = "æ— åæ°";   //æ˜µç§°ã€é»˜è®¤å€¼æ˜¯â€œæ— åæ°â€
+	private int health = 100;    //å¥åº·å€¼ï¼Œé»˜è®¤å€¼100
+	private int love = 0;        //äº²å¯†åº¦
+	private String sex = "Qä»”";    //æ€§åˆ«
 	
 	
 	
@@ -38,7 +38,7 @@ public class Penguin {
 
 	public void setHealth(int health) {
 		if(health < 0 || health >100) {
-			System.out.println("½¡¿µÖµÓ¦¸Ã×Ğ0ÖÁ100Ö®¼ä£¬Ä¬ÈÏÖµÎª60");
+			System.out.println("å¥åº·å€¼åº”è¯¥ä»”0è‡³100ä¹‹é—´ï¼Œé»˜è®¤å€¼ä¸º60");
 			this.health = 60;
 			return;
 		}
@@ -58,7 +58,7 @@ public class Penguin {
 
 	public void setLove(int love) {
 		if(love < 0 || love > 100) {
-			System.out.println("Ç×ÃÜ¶ÈÓ¦¸ÃÔÚ0ÖÁ100Ö®¼ä£¬Ä¬ÈÏÖµÎª10");
+			System.out.println("äº²å¯†åº¦åº”è¯¥åœ¨0è‡³100ä¹‹é—´ï¼Œé»˜è®¤å€¼ä¸º10");
 			this.love  = 10;
 			return;
 		}
@@ -97,11 +97,11 @@ public class Penguin {
 
 
 	/**
-	 * Êä³öÆó¶ìµÄĞÅÏ¢
+	 * è¾“å‡ºä¼é¹…çš„ä¿¡æ¯
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name +
-				",½¡¿µÖµÊÇ" + this.health + ",ºÍÖ÷ÈÎµÄÇ×ÃÜ¶ÈÊÇ"
-				+ this.love +",ĞÔ±ğÊÇ " + this.sex + ".");
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name +
+				",å¥åº·å€¼æ˜¯" + this.health + ",å’Œä¸»ä»»çš„äº²å¯†åº¦æ˜¯"
+				+ this.love +",æ€§åˆ«æ˜¯ " + this.sex + ".");
 	}
 }

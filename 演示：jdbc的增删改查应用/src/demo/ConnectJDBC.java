@@ -5,47 +5,47 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 /**
- * Á¬½ÓJDBC
+ * è¿æ¥JDBC
  * @author 10947
  *
  */
 public class ConnectJDBC {
-	//Çı¶¯³ÌĞò¾ÍÊÇÖ®Ç°ÔÚclasspathÖĞÅäÖÃµÄjdbcµÄÇı¶¯³ÌĞòµÄjar°üÖĞ
+	//é©±åŠ¨ç¨‹åºå°±æ˜¯ä¹‹å‰åœ¨classpathä¸­é…ç½®çš„jdbcçš„é©±åŠ¨ç¨‹åºçš„jaråŒ…ä¸­
 	public static final String DBDRIVER = "com.mysql.jdbc.Driver";
-	//Á¬½ÓµØÖ·ÊÇÓÉ¸÷¸öÊı¾İ¿âÉú²úÉÌµ¥¶ÀÌá¹©µÄ£¬ËùÒÔÒªµ¥¶À¼Ç×¡
+	//è¿æ¥åœ°å€æ˜¯ç”±å„ä¸ªæ•°æ®åº“ç”Ÿäº§å•†å•ç‹¬æä¾›çš„ï¼Œæ‰€ä»¥è¦å•ç‹¬è®°ä½
 	public static final String DBURL = "jdbc:mysql://127.0.0.1:3306/order?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true";
-	//Á¬½ÓÊı¾İ¿âµÄÓÃ»§
+	//è¿æ¥æ•°æ®åº“çš„ç”¨æˆ·
 	public static final String DBUSER = "root";
-	//Á¬½ÓÊı¾İ¿âµÄÃÜÂë
+	//è¿æ¥æ•°æ®åº“çš„å¯†ç 
 	public static final String DBPASS = "root";
 	
 	
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Connection conn = null;       //±íÊ¾Êı¾İ¿âµÄÁ¬½ÓµÄ¶ÔÏó
+		Connection conn = null;       //è¡¨ç¤ºæ•°æ®åº“çš„è¿æ¥çš„å¯¹è±¡
 		
-		//1    Ê¹ÓÃClassÀà¼ÓÔØÇı¶¯³ÌĞò
+		//1    ä½¿ç”¨Classç±»åŠ è½½é©±åŠ¨ç¨‹åº
 		Class.forName(DBDRIVER);
 		
-		//2¡¢Á¬½ÓÊı¾İ¿â
+		//2ã€è¿æ¥æ•°æ®åº“
 		conn = DriverManager.getConnection(DBURL, DBUSER, DBPASS);
 		System.out.println(conn);
 		
 		
-		//3¡¢ Ğ´ĞèÒªÖ´ĞĞµÄSQL
-		Statement stmt = null;     //²Ù×÷Êı¾İ¿â
+		//3ã€ å†™éœ€è¦æ‰§è¡Œçš„SQL
+		Statement stmt = null;     //æ“ä½œæ•°æ®åº“
 		stmt = conn.createStatement();
-		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES ('ÕÅÈı','28', NOW(), 9000.0)";
-		String sqlUpdate = "UPDATE `person` SET `name`='ÀîËÄ', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
-		stmt.executeUpdate(sqlUpdate);  //Ö§³ÖĞÂÔöºÍ¸üĞÂµÄSQL
+		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES ('å¼ ä¸‰','28', NOW(), 9000.0)";
+		String sqlUpdate = "UPDATE `person` SET `name`='æå››', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
+		stmt.executeUpdate(sqlUpdate);  //æ”¯æŒæ–°å¢å’Œæ›´æ–°çš„SQL
 		
-		//3¡¢¹Ø±ÕÊı¾İ¿â
+		//3ã€å…³é—­æ•°æ®åº“
 		conn.close();
 		
-		//¿ÎÌÃÁ·Ï° :
-		//Ê¹ÓÃµ¥ÀıÉè¼ÆÄ£Ê½ÓÅ»¯´Ë°¸Àı
-		//propertiesÀàload·½·¨ÊµÏÖ Á¬½Ó×Ö·û´®·ÖÀëµ½Íâ²¿ÅäÖÃÎÄ¼ş½øĞĞ¶ÁÈ¡
+		//è¯¾å ‚ç»ƒä¹  :
+		//ä½¿ç”¨å•ä¾‹è®¾è®¡æ¨¡å¼ä¼˜åŒ–æ­¤æ¡ˆä¾‹
+		//propertiesç±»loadæ–¹æ³•å®ç° è¿æ¥å­—ç¬¦ä¸²åˆ†ç¦»åˆ°å¤–éƒ¨é…ç½®æ–‡ä»¶è¿›è¡Œè¯»å–
 		
 		
 		

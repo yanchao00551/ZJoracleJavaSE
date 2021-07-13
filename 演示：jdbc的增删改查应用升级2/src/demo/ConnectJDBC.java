@@ -20,7 +20,7 @@ import java.util.Set;
 import demo.domain.Person;
 
 /**
- * Á¬½ÓJDBC
+ * è¿æ¥JDBC
  * @author 10947
  *
  */
@@ -29,30 +29,30 @@ public class ConnectJDBC {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Connection conn = null;       //±íÊ¾Êı¾İ¿âµÄÁ¬½ÓµÄ¶ÔÏó
+		Connection conn = null;       //è¡¨ç¤ºæ•°æ®åº“çš„è¿æ¥çš„å¯¹è±¡
 		conn = DataSourceUtil.openConnection();
 		
-		//3¡¢ Ğ´ĞèÒªÖ´ĞĞµÄSQL
-		Statement stmt = null;     //²Ù×÷Êı¾İ¿â
+		//3ã€ å†™éœ€è¦æ‰§è¡Œçš„SQL
+		Statement stmt = null;     //æ“ä½œæ•°æ®åº“
 		stmt = conn.createStatement();
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëĞÕÃû£º");
+		System.out.println("è¯·è¾“å…¥å§“åï¼š");
 		String name = input.next();
-		System.out.println("ÇëÊäÈëÄêÁä£º");
+		System.out.println("è¯·è¾“å…¥å¹´é¾„ï¼š");
 		int age = input.nextInt();
-		System.out.println("ÇëÊäÈëÉúÈÕ£º");
+		System.out.println("è¯·è¾“å…¥ç”Ÿæ—¥ï¼š");
 		String date = input.next();
-		System.out.println("ÇëÊäÈëÔ±¹¤¹¤×Ê£º");
+		System.out.println("è¯·è¾“å…¥å‘˜å·¥å·¥èµ„ï¼š");
 		BigDecimal salary = input.nextBigDecimal();
 		
 		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES ('" + name +"','" + age +"','"+date+"', " + salary + ")";
 		System.out.println(sqlInsert);
-		String sqlUpdate = "UPDATE `person` SET `name`='ÀîËÄ', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
-		String sqlSelect2 = "SELECT * FROM `person` LEFT JOIN  `book` ON `person`.like_bid = `book`.b_id WHERE 	1=1  "; //Á¬±í
+		String sqlUpdate = "UPDATE `person` SET `name`='æå››', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
+		String sqlSelect2 = "SELECT * FROM `person` LEFT JOIN  `book` ON `person`.like_bid = `book`.b_id WHERE 	1=1  "; //è¿è¡¨
 		
-		String sqlSelect1 = "SELECT * FROM `person` WHERE 	1=1  ORDER BY `birthday` DESC";  //µ¥±í
+		String sqlSelect1 = "SELECT * FROM `person` WHERE 	1=1  ORDER BY `birthday` DESC";  //å•è¡¨
 		
-		stmt.executeUpdate(sqlInsert);  //Ö§³ÖĞÂÔöºÍ¸üĞÂµÄSQL
+		stmt.executeUpdate(sqlInsert);  //æ”¯æŒæ–°å¢å’Œæ›´æ–°çš„SQL
 		
 		List<Person> list = new ArrayList<>();
 		
@@ -61,7 +61,7 @@ public class ConnectJDBC {
 		while(result.next()) {
 			Person person  = new Person();
 
-			/*Ö÷±í×Ö¶Î*/
+			/*ä¸»è¡¨å­—æ®µ*/
 			person.setPid(result.getInt(1));
 			person.setName(result.getString(2));
 			person.setAge(result.getInt(3));
@@ -71,7 +71,7 @@ public class ConnectJDBC {
 			
 			
 			
-			/*´Ó±í×Ö¶Î*/
+			/*ä»è¡¨å­—æ®µ*/
 //			person.setbName(result.getString("b_name"));
 //			person.setPid(result.getInt("p_id"));
 //			person.setbAuthor(result.getString("b_author"));
@@ -86,7 +86,7 @@ public class ConnectJDBC {
 		
 
 		
-		//3¡¢¹Ø±ÕÊı¾İ¿â
+		//3ã€å…³é—­æ•°æ®åº“
 		DataSourceUtil.closeConnection(conn);
 		
 		

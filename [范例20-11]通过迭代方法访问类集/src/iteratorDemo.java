@@ -6,14 +6,14 @@ public class iteratorDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öArrayListÊı×é
+		//åˆ›å»ºä¸€ä¸ªArrayListæ•°ç»„
 		ArrayList<String> al = new ArrayList<String>();
-		//¼ÓÈëÔªËØµ½ArrayListÖĞ
+		//åŠ å…¥å…ƒç´ åˆ°ArrayListä¸­
 		al.add("WelCome");
 		al.add("to");
 		al.add("HAUT");
-		//Ê¹ÓÃiteratorÏÔÊ¾alÖĞµÄÄÚÈİ
-		System.out.println("alÖĞµÄÄÚÈİÊÇ£º");
+		//ä½¿ç”¨iteratoræ˜¾ç¤ºalä¸­çš„å†…å®¹
+		System.out.println("alä¸­çš„å†…å®¹æ˜¯ï¼š");
 		Iterator<String> itr = al.iterator();
 		while(itr.hasNext()) {
 			Object element = itr.next();

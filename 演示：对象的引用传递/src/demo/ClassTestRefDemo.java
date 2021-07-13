@@ -4,14 +4,14 @@ public class ClassTestRefDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person p1 = null;  //ÉùÃ÷¶ÔÏóp1 ,´Ë¶ÔÏóÖµÎªnull,Î´ÊµÀı»¯
+		Person p1 = null;  //å£°æ˜å¯¹è±¡p1 ,æ­¤å¯¹è±¡å€¼ä¸ºnull,æœªå®ä¾‹åŒ–
 		Person p2 = null;
 		p1 = new Person();
 		p1.age = 20;
-		p1.name = "ÕÅÈı";
-		p2 = p1;    //½«p1µÄÒıÓÃ¸³¸øp2
-		System.out.println("ĞÕÃû£º" + p2.name);   //ÕÅÈı
-		System.out.println("ÄêÁä£º" + p2.age);     //20
+		p1.name = "å¼ ä¸‰";
+		p2 = p1;    //å°†p1çš„å¼•ç”¨èµ‹ç»™p2
+		System.out.println("å§“åï¼š" + p2.name);   //å¼ ä¸‰
+		System.out.println("å¹´é¾„ï¼š" + p2.age);     //20
 	}
 
 }

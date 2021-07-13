@@ -1,7 +1,7 @@
 package demo;
 
 /**
- * 静态常量的使用
+ * 闈欐�佸父閲忕殑浣跨敤
  * @author 10947
  *
  */
@@ -11,16 +11,16 @@ public class Test {
 		// TODO Auto-generated method stub
 		Penguin pgn = null;
 		pgn = new Penguin();
-		System.out.println("第一个企鹅的性别是：" + pgn.sex + ".");
+		System.out.println("绗竴涓紒楣呯殑鎬у埆鏄細" + pgn.sex + ".");
 		
 		pgn = new Penguin();
 		pgn.sex = Penguin.SEX_FEMALE;
-		System.out.println("第二个企鹅的性别是：" + pgn.sex + ".");
+		System.out.println("绗簩涓紒楣呯殑鎬у埆鏄細" + pgn.sex + ".");
 		
 		
 		pgn = new Penguin();
 		pgn.sex = Penguin.SEX_MALE;
-		System.out.println("第三个企鹅的性别是：" + pgn.sex + ".");
+		System.out.println("绗笁涓紒楣呯殑鎬у埆鏄細" + pgn.sex + ".");
 		
 		
 	}

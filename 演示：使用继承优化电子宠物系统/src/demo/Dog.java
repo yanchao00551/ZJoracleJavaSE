@@ -1,7 +1,7 @@
 package demo;
 
 /**
- * ¹·¹·Àà£¬³èÎïµÄ×ÓÀà
+ * ç‹—ç‹—ç±»ï¼Œå® ç‰©çš„å­ç±»
  * @author 10947
  *
  */
@@ -24,7 +24,7 @@ public class Dog extends Pet{
 	@Override
 	public void print() {
 		// TODO Auto-generated method stub
-		System.out.println("ÕâÊÇÖØĞ´µÄ·½·¨£¡£¡£¡");
+		System.out.println("è¿™æ˜¯é‡å†™çš„æ–¹æ³•ï¼ï¼ï¼");
 	}
 	
 	

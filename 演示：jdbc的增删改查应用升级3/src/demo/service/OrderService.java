@@ -14,7 +14,7 @@ import demo.domain.Menu;
 import demo.domain.Order;
 
 /**
- * ÒµÎñÂß¼­
+ * ä¸šåŠ¡é€»è¾‘
  * @author 10947
  *
  */
@@ -22,18 +22,18 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 	
 	MenuService menuService =new MenuService();
 	
-	//´´½¨ÊäÈëÀà
+	//åˆ›å»ºè¾“å…¥ç±»
 	Scanner input = new Scanner(System.in);
-	//´´½¨²Ëµ¥¼¯ºÏ
+	//åˆ›å»ºèœå•é›†åˆ
 	List<Object> menuList = new ArrayList<>();
-	//´´½¨¶©µ¥¼¯ºÏ
+	//åˆ›å»ºè®¢å•é›†åˆ
 	List<Object> orderList = new ArrayList<>();
-	//´´½¨²ÎÊıÀà
+	//åˆ›å»ºå‚æ•°ç±»
 	Params params = new Params();
 
 	
 	/*
-	 * ³õÊ¼»¯¶©µ¥ºÍ²ËÆ·
+	 * åˆå§‹åŒ–è®¢å•å’Œèœå“
 	 */
 	public void initial(){
 		menuList = menuService.queryOrdersList(params);
@@ -41,66 +41,66 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 	}
 	
 	/*
-	 * ÏµÍ³ÓÃ»§Ö÷²Ëµ¥   
+	 * ç³»ç»Ÿç”¨æˆ·ä¸»èœå•   
 	 */
 	public void startMenu(){
-		int num = -1;  //ÓÃ»§ÊäÈë0·µ»ØÖ÷²Ëµ¥ £¬·ñÔòÍË³öÏµÍ³  
-		boolean isExit = false;  //±êÊ¶ÓÃ»§ÊÇ·ñÍË³öÏµÍ³£ºtrue£ºÍË³öÏµÍ³
+		int num = -1;  //ç”¨æˆ·è¾“å…¥0è¿”å›ä¸»èœå• ï¼Œå¦åˆ™é€€å‡ºç³»ç»Ÿ  
+		boolean isExit = false;  //æ ‡è¯†ç”¨æˆ·æ˜¯å¦é€€å‡ºç³»ç»Ÿï¼štrueï¼šé€€å‡ºç³»ç»Ÿ
 		
-		System.out.println("\n»¶Ó­Ê¹ÓÃ¡°¶©µ¥¹ÜÀíÏµÍ³¡±");
-		//Ñ­»·£ºÏÔÊ¾²Ëµ¥  £¬¸ù¾İÓÃ»§Ñ¡ÔñµÄÊı×ÖÖ´ĞĞÏàÓ¦¹¦ÄÜ
+		System.out.println("\næ¬¢è¿ä½¿ç”¨â€œè®¢å•ç®¡ç†ç³»ç»Ÿâ€");
+		//å¾ªç¯ï¼šæ˜¾ç¤ºèœå•  ï¼Œæ ¹æ®ç”¨æˆ·é€‰æ‹©çš„æ•°å­—æ‰§è¡Œç›¸åº”åŠŸèƒ½
 		do{
-			//ÏÔÊ¾²Ëµ¥
+			//æ˜¾ç¤ºèœå•
 			System.out.println("****************************");
-			System.out.println("1¡¢ÎÒÒª¶©²Í");
-			System.out.println("2¡¢²é¿´²Í´ü");
-			System.out.println("3¡¢Ç©ÊÕ¶©µ¥");
-			System.out.println("4¡¢É¾³ı¶©µ¥");
-			System.out.println("5¡¢ÎÒÒªµãÔŞ");
-			System.out.println("6¡¢ÍË³öÏµÍ³");
+			System.out.println("1ã€æˆ‘è¦è®¢é¤");
+			System.out.println("2ã€æŸ¥çœ‹é¤è¢‹");
+			System.out.println("3ã€ç­¾æ”¶è®¢å•");
+			System.out.println("4ã€åˆ é™¤è®¢å•");
+			System.out.println("5ã€æˆ‘è¦ç‚¹èµ");
+			System.out.println("6ã€é€€å‡ºç³»ç»Ÿ");
 			System.out.println("****************************");
-			System.out.println("ÇëÑ¡Ôñ£º ");
-			int choose = input.nextInt();   //¼ÇÂ¼ÓÃ»§Ñ¡ÔñµÄ¹¦ÄÜ±àºÅ
+			System.out.println("è¯·é€‰æ‹©ï¼š ");
+			int choose = input.nextInt();   //è®°å½•ç”¨æˆ·é€‰æ‹©çš„åŠŸèƒ½ç¼–å·
 			
-			//¸ù¾İÓÃ»§Ñ¡ÔñµÄ¹¦ÄÜ±àºÅÖ´ĞĞÏàÓ¦¹¦ÄÜ
+			//æ ¹æ®ç”¨æˆ·é€‰æ‹©çš„åŠŸèƒ½ç¼–å·æ‰§è¡Œç›¸åº”åŠŸèƒ½
 			switch(choose){
 			case 1:
-				//ÎÒÒª¶©²Í
-				System.out.println("***ÎÒÒª¶©²Í***");
+				//æˆ‘è¦è®¢é¤
+				System.out.println("***æˆ‘è¦è®¢é¤***");
 				add();
 				break;
 			case 2:
-				//²é¿´²Í´ü
-				System.out.println("***²é¿´²Í´ü***");
+				//æŸ¥çœ‹é¤è¢‹
+				System.out.println("***æŸ¥çœ‹é¤è¢‹***");
 				display();
 				break;
 			case 3:
-				//Ç©ÊÕ¶©µ¥
-				System.out.println("***Ç©ÊÕ¶©µ¥***");
+				//ç­¾æ”¶è®¢å•
+				System.out.println("***ç­¾æ”¶è®¢å•***");
 				sign();
 				break;
 			case 4:
-				//É¾³ı¶©µ¥
-				System.out.println("***É¾³ı¶©µ¥***");
+				//åˆ é™¤è®¢å•
+				System.out.println("***åˆ é™¤è®¢å•***");
 				delete();
 				break;
 			case 5:
-				//ÎÒÒªµãÔŞ
-				System.out.println("***ÎÒÒªµãÔŞ***");
+				//æˆ‘è¦ç‚¹èµ
+				System.out.println("***æˆ‘è¦ç‚¹èµ***");
 				praise();
 				break;
 			case 6:
-				//ÍË³öÏµÍ³
+				//é€€å‡ºç³»ç»Ÿ
 				isExit = true;
 				break;
 			default:
-				//ÍË³öÏµÍ³
+				//é€€å‡ºç³»ç»Ÿ
 				isExit = true;
 				break;
 			}
 			
 			if(!isExit){  //false
-				System.out.println("ÊäÈë0·µ»Ø£º");
+				System.out.println("è¾“å…¥0è¿”å›ï¼š");
 				num = input.nextInt();
 			}else{   //true
 				break;
@@ -108,22 +108,22 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 			
 		}while(num == 0);
 		
-		System.out.println("Ğ»Ğ»Ê¹ÓÃ£¬»¶Ó­ÏÂ´Î¹âÁÙ£¡");
+		System.out.println("è°¢è°¢ä½¿ç”¨ï¼Œæ¬¢è¿ä¸‹æ¬¡å…‰ä¸´ï¼");
 	}
 	
 	/*
-	 * µãÔŞ
+	 * ç‚¹èµ
 	 */
     void praise() {
 		// TODO Auto-generated method stub
-		//ÏÔÊ¾²ËÆ·ĞÅÏ¢
-    	System.out.println("ĞòºÅ\t²ËÃû\tµ¥¼Û\tµãÔŞÊı");
+		//æ˜¾ç¤ºèœå“ä¿¡æ¯
+    	System.out.println("åºå·\tèœå\tå•ä»·\tç‚¹èµæ•°");
     	int i = 0;
     	for(Object m:menuList) {
     		Menu entity = (Menu)m;
     		String praiseNum;
     		if(entity.getPraiseNums() > 0){
-    			praiseNum = entity.getPraiseNums() + "ÔŞ";
+    			praiseNum = entity.getPraiseNums() + "èµ";
     		}else{
     			praiseNum = "0";
     		}
@@ -133,22 +133,22 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 
     	int priaiseNum;
     	do{
-    		System.out.println("ÇëÑ¡ÔñÄúÒªµãÔŞµÄ²ËÆ·ĞòºÅ£º ");
+    		System.out.println("è¯·é€‰æ‹©æ‚¨è¦ç‚¹èµçš„èœå“åºå·ï¼š ");
     		priaiseNum = input.nextInt();
     	}while(priaiseNum <=0 || priaiseNum > menuList.size());
     	
     	Menu updateEntity = (Menu)menuList.get(priaiseNum-1);
-    	updateEntity.setPraiseNums(updateEntity.getPraiseNums()+1);   //µãÔŞÊı+1
+    	updateEntity.setPraiseNums(updateEntity.getPraiseNums()+1);   //ç‚¹èµæ•°+1
     	
     	Map<String,Object> updateParams = new HashMap<>();
     	updateParams.put("id", updateEntity.getId());
     	params.setUpdateParams(updateParams);
         menuService.update(params,updateEntity);
-    	System.out.println("µãÔŞ³É¹¦£¡£¡£¡");
+    	System.out.println("ç‚¹èµæˆåŠŸï¼ï¼ï¼");
 	}
 
 	/*
-     * É¾³ı¶©µ¥
+     * åˆ é™¤è®¢å•
      */
     void delete() {
 	
@@ -156,7 +156,7 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 	}
 
 	/*
-	 * Ç©ÊÕ¶©µ¥
+	 * ç­¾æ”¶è®¢å•
 	 */
     void sign() {
 	
@@ -164,14 +164,14 @@ public class OrderService extends CrezyManService<Order,OrderDao>{
 	}
 
 	/*
-	 * ²é¿´²Í´ü
+	 * æŸ¥çœ‹é¤è¢‹
 	 */
 	void display() {
 	
 	}
 
 	/*
-	 * ÎÒÒª¶©²Í
+	 * æˆ‘è¦è®¢é¤
 	 */
 	boolean add() {
 		

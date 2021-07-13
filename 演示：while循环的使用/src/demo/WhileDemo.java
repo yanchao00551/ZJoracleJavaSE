@@ -13,4 +13,6 @@ public class WhileDemo {
 		System.out.println("1 + 2 + 3 + ... + 10 = " + sum);
 	}
 
+
+
 }

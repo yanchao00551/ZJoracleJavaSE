@@ -6,10 +6,10 @@ public class CalculateBigDecimal {
 		// TODO Auto-generated method stub
 		BigDecimal bigA = new BigDecimal("82348239234929344239.2");
 		BigDecimal bigB = new BigDecimal("929329932.6");
-		System.out.println("¼Ó·¨²Ù×÷£º"+bigA.add(bigB));
-		System.out.println("¼õ·¨²Ù×÷£º"+bigA.subtract(bigB));
-		System.out.println("³Ë·¨²Ù×÷£º"+bigA.multiply(bigB));
-		System.out.println("³ı·¨²Ù×÷£º"+bigA.divide(bigB,BigDecimal.ROUND_DOWN));
+		System.out.println("åŠ æ³•æ“ä½œï¼š"+bigA.add(bigB));
+		System.out.println("å‡æ³•æ“ä½œï¼š"+bigA.subtract(bigB));
+		System.out.println("ä¹˜æ³•æ“ä½œï¼š"+bigA.multiply(bigB));
+		System.out.println("é™¤æ³•æ“ä½œï¼š"+bigA.divide(bigB,BigDecimal.ROUND_DOWN));
 
 	}
 }

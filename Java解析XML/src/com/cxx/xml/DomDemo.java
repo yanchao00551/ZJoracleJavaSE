@@ -8,7 +8,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * Dom操作xml
+ * Dom鎿嶄綔xml
  * @author 10947
  *
  */
@@ -29,9 +29,9 @@ public class DomDemo {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		//1.创建DocumentBuilderFactory 对象
+		//1.鍒涘缓DocumentBuilderFactory 瀵硅薄
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		//2.创建DocumentBuilder对象
+		//2.鍒涘缓DocumentBuilder瀵硅薄
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		Document d = builder.parse("resources/student.xml");
 		NodeList sList= d.getElementsByTagName("student");

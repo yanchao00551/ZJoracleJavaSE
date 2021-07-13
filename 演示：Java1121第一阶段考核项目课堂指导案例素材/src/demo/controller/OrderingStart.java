@@ -15,7 +15,7 @@ public class OrderingStart {
 	
 	public static void main(String[] args){
 		OrderService om = new OrderService();
-		//om.initial();     //³õÊ¼»¯¶©µ¥Êı¾İ
+		//om.initial();     //åˆå§‹åŒ–è®¢å•æ•°æ®
 		//om.startMenu();   
 		
 		Params params = new Params();
@@ -23,8 +23,8 @@ public class OrderingStart {
 		personService.queryPersonAndBookList(params);
 		
 		
-		//·½°¸¶ş £º·½·¨ ÊµÏÖÁ¬±í²éÑ¯£¬ÕæÕıÊµÏÖÁËÁ¬±í²éÑ¯ LEFT JOIN
-    	System.out.println("LEFT JOINÁ¬±í²éÑ¯·½°¸¶ş£º");
+		//æ–¹æ¡ˆäºŒ ï¼šæ–¹æ³• å®ç°è¿è¡¨æŸ¥è¯¢ï¼ŒçœŸæ­£å®ç°äº†è¿è¡¨æŸ¥è¯¢ LEFT JOIN
+    	System.out.println("LEFT JOINè¿è¡¨æŸ¥è¯¢æ–¹æ¡ˆäºŒï¼š");
     	List<Object> list = personService.queryPersonAndBookList(params);
     	for(Object y:list) {
 			Person t = (Person) y;

@@ -1,24 +1,24 @@
 package demo;
 
 /**
- * ³èÎïÆó¶ìÀà
+ * å® ç‰©ä¼é¹…ç±»
  * @author 10947
  *
  */
 public class Penguin {
 
-	String name = "ÎŞÃûÊÏ";   //êÇ³Æ¡¢Ä¬ÈÏÖµÊÇ¡°ÎŞÃûÊÏ¡±
-	int health = 100;    //½¡¿µÖµ£¬Ä¬ÈÏÖµ100
-	int love = 0;        //Ç×ÃÜ¶È
-	String sex = "Q×Ğ";    //ĞÔ±ğ
+	String name = "æ— åæ°";   //æ˜µç§°ã€é»˜è®¤å€¼æ˜¯â€œæ— åæ°â€
+	int health = 100;    //å¥åº·å€¼ï¼Œé»˜è®¤å€¼100
+	int love = 0;        //äº²å¯†åº¦
+	String sex = "Qä»”";    //æ€§åˆ«
 	
 	
 	/**
-	 * Êä³öÆó¶ìµÄĞÅÏ¢
+	 * è¾“å‡ºä¼é¹…çš„ä¿¡æ¯
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name +
-				",½¡¿µÖµÊÇ" + this.health + ",ºÍÖ÷ÈÎµÄÇ×ÃÜ¶ÈÊÇ"
-				+ this.love +",ĞÔ±ğÊÇ " + this.sex + ".");
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name +
+				",å¥åº·å€¼æ˜¯" + this.health + ",å’Œä¸»ä»»çš„äº²å¯†åº¦æ˜¯"
+				+ this.love +",æ€§åˆ«æ˜¯ " + this.sex + ".");
 	}
 }

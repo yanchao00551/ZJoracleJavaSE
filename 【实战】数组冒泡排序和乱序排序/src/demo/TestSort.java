@@ -6,7 +6,7 @@ public class TestSort {
 	final static int[] a = {25,24,12,76,98,101,90,28};
 	
 	/**
-	 * Ã°ÅİÅÅĞò
+	 * å†’æ³¡æ’åº
 	 * @param a
 	 * @param len
 	 */
@@ -25,7 +25,7 @@ public class TestSort {
 		}
 	}
 	/**
-	 * ÂÒĞò
+	 * ä¹±åº
 	 * @param a
 	 * @param len
 	 */
@@ -42,18 +42,18 @@ public class TestSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("ÅÅĞòÇ°Êı×éaµÄÔªËØÎª:");
+		System.out.println("æ’åºå‰æ•°ç»„açš„å…ƒç´ ä¸º:");
 		for(int i=0;i<a.length;i++) {
 			System.out.print("a[" + i +"] =" + a[i] + "\t");
 		}
 		System.out.println("");
-		System.out.println("ÅÅĞòºóÊı×éaµÄÔªËØÎª£º");
+		System.out.println("æ’åºåæ•°ç»„açš„å…ƒç´ ä¸ºï¼š");
 		BubbleSort(a, a.length);
 		for(int i=0;i<a.length;i++) {
 			System.out.print("a[" + i +"] =" + a[i] + "\t");
 		}
 		System.out.println("");
-		System.out.println("ÂÒĞòºóÊı×éaµÄÔªËØÎª£º");
+		System.out.println("ä¹±åºåæ•°ç»„açš„å…ƒç´ ä¸ºï¼š");
 		RandomSequence(a,a.length);
 		for(int i=0;i<a.length;i++) {
 			System.out.print("a[" + i +"] =" + a[i] + "\t");

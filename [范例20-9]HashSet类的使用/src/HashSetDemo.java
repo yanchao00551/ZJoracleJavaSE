@@ -4,9 +4,9 @@ public class HashSetDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨HashSet¶ÔÏó
+		//åˆ›å»ºHashSetå¯¹è±¡
 		HashSet<String> hs = new HashSet<String>();
-		//¼ÓÈëÔªËØµ½HashSetÖĞ
+		//åŠ å…¥å…ƒç´ åˆ°HashSetä¸­
 		hs.add("B");
 		hs.add("A");
 		hs.add("D");

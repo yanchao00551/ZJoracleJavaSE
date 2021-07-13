@@ -10,28 +10,28 @@ public class PropertiesDemo {
 	public static void main(String[] args) {
 		Set<Object> states;
 		String str;
-		//¼Ì³Ğ¹ØÏµ»á´æÔÚÀàµÄÀàĞÍµÈ¼ÛĞÔ
+		//ç»§æ‰¿å…³ç³»ä¼šå­˜åœ¨ç±»çš„ç±»å‹ç­‰ä»·æ€§
 		Properties capitals = new Properties();
 		
-		capitals.put("ÖĞ¹ú", "±±¾©");
-		capitals.put("¶íÂŞË¹", "ÄªË¹¿Æ");
-		capitals.put("ÈÕ±¾", "¶«¾©");
-		capitals.put("·¨¹ú", "°ÍÀè");
-		capitals.put("Ó¢¹ú", "Â×¶Ø");
+		capitals.put("ä¸­å›½", "åŒ—äº¬");
+		capitals.put("ä¿„ç½—æ–¯", "è«æ–¯ç§‘");
+		capitals.put("æ—¥æœ¬", "ä¸œäº¬");
+		capitals.put("æ³•å›½", "å·´é»");
+		capitals.put("è‹±å›½", "ä¼¦æ•¦");
 		
 	   
-		states = capitals .keySet();	//·µ»ØÒ»¸ö¼üµÄSet¼¯ºÏ
+		states = capitals .keySet();	//è¿”å›ä¸€ä¸ªé”®çš„Seté›†åˆ
 	    Iterator<Object>  itr = states.iterator();
 	    
 	    while(itr.hasNext()) {
 	    	str = (String)itr.next();
-	    	System.out.println("¹ú¼Ò£º" + str + ",  Ê×¶¼£º" + capitals.getProperty(str));
+	    	System.out.println("å›½å®¶ï¼š" + str + ",  é¦–éƒ½ï¼š" + capitals.getProperty(str));
 	    }
 	    System.out.println();
 	    
-	    //Èç¹û"ÃÀ¹ú"¸Ã¼ü²»´æÔÚ£¬Ôò·µ»ØÄ¬ÈÏÖµ
-	    str = capitals.getProperty("ÃÀ¹ú", "Ã»ÓĞ·¢ÏÖ");
-	    System.out.println("ÃÀ¹úµÄÊ×¶¼£º" + str + ".");
+	    //å¦‚æœ"ç¾å›½"è¯¥é”®ä¸å­˜åœ¨ï¼Œåˆ™è¿”å›é»˜è®¤å€¼
+	    str = capitals.getProperty("ç¾å›½", "æ²¡æœ‰å‘ç°");
+	    System.out.println("ç¾å›½çš„é¦–éƒ½ï¼š" + str + ".");
 	}
 	
 	

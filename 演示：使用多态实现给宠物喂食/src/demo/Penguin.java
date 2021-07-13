@@ -1,11 +1,11 @@
 package demo;
 
 public class Penguin extends Pet{
-	private String sex;// ĞÔ±ğ
+	private String sex;// æ€§åˆ«
 	/**
-	 * ÓĞ²Î¹¹Ôì·½·¨¡£
-	 * @param name êÇ³Æ
-	 * @param sex ĞÔ±ğ
+	 * æœ‰å‚æ„é€ æ–¹æ³•ã€‚
+	 * @param name æ˜µç§°
+	 * @param sex æ€§åˆ«
 	 */
 	public Penguin(String name, String sex) {
 		super(name);
@@ -15,22 +15,22 @@ public class Penguin extends Pet{
 		return sex;
 	}
 	/**
-	 * ÖØĞ´¸¸ÀàµÄprint·½·¨¡£
+	 * é‡å†™çˆ¶ç±»çš„printæ–¹æ³•ã€‚
 	 */
 	public void print() {
 		super.print();
-		System.out.println("ĞÔ±ğÊÇ " + this.sex + "¡£");
+		System.out.println("æ€§åˆ«æ˜¯ " + this.sex + "ã€‚");
 	}
 	
 	/**
-	 * ÊµÏÖ³ÔÊ³·½·¨¡£ 
+	 * å®ç°åƒé£Ÿæ–¹æ³•ã€‚ 
 	 */
 	public void eat() {
 		if(getHealth()>=100){
-			System.out.println("Æó¶ì"+this.getName() +"³Ô±¥ÁË£¬²»ĞèÒªÎ¹Ê³ÁË£¡");
+			System.out.println("ä¼é¹…"+this.getName() +"åƒé¥±äº†ï¼Œä¸éœ€è¦å–‚é£Ÿäº†ï¼");
 		}else{
 			this.setHealth(this.getHealth()+5);
-			System.out.println("Æó¶ì"+this.getName() + "³Ô±¥À²£¡½¡¿µÖµÔö¼Ó3¡£");
+			System.out.println("ä¼é¹…"+this.getName() + "åƒé¥±å•¦ï¼å¥åº·å€¼å¢åŠ 3ã€‚");
 		}
 	}
 }

@@ -15,7 +15,7 @@ public class PropertiesFile {
 			settings.setProperty("count", new Integer(0).toString());
 		}
 		int c = Integer.parseInt(settings.getProperty("count")) + 1;
-		System.out.println("这是本程序第" + c + "次被使用");
+		System.out.println("杩欐槸鏈▼搴忕" + c + "娆¤浣跨敤");
 		
 		settings.put("count", new Integer(c).toString());
 		

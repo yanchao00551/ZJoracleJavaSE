@@ -7,7 +7,7 @@ public class TestInstance {
 		Book book = null;
 		Class<?> cls = Class.forName("Book");
 		Constructor<?> constructor = cls.getConstructor(String.class,double.class);
-		book = (Book) constructor.newInstance("java¿ª·¢",79.8);
+		book = (Book) constructor.newInstance("javaÂ¿ÂªÂ·Â¢",79.8);
 		System.out.println(book);
 	}
 

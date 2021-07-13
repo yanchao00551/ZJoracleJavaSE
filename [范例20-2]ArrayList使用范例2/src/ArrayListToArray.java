@@ -4,21 +4,21 @@ public class ArrayListToArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öArrayList¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªArrayListå¯¹è±¡
 		ArrayList<Integer> al = new ArrayList<Integer>();
-		//ÏòArrayListÖĞ¼ÓÈë¶ÔÏó
+		//å‘ArrayListä¸­åŠ å…¥å¯¹è±¡
 		al.add(new Integer(1));
 		al.add(new Integer(2));
 		al.add(new Integer(3));
 		al.add(new Integer(4));
-		System.out.println("ArrayListÖĞµÄÄÚÈİ£º"+al);
-		//µÃµ½¶ÔÏóÄÚÈİ
+		System.out.println("ArrayListä¸­çš„å†…å®¹ï¼š"+al);
+		//å¾—åˆ°å¯¹è±¡å†…å®¹
 		Object[] ia = al.toArray();
 		int sum = 0;
 		for(int i=0;i<ia.length;i++) {
 			sum += ((Integer)ia[i]).intValue();
 		}
-		System.out.println("Êı¾İÀÛ¼Ó½á¹ûÊÇ£º"+sum);
+		System.out.println("æ•°æ®ç´¯åŠ ç»“æœæ˜¯ï¼š"+sum);
 	}
 
 }

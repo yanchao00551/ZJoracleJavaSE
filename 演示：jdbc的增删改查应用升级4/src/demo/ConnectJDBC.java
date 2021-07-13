@@ -21,8 +21,8 @@ import java.util.Set;
 import demo.domain.Person;
 
 /**
- * PrepararedStatement½Ó¿ÚÈ¡´úStatemtn½Ó¿Ú
- * Ôö¼ÓÄÚÈİ ¡¢ĞŞ¸ÄÄÚÈİ
+ * PrepararedStatementæ¥å£å–ä»£Statemtnæ¥å£
+ * å¢åŠ å†…å®¹ ã€ä¿®æ”¹å†…å®¹
  * @author 10947
  *
  */
@@ -31,56 +31,56 @@ public class ConnectJDBC {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Connection conn = null;       //±íÊ¾Êı¾İ¿âµÄÁ¬½ÓµÄ¶ÔÏó
+		Connection conn = null;       //è¡¨ç¤ºæ•°æ®åº“çš„è¿æ¥çš„å¯¹è±¡
 		conn = DataSourceUtil.openConnection();
 		
-		//3¡¢ Ğ´ĞèÒªÖ´ĞĞµÄSQL
-		PreparedStatement pstmt = null;     //Ô¤´¦Àí¶ÔÏó  ²Ù×÷Êı¾İ¿â  
+		//3ã€ å†™éœ€è¦æ‰§è¡Œçš„SQL
+		PreparedStatement pstmt = null;     //é¢„å¤„ç†å¯¹è±¡  æ“ä½œæ•°æ®åº“  
 
 		/*
 		Scanner input = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëĞÕÃû£º");
+		System.out.println("è¯·è¾“å…¥å§“åï¼š");
 		String name = input.next();
-		System.out.println("ÇëÊäÈëÄêÁä£º");
+		System.out.println("è¯·è¾“å…¥å¹´é¾„ï¼š");
 		int age = input.nextInt();
-		System.out.println("ÇëÊäÈëÉúÈÕ£º");
+		System.out.println("è¯·è¾“å…¥ç”Ÿæ—¥ï¼š");
 		String date = input.next();
-		System.out.println("ÇëÊäÈëÔ±¹¤¹¤×Ê£º");
+		System.out.println("è¯·è¾“å…¥å‘˜å·¥å·¥èµ„ï¼š");
 		BigDecimal salary = input.nextBigDecimal();
 		*/
 		
-		//1¡¢Ğ´Ô¤±àÒëSQL
-		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES (?,?,?,?)";  //Ô¤±àÒë¶ÔÏó
+		//1ã€å†™é¢„ç¼–è¯‘SQL
+		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES (?,?,?,?)";  //é¢„ç¼–è¯‘å¯¹è±¡
 		
 		String sqlUpdate = "UPDATE `person` SET `name`= ?, `age`= ?,  `salary`= ? WHERE `pid`= ?" ;
 		
-		//Ô¤±àÒëSQL
-		String sqlSelect2 = "SELECT * FROM `person` LEFT JOIN  `book` ON `person`.like_bid = `book`.b_id WHERE 	1=1 "; //Á¬±í
+		//é¢„ç¼–è¯‘SQL
+		String sqlSelect2 = "SELECT * FROM `person` LEFT JOIN  `book` ON `person`.like_bid = `book`.b_id WHERE 	1=1 "; //è¿è¡¨
 		
-		// Ô¤±àÒëSQL ¶ø²»ÊÇĞ´ËÀµÄ
-		String sqlSelect1 = "SELECT * FROM `person` WHERE 	1=1  ORDER BY `birthday` DESC LIMIT ?,?";  //µ¥±í
+		// é¢„ç¼–è¯‘SQL è€Œä¸æ˜¯å†™æ­»çš„
+		String sqlSelect1 = "SELECT * FROM `person` WHERE 	1=1  ORDER BY `birthday` DESC LIMIT ?,?";  //å•è¡¨
 				
 		List<Person> list = new ArrayList<>();
 		
-		// 2¡¢PreparedStatement½Ó¿ÚĞèÒªÍ¨¹ıConnection½Ó¿Ú½øĞĞÊµÀı»¯²Ù×÷£¬Í¬Ê±´«ÈëÔ¤±àÒëSQL
+		// 2ã€PreparedStatementæ¥å£éœ€è¦é€šè¿‡Connectionæ¥å£è¿›è¡Œå®ä¾‹åŒ–æ“ä½œï¼ŒåŒæ—¶ä¼ å…¥é¢„ç¼–è¯‘SQL
 		pstmt = conn.prepareStatement(sqlSelect2);
-		// 3¡¢¸øÔ¤±àÒëSQL  £¿ Õ¼Î»·û Ìî Öµ 
+		// 3ã€ç»™é¢„ç¼–è¯‘SQL  ï¼Ÿ å ä½ç¬¦ å¡« å€¼ 
 		
-		//µ¥±í
-		//int currentPage = 3;   //µ±Ç°Ò³
+		//å•è¡¨
+		//int currentPage = 3;   //å½“å‰é¡µ
 		//int pageSize  = 2;    
 		//int startIndex = (currentPage - 1) * pageSize;
-		//pstmt.setInt(1, startIndex);   //µÚ1¸ö ?  £¨²ÎÊıÕ¼Î»·û) µÄÄÚÈİ  
+		//pstmt.setInt(1, startIndex);   //ç¬¬1ä¸ª ?  ï¼ˆå‚æ•°å ä½ç¬¦) çš„å†…å®¹  
 		//pstmt.setInt(2, pageSize);
 		
 		//pstmt.setBigDecimal(3, salary);
 		//pstmt.setInt(4, 6);
 		
-		//4¡¢Ö´ĞĞSQLÓï¾ä£¬¸üĞÂÊı¾İ¿â
+		//4ã€æ‰§è¡ŒSQLè¯­å¥ï¼Œæ›´æ–°æ•°æ®åº“
 		//pstmt.executeUpdate();
 		
-		//ResultSet result = pstmt.executeQuery(sqlSelect2);       //ÓĞ²ÎµÄÇé¿öÏÂµ÷ÓÃµÄÊÇ  Statement½Ó¿Ú
-		ResultSet result = pstmt.executeQuery();   //¶øÎŞ²ÎµÄÇé¿öÏÂ£¬µ÷ÓÃµÄÊÇ PreparedStatement ½Ó¿Ú
+		//ResultSet result = pstmt.executeQuery(sqlSelect2);       //æœ‰å‚çš„æƒ…å†µä¸‹è°ƒç”¨çš„æ˜¯  Statementæ¥å£
+		ResultSet result = pstmt.executeQuery();   //è€Œæ— å‚çš„æƒ…å†µä¸‹ï¼Œè°ƒç”¨çš„æ˜¯ PreparedStatement æ¥å£
 		while(result.next()) {
 			Person person = new Person();
 			person.setName(result.getString(2));
@@ -97,9 +97,9 @@ public class ConnectJDBC {
 		}
 		
 		
-		//5¡¢¹Ø±ÕÊı¾İ¿â
-		pstmt.close();   //·¿¼äÃÅ
-		DataSourceUtil.closeConnection(conn);  //´óÃÅ
+		//5ã€å…³é—­æ•°æ®åº“
+		pstmt.close();   //æˆ¿é—´é—¨
+		DataSourceUtil.closeConnection(conn);  //å¤§é—¨
 		
 		
 	}

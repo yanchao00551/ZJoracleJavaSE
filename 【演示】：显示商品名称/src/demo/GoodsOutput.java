@@ -4,8 +4,8 @@ public class GoodsOutput {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[] goods = new String[] {"Nike±³°ü","AdidasÔË¶¯ÉÀ","ÀîÄşÔË¶¯Ğ¬","KappaÍâÌ×","361¡ãÑü°ü"};
-	    System.out.println("±¾´Î»î¶¯ÌØ¼ÛÉÌÆ·ÓĞ£º");
+		String[] goods = new String[] {"NikeèƒŒåŒ…","Adidasè¿åŠ¨è¡«","æå®è¿åŠ¨é‹","Kappaå¤–å¥—","361Â°è…°åŒ…"};
+	    System.out.println("æœ¬æ¬¡æ´»åŠ¨ç‰¹ä»·å•†å“æœ‰ï¼š");
 	    for(int i=0; i< goods.length; i++) {
 	    	System.out.println(goods[i]);
 	    }

@@ -2,7 +2,7 @@ package org.proxy;
 
 public class Proxytest {
 public static void main(String[] args) {
-	Subject sub = new ProxySubject(); //子类为接口化实例
+	Subject sub = new ProxySubject(); //瀛愮被涓烘帴鍙ｅ寲瀹炰緥
 	sub.request();
 	
 }

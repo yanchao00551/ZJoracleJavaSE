@@ -7,28 +7,28 @@ public class ArrayListDemo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öArrayList¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªArrayListå¯¹è±¡
 		List<String> al  = new ArrayList<String>();
-		System.out.println("alÖĞÔªËØµÄ¸öÊı£º" + al.size());
-		//ÏòArrayList¶ÔÏóÖĞÌí¼ÓĞÂÄÚÈİ
-		al.add("C"); //ÔÚÊı×éÁĞ±í0Î»ÖÃÌí¼ÓÔªËØC
-		al.add("A"); //ÔÚÊı×éÁĞ±í1Î»ÖÃÌí¼ÓÔªËØA
-		al.add("E");  //ÔÚÊı×éÁĞ±í2Î»ÖÃÌí¼ÓÔªËØE
-		al.add("B"); //ÔÚÊı×éÁĞ±í3Î»ÖÃÌí¼ÓÔªËØB
-		al.add("D");  //ÔÚÊı×éÁĞ±í4Î»ÖÃÌí¼ÓÔªËØD
-		al.add("F");  //ÔÚÊı×éÁĞ±í5Î»ÖÃÌí¼ÓÔªËØF
-		//°ÑA2¼ÓÔÚArrayList¶ÔÏóµÄµÚ2¸öÎ»ÖÃ
-		al.add(1, "A2");  //ÔÚ1Î»ÖÃÌí¼ÓA2£¬ÁĞ±íÄÚÈİÎª C A2 A E B D F
-		System.out.println("al¼ÓÈëÔªËØÖ®ºóµÄÔªËØ¸öÊı£º" + al.size());
+		System.out.println("alä¸­å…ƒç´ çš„ä¸ªæ•°ï¼š" + al.size());
+		//å‘ArrayListå¯¹è±¡ä¸­æ·»åŠ æ–°å†…å®¹
+		al.add("C"); //åœ¨æ•°ç»„åˆ—è¡¨0ä½ç½®æ·»åŠ å…ƒç´ C
+		al.add("A"); //åœ¨æ•°ç»„åˆ—è¡¨1ä½ç½®æ·»åŠ å…ƒç´ A
+		al.add("E");  //åœ¨æ•°ç»„åˆ—è¡¨2ä½ç½®æ·»åŠ å…ƒç´ E
+		al.add("B"); //åœ¨æ•°ç»„åˆ—è¡¨3ä½ç½®æ·»åŠ å…ƒç´ B
+		al.add("D");  //åœ¨æ•°ç»„åˆ—è¡¨4ä½ç½®æ·»åŠ å…ƒç´ D
+		al.add("F");  //åœ¨æ•°ç»„åˆ—è¡¨5ä½ç½®æ·»åŠ å…ƒç´ F
+		//æŠŠA2åŠ åœ¨ArrayListå¯¹è±¡çš„ç¬¬2ä¸ªä½ç½®
+		al.add(1, "A2");  //åœ¨1ä½ç½®æ·»åŠ A2ï¼Œåˆ—è¡¨å†…å®¹ä¸º C A2 A E B D F
+		System.out.println("alåŠ å…¥å…ƒç´ ä¹‹åçš„å…ƒç´ ä¸ªæ•°ï¼š" + al.size());
 		
-		//ÏÔÊ¾ArrayListÊı¾İ
-		System.out.println("alµÄÄÚÈİ£º" + al);
+		//æ˜¾ç¤ºArrayListæ•°æ®
+		System.out.println("alçš„å†…å®¹ï¼š" + al);
 		
-		//´ÓArrayListÖĞÒÆ³ıÔªËØ
-		al.remove("F"); //É¾³ıÔªËØF£¬´ËÊ±Êı¾İ C A2 A E B D
-		al.remove(2);  //É¾³ıÏÂ±êÎª2µÄÔªËØ£¬´ËÊ±Êı¾İÁĞ±íÎª C A2 E B D
-		System.out.println("alÉ¾³ıÔªËØÖ®ºóµÄÔªËØ¸öÊı£º" + al.size());
-		System.out.println("alµÄÄÚÈİ:" + al);
+		//ä»ArrayListä¸­ç§»é™¤å…ƒç´ 
+		al.remove("F"); //åˆ é™¤å…ƒç´ Fï¼Œæ­¤æ—¶æ•°æ® C A2 A E B D
+		al.remove(2);  //åˆ é™¤ä¸‹æ ‡ä¸º2çš„å…ƒç´ ï¼Œæ­¤æ—¶æ•°æ®åˆ—è¡¨ä¸º C A2 E B D
+		System.out.println("alåˆ é™¤å…ƒç´ ä¹‹åçš„å…ƒç´ ä¸ªæ•°ï¼š" + al.size());
+		System.out.println("alçš„å†…å®¹:" + al);
 		
 	}
 

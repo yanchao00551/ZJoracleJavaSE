@@ -1,7 +1,7 @@
 package demo;
 
 /**
- * Ô²ÐÎÀà
+ * åœ†å½¢ç±»
  * @author 10947
  *
  */
@@ -12,7 +12,7 @@ public class Circle implements CircleShape {
 	}
 
 	/**
-	 * ÖÜ³¤
+	 * å‘¨é•¿
 	 */
 	@Override
 	public double perimeter() {

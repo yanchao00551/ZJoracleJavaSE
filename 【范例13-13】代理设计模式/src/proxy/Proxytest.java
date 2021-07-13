@@ -4,7 +4,7 @@ package proxy;
 
 public class Proxytest{
 	public static void main(String[] args) {
-		Subject sub = new ProxySubject();    //子类为接口实例化
+		Subject sub = new ProxySubject();    //瀛愮被涓烘帴鍙ｅ疄渚嬪寲
 		sub.request();
 	}
 }

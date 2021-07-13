@@ -7,7 +7,7 @@ class Book implements Comparable<Book>{
 	
 	public Book(String title,double price) {
 		this.title = title;
-		this.price = price;     //°´ÕÕ¼Û¸ñÅÅĞò
+		this.price = price;     //æŒ‰ç…§ä»·æ ¼æ’åº
 	}
 
 	@Override
@@ -16,7 +16,7 @@ class Book implements Comparable<Book>{
 	}
 
 	/*
-	 * ÓÃ³ÉÔ±ÊôĞÔÓëcompareToµÄ¶ÔÏóĞÎ²Î±È½Ï
+	 * ç”¨æˆå‘˜å±æ€§ä¸compareToçš„å¯¹è±¡å½¢å‚æ¯”è¾ƒ
 	 */
 	@Override
 	public int compareTo(Book b) {

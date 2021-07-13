@@ -17,7 +17,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 /**
- * Á¬½ÓJDBC
+ * è¿æ¥JDBC
  * @author 10947
  *
  */
@@ -26,50 +26,50 @@ public class ConnectJDBC {
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		Connection conn = null;       //±íÊ¾Êı¾İ¿âµÄÁ¬½ÓµÄ¶ÔÏó
+		Connection conn = null;       //è¡¨ç¤ºæ•°æ®åº“çš„è¿æ¥çš„å¯¹è±¡
 		conn = DataSourceUtil.openConnection();
 		
-		//3¡¢ Ğ´ĞèÒªÖ´ĞĞµÄSQL
-		Statement stmt = null;     //²Ù×÷Êı¾İ¿â
+		//3ã€ å†™éœ€è¦æ‰§è¡Œçš„SQL
+		Statement stmt = null;     //æ“ä½œæ•°æ®åº“
 		stmt = conn.createStatement();
-		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES ('ÕÅÈı','28', NOW(), 9000.0)";
-		String sqlUpdate = "UPDATE `person` SET `name`='ÀîËÄ', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
+		String sqlInsert = "INSERT INTO `person` (`name`, `age`, `birthday`, `salary`) VALUES ('å¼ ä¸‰','28', NOW(), 9000.0)";
+		String sqlUpdate = "UPDATE `person` SET `name`='æå››', `age`='33',  `salary`='12000.00' WHERE `pid`='2'" ;
 		String sqlSelect = "SELECT * FROM `person` LEFT JOIN  `book` ON `person`.like_bid = `book`.b_id WHERE 	1=1  ";
-		//stmt.executeUpdate(sqlInsert);  //Ö§³ÖĞÂÔöºÍ¸üĞÂµÄSQL
+		//stmt.executeUpdate(sqlInsert);  //æ”¯æŒæ–°å¢å’Œæ›´æ–°çš„SQL
 		
 		ResultSet result =  stmt.executeQuery(sqlSelect);
 		
 		List<LinkedHashMap<String,Object>> mapList = new ArrayList<>();
-		//Map<String,Object> map = new HashMap<>();  //putµÄË³Ğò   ²»»á±£³ÖÊÇÄãput¹ı³ÌÖĞµÄË³Ğò
+		//Map<String,Object> map = new HashMap<>();  //putçš„é¡ºåº   ä¸ä¼šä¿æŒæ˜¯ä½ putè¿‡ç¨‹ä¸­çš„é¡ºåº
 		
 		while(result.next()) {
-			/*Ö÷±í×Ö¶Î*/
+			/*ä¸»è¡¨å­—æ®µ*/
 			int pid =  result.getInt("pid");
 			String name = result.getString("name");
 			int age = result.getInt("age");
 			Date birthday = result.getDate("birthday");
 			BigDecimal salary = result.getBigDecimal("salary");
 			int likeBid = result.getInt("like_bid");
-			/*´Ó±í×Ö¶Î*/
+			/*ä»è¡¨å­—æ®µ*/
 			String bName  = result.getString("b_name");
 			int publisherId = result.getInt("p_id");
 			String bAuthor = result.getString("b_author");
 			Double bPrice = result.getDouble("b_price");
 			
-			LinkedHashMap<String,Object> map = new LinkedHashMap<>();  //ÄÜ¹»±£³Öput½øÈ¥µÄË³Ğò
+			LinkedHashMap<String,Object> map = new LinkedHashMap<>();  //èƒ½å¤Ÿä¿æŒputè¿›å»çš„é¡ºåº
 
-			/* È¡³öÖ÷±í×Ö¶Î½á¹û*/
-			map.put("Ö÷¼ü", pid);
-			map.put("ĞÕÃû", name);
-			map.put("ÄêÁä", age);
-			map.put("ÉúÈÕ", birthday);
-			map.put("Ğ½Ë®", salary);
-			map.put("Êé¼®ID", likeBid);
-			/*È¡³ö´Ó±í×Ö¶Î½á¹û*/
-			map.put("Êé¼®Ãû³Æ", bName);
-			map.put("³ö°æÉçID", publisherId);
-			map.put("×÷Õß", bAuthor);
-			map.put("¼Û¸ñ", bPrice);
+			/* å–å‡ºä¸»è¡¨å­—æ®µç»“æœ*/
+			map.put("ä¸»é”®", pid);
+			map.put("å§“å", name);
+			map.put("å¹´é¾„", age);
+			map.put("ç”Ÿæ—¥", birthday);
+			map.put("è–ªæ°´", salary);
+			map.put("ä¹¦ç±ID", likeBid);
+			/*å–å‡ºä»è¡¨å­—æ®µç»“æœ*/
+			map.put("ä¹¦ç±åç§°", bName);
+			map.put("å‡ºç‰ˆç¤¾ID", publisherId);
+			map.put("ä½œè€…", bAuthor);
+			map.put("ä»·æ ¼", bPrice);
 			mapList.add(map);
 		}
 		
@@ -97,7 +97,7 @@ public class ConnectJDBC {
 		}
 		
 		
-		//3¡¢¹Ø±ÕÊı¾İ¿â
+		//3ã€å…³é—­æ•°æ®åº“
 		DataSourceUtil.closeConnection(conn);
 		
 		

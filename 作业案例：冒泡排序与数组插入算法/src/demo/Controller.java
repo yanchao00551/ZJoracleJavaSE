@@ -3,7 +3,7 @@ package demo;
 import java.util.Arrays;
 
 /*
- * ³ÌĞò¿ØÖÆÆ÷Àà
+ * Â³ÃŒÃÃ²Â¿Ã˜Ã–Ã†Ã†Ã·Ã€Ã 
  */
 public class Controller extends Config{
 	public void start() {

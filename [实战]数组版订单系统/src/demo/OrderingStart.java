@@ -1,14 +1,14 @@
 package demo;
 
 /**
- * ÏµÍ³Èë¿ÚÀà
+ * ç³»ç»Ÿå…¥å£ç±»
  * @author 10947
  *
  */
 public class OrderingStart {
 	public static void main(String[] args) {
 		OrderingUtil om = new OrderingUtil();
-		om.initial();   //³õÊ¼»¯¶©µ¥Êı¾İ
-		om.startMenu();   //Æô¶¯²Ëµ¥
+		om.initial();   //åˆå§‹åŒ–è®¢å•æ•°æ®
+		om.startMenu();   //å¯åŠ¨èœå•
 	}
 }

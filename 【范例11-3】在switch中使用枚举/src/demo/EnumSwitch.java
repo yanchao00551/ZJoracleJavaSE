@@ -1,21 +1,21 @@
 package demo;
 
 
-enum MyColor {ºìÉ«,ÂÌÉ«,À¶É«};
+enum MyColor {çº¢è‰²,ç»¿è‰²,è“è‰²};
 
 public class EnumSwitch {
 	public static void main(String[] args) {
-		//¶¨ÒåMyColorÃ¶¾Ù±äÁ¿c1,²¢¸³ÖµÎªÂÌÉ«
-		MyColor c1 = MyColor.ÂÌÉ«;
+		//å®šä¹‰MyColoræšä¸¾å˜é‡c1,å¹¶èµ‹å€¼ä¸ºç»¿è‰²
+		MyColor c1 = MyColor.ç»¿è‰²;
 		switch(c1) {
-		case ÂÌÉ«:
-			System.out.println("ÎÒÊÇÂÌÉ«£¡");
+		case ç»¿è‰²:
+			System.out.println("æˆ‘æ˜¯ç»¿è‰²ï¼");
 			break;
-		case ºìÉ«:
-			System.out.println("ÎÒÊÇºìÉ«£¡");
+		case çº¢è‰²:
+			System.out.println("æˆ‘æ˜¯çº¢è‰²ï¼");
 			break;
-		case À¶É«:
-			System.out.println("ÎÒÊÇÀ¶É«£¡");
+		case è“è‰²:
+			System.out.println("æˆ‘æ˜¯è“è‰²ï¼");
 			break;
 		}
 	}

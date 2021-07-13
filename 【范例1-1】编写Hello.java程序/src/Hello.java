@@ -1,11 +1,11 @@
 /*
- * public ¹«ÓĞ·ÃÎÊÀàĞÍ
- * class ÕâÊÇÒ»¸öÀàµÄ±êÊ¶
- *   ÀàµÄÃû³Æ½Ğ Hello
+ * public å…¬æœ‰è®¿é—®ç±»å‹
+ * class è¿™æ˜¯ä¸€ä¸ªç±»çš„æ ‡è¯†
+ *   ç±»çš„åç§°å« Hello
  */
 public class Hello {
 	/**
-	 * mainÊÇ³ÌĞòµÄÆğµã£¬ËùÓĞ³ÌĞòÓÉ´Ë¿ªÊ¼ÔËĞĞ
+	 * mainæ˜¯ç¨‹åºçš„èµ·ç‚¹ï¼Œæ‰€æœ‰ç¨‹åºç”±æ­¤å¼€å§‹è¿è¡Œ
 	 * @param args
 	 */
 	public static void main(String[] args) {   

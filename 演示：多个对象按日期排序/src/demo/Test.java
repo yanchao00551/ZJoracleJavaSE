@@ -7,10 +7,10 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Person[] person = new Person[] {
-				new Person("Àîxx","ÄĞ","2010-1-10 22:22"),
-				new Person("Ëïxx","ÄĞ","2010-5-1 10:11"),
-				new Person("Íõxx","ÄĞ","2010-3-22 21:11"),
-				new Person("½ªxx","Å®","2010-3-22 20:09")
+				new Person("Ã€Ã®xx","Ã„Ã","2010-1-10 22:22"),
+				new Person("Ã‹Ã¯xx","Ã„Ã","2010-5-1 10:11"),
+				new Person("ÃÃµxx","Ã„Ã","2010-3-22 21:11"),
+				new Person("Â½Âªxx","Ã…Â®","2010-3-22 20:09")
 		};
 		Arrays.sort(person, new PersonComparator());
 		

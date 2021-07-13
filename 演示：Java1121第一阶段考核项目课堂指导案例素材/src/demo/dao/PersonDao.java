@@ -21,7 +21,7 @@ public class PersonDAO extends CrezyManDAO implements IPersonDAO{
 	}
 
 	/**
-	 * Ԥ�������  д SQL
+	 * Ô¤±àÒë¶ÔÏó  Ð´ SQL
 	 */
 	@Override
 	public List<Object> selectPersonDetails(Params params) {

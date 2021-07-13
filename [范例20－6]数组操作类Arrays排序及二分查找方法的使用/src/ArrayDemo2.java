@@ -6,24 +6,24 @@ public class ArrayDemo2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arrInt[] = {17,40,12,6,15,16,8,10,18,50};
-		//ÉıĞòÅÅĞòÊı×éarrInt
+		//å‡åºæ’åºæ•°ç»„arrInt
 		Arrays.sort(arrInt);
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëĞèÒª²éÕÒµÄÕûÊı£º");
+		System.out.println("è¯·è¾“å…¥éœ€è¦æŸ¥æ‰¾çš„æ•´æ•°ï¼š");
 		int search = scan.nextInt();
-		//Êä³öÅÅĞòºóµÄÊı×é
+		//è¾“å‡ºæ’åºåçš„æ•°ç»„
 		for(int i = 0;i < arrInt.length; i++) {
 			System.out.println(arrInt[i] + " ");
 		}
 		System.out.println();
-		//ÀûÓÃ¶ş·Ö²éÕÒ·¨²éÕÒÖ¸¶¨µÄÕûÊı 
+		//åˆ©ç”¨äºŒåˆ†æŸ¥æ‰¾æ³•æŸ¥æ‰¾æŒ‡å®šçš„æ•´æ•° 
 		int seaInt = Arrays.binarySearch(arrInt, search);
 		if(seaInt >= 0) {
-			System.out.println(search + "ÊÇÊı×éµÄµÚ" + (search + 1) + "Î»ÔªËØ");
+			System.out.println(search + "æ˜¯æ•°ç»„çš„ç¬¬" + (search + 1) + "ä½å…ƒç´ ");
 		}else {
-			System.out.println(search + "²»ÊÇÊı×éµÄÔªËØ");
+			System.out.println(search + "ä¸æ˜¯æ•°ç»„çš„å…ƒç´ ");
 		}
-		scan.close();  //¹Ø±ÕÊäÈëÁ÷
+		scan.close();  //å…³é—­è¾“å…¥æµ
 	}
 
 }

@@ -1,7 +1,7 @@
 package demo;
 
 public class Penguin extends Pet{
-	private String sex;   //ĞÔ±ğ
+	private String sex;   //æ€§åˆ«
 	
 	public Penguin(String name,String sex) {
 		super(name);
@@ -15,25 +15,25 @@ public class Penguin extends Pet{
 
 
 	/**
-	 * ÖØĞ´¸¸ÀàµÄprint·½·¨
+	 * é‡å†™çˆ¶ç±»çš„printæ–¹æ³•
 	 */
 	@Override
 	public void print() {
 		// TODO Auto-generated method stub
 		super.print();
-		System.out.println("ĞÔ±ğÊÇ£º" + this.sex  + "¡£");
+		System.out.println("æ€§åˆ«æ˜¯ï¼š" + this.sex  + "ã€‚");
 	}
 
 	
 
 	/**
-	 * ÊµÏÖ³Ô·¹·½·¨
+	 * å®ç°åƒé¥­æ–¹æ³•
 	 */
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
 		super.health = super.health +5;
-		System.out.println("Æó¶ì" + super.name + "³Ô±¥À²£¡½¡¿µÖµÔö¼Ó5");
+		System.out.println("ä¼é¹…" + super.name + "åƒé¥±å•¦ï¼å¥åº·å€¼å¢åŠ 5");
 	}
 
 }

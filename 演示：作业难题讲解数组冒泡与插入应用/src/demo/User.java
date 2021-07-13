@@ -3,31 +3,31 @@ package demo;
 import java.util.Scanner;
 
 /*
- * ÓÃ»§²Ù×÷Àà
+ * ç”¨æˆ·æ“ä½œç±»
  */
 public class User {
 	/*
-	 * ÉèÖÃ¼üÅÌÊäÈë³ÉÔ±¶ÔÏó
+	 * è®¾ç½®é”®ç›˜è¾“å…¥æˆå‘˜å¯¹è±¡
 	 */
 	public static final Scanner input = new Scanner(System.in);
 
 	
 	
 	/*
-	 * ÓÃ»§ÊäÈë ²É¼¯Êı×éb
+	 * ç”¨æˆ·è¾“å…¥ é‡‡é›†æ•°ç»„b
 	 */
 	public static int[] inputArr() {
 		int[] b = new int[Config.NUMBER];
-		System.out.print("Êı×éa:[");
+		System.out.print("æ•°ç»„a:[");
 		for(int i=0; i< Config.A.length; i++) {
 			System.out.print(Config.A[i]);
-			if(i != Config.A.length - 1)  //×îºóÒ»¸ö²»¼Ó,
+			if(i != Config.A.length - 1)  //æœ€åä¸€ä¸ªä¸åŠ ,
 				System.out.print(", ");
 		}
 		System.out.println("]");
 		
 		for(int i = 0; i < Config.NUMBER; i++) {
-			System.out.println("ÇëÊäÈë³¤¶ÈÎª" + Config.NUMBER + "µÄÊı×é " + i + "ÏÂ±êÊı×ébÄÚÈİ£º");
+			System.out.println("è¯·è¾“å…¥é•¿åº¦ä¸º" + Config.NUMBER + "çš„æ•°ç»„ " + i + "ä¸‹æ ‡æ•°ç»„bå†…å®¹ï¼š");
 			b[i] = input.nextInt();
 		}
 		
@@ -35,12 +35,12 @@ public class User {
 	}
 	
 	/*
-	 * ÓÃ»§ÏÂ±êÂ¼Èë
+	 * ç”¨æˆ·ä¸‹æ ‡å½•å…¥
 	 */
 	public static int inputIndex() {
 		int i = 0;
 		do {
-			System.out.println("ÇëÊäÈë²åÈëµ½Êı×éaµÄÎ»ÖÃ£º");
+			System.out.println("è¯·è¾“å…¥æ’å…¥åˆ°æ•°ç»„açš„ä½ç½®ï¼š");
 			i = input.nextInt();	
 		}while(i > 8 || i < 0);	
 		return i;

@@ -1,14 +1,14 @@
 import java.util.EnumMap;
 import java.util.Map;
 
-enum Color {红色,绿色,蓝色};
+enum Color {绾㈣壊,缁胯壊,钃濊壊};
 public class EnumMapDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		EnumMap<Color,String> eMap = new EnumMap<Color,String>(Color.class);
-		eMap.put(Color.红色, "RED");
-		eMap.put(Color.绿色, "GREEN");
-		eMap.put(Color.蓝色, "BLUE");
+		eMap.put(Color.绾㈣壊, "RED");
+		eMap.put(Color.缁胯壊, "GREEN");
+		eMap.put(Color.钃濊壊, "BLUE");
 		
 		for(Map.Entry<Color, String> me:eMap.entrySet()) {
 			System.out.println(me.getKey() + "---->" + me.getValue());

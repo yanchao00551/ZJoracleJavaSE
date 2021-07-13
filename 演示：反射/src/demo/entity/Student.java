@@ -1,29 +1,29 @@
 package demo.entity;
 
 public class Student {
-	//---------------¹¹Ôì·½·¨-------------------
-		//£¨Ä¬ÈÏµÄ¹¹Ôì·½·¨£©
+	//---------------æ„é€ æ–¹æ³•-------------------
+		//ï¼ˆé»˜è®¤çš„æ„é€ æ–¹æ³•ï¼‰
 		Student(String str){
-			System.out.println("(Ä¬ÈÏ)µÄ¹¹Ôì·½·¨ s = " + str);
+			System.out.println("(é»˜è®¤)çš„æ„é€ æ–¹æ³• s = " + str);
 		}
-		//ÎŞ²Î¹¹Ôì·½·¨
+		//æ— å‚æ„é€ æ–¹æ³•
 		public Student(){
-			System.out.println("µ÷ÓÃÁË¹«ÓĞ¡¢ÎŞ²Î¹¹Ôì·½·¨Ö´ĞĞÁË¡£¡£¡£");
+			System.out.println("è°ƒç”¨äº†å…¬æœ‰ã€æ— å‚æ„é€ æ–¹æ³•æ‰§è¡Œäº†ã€‚ã€‚ã€‚");
 		}
-		//ÓĞÒ»¸ö²ÎÊıµÄ¹¹Ôì·½·¨
+		//æœ‰ä¸€ä¸ªå‚æ•°çš„æ„é€ æ–¹æ³•
 		public Student(char name){
-			System.out.println("ĞÕÃû£º" + name);
+			System.out.println("å§“åï¼š" + name);
 		}
-		//ÓĞ¶à¸ö²ÎÊıµÄ¹¹Ôì·½·¨
+		//æœ‰å¤šä¸ªå‚æ•°çš„æ„é€ æ–¹æ³•
 		public Student(String name ,int age){
-			System.out.println("ĞÕÃû£º"+name+"ÄêÁä£º"+ age);//ÕâµÄÖ´ĞĞĞ§ÂÊÓĞÎÊÌâ£¬ÒÔºó½â¾ö¡£
+			System.out.println("å§“åï¼š"+name+"å¹´é¾„ï¼š"+ age);//è¿™çš„æ‰§è¡Œæ•ˆç‡æœ‰é—®é¢˜ï¼Œä»¥åè§£å†³ã€‚
 		}
-		//ÊÜ±£»¤µÄ¹¹Ôì·½·¨
+		//å—ä¿æŠ¤çš„æ„é€ æ–¹æ³•
 		protected Student(boolean n){
-			System.out.println("ÊÜ±£»¤µÄ¹¹Ôì·½·¨ n = " + n);
+			System.out.println("å—ä¿æŠ¤çš„æ„é€ æ–¹æ³• n = " + n);
 		}
-		//Ë½ÓĞ¹¹Ôì·½·¨
+		//ç§æœ‰æ„é€ æ–¹æ³•
 		private Student(int age){
-			System.out.println("Ë½ÓĞµÄ¹¹Ôì·½·¨   ÄêÁä£º"+ age);
+			System.out.println("ç§æœ‰çš„æ„é€ æ–¹æ³•   å¹´é¾„ï¼š"+ age);
 		}
 }

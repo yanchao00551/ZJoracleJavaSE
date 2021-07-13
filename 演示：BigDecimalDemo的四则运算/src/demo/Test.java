@@ -5,16 +5,16 @@ import java.math.BigDecimal;
 public class Test {
 	public static void main(String[] args) {
 		
-		//  ËÄÔòÔËËã£º+,-,*,  È«²¿¸ø·½·¨¸øÌæ´ú£¬²»ÄÜĞ´ËÄÔòÔËËã·û ,¹æ¶¨²»¹ÜÊÇ¼Ó¼õ³Ë³ı £¬²Ù×÷¶ÔÏó¶¼ÒªÊÇÍ³Ò»ÀàĞÍBigDecimal
-		BigDecimal bigA = new BigDecimal("888234582438382434382.2");  //´óĞÍ¸¡µãÀàĞÍ£¬½ğ¶î
+		//  å››åˆ™è¿ç®—ï¼š+,-,*,  å…¨éƒ¨ç»™æ–¹æ³•ç»™æ›¿ä»£ï¼Œä¸èƒ½å†™å››åˆ™è¿ç®—ç¬¦ ,è§„å®šä¸ç®¡æ˜¯åŠ å‡ä¹˜é™¤ ï¼Œæ“ä½œå¯¹è±¡éƒ½è¦æ˜¯ç»Ÿä¸€ç±»å‹BigDecimal
+		BigDecimal bigA = new BigDecimal("888234582438382434382.2");  //å¤§å‹æµ®ç‚¹ç±»å‹ï¼Œé‡‘é¢
 		
 		BigDecimal bigB = new BigDecimal("92923923.6");
 		
-		System.out.println("¼Ó·¨²Ù×÷£º" + bigA.add(bigB));
-		System.out.println("¼õ·¨²Ù×÷£º" + bigA.subtract(bigB));
-		System.out.println("³Ë·¨²Ù×÷£º" + bigA.multiply(bigB));
-		//BigDecimal.ROUND_DOWN Öµ±£Áô1Î»Ğ¡Êı
-		System.out.println("³ı·¨²Ù×÷£º" + bigA.divide(bigB,BigDecimal.ROUND_DOWN)); 
+		System.out.println("åŠ æ³•æ“ä½œï¼š" + bigA.add(bigB));
+		System.out.println("å‡æ³•æ“ä½œï¼š" + bigA.subtract(bigB));
+		System.out.println("ä¹˜æ³•æ“ä½œï¼š" + bigA.multiply(bigB));
+		//BigDecimal.ROUND_DOWN å€¼ä¿ç•™1ä½å°æ•°
+		System.out.println("é™¤æ³•æ“ä½œï¼š" + bigA.divide(bigB,BigDecimal.ROUND_DOWN)); 
 		
 	    	
 	}

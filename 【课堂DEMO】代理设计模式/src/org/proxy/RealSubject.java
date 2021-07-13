@@ -1,16 +1,19 @@
 package org.proxy;
 
 /**
- * ºì¾Æ³§ÉÌ£¨ÕæÊµ½ÇÉ«£©
+ * çº¢é…’å‚å•†ï¼ˆçœŸå®è§’è‰²ï¼‰
  * @author 10947
  *
  */
 public class RealSubject extends Subject{
 
 	@Override
-	public void request() {  //¸²Ğ´ÊµÏÖÁË³éÏó·½·¨
+	public void request() {  //è¦†å†™å®ç°äº†æŠ½è±¡æ–¹æ³•
+
 		// TODO Auto-generated method stub
-		System.out.println("ÎÒÊÇºì¾Æ³§ÉÌ£¬»¶Ó­Æ·³¢¹ºÂò£¡");
+		System.out.println("æˆ‘æ˜¯çº¢é…’å‚å•†ï¼Œæ¬¢è¿å“å°è´­ä¹°ï¼");
+
+
 	}
-	
+
 }

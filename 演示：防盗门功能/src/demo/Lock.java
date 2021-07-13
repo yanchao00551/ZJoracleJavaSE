@@ -2,11 +2,11 @@ package demo;
 
 
 /**
- * Ëø  ½Ó¿Ú
+ * Ã‹Ã¸  Â½Ã“Â¿Ãš
  * @author 10947
  *
  */
 public interface Lock {
-	void lockUp();       //Ëø
-	void openLock();   //½âËø
+	void lockUp();       //Ã‹Ã¸
+	void openLock();   //Â½Ã¢Ã‹Ã¸
 }

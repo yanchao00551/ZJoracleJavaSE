@@ -1,12 +1,12 @@
 package demo;
 
 public class Master {
-	private String name = "";// Ö÷ÈËÃû×Ö
-	private int money = 0; // Ôª±¦Êı
+	private String name = "";// ä¸»äººåå­—
+	private int money = 0; // å…ƒå®æ•°
 	/**
-	 * ÓĞ²Î¹¹Ôì·½·¨¡£
-	 * @param name Ö÷ÈËÃû×Ö
-	 * @param money Ôª±¦Êı
+	 * æœ‰å‚æ„é€ æ–¹æ³•ã€‚
+	 * @param name ä¸»äººåå­—
+	 * @param money å…ƒå®æ•°
 	 */
 	public Master(String name, int money) {
 		this.name = name;
@@ -28,7 +28,7 @@ public class Master {
 		return name;
 	}
 	/**
-	 * Ö÷ÈË¸ø³èÎïÎ¹Ê³¡£
+	 * ä¸»äººç»™å® ç‰©å–‚é£Ÿã€‚
 	 */
 	public void feed(Pet pet) {
 		pet.eat();

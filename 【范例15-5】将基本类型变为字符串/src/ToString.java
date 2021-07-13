@@ -4,11 +4,11 @@ public class ToString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int x = 10;
-		String str = x + "";  //ÈÎºÎÀàĞÍÓë×Ö·û´®Ïà¼ÓÖ®ºó¾ÍÊÇ×Ö·û´®
+		String str = x + "";  //ä»»ä½•ç±»å‹ä¸å­—ç¬¦ä¸²ç›¸åŠ ä¹‹åå°±æ˜¯å­—ç¬¦ä¸²
 		System.out.println(str);
 		
 		int y = 100;
-		String str1 = String.valueOf(y); //Ò²¿ÉÒÔ×ª
+		String str1 = String.valueOf(y); //ä¹Ÿå¯ä»¥è½¬
 		System.out.println(str1);
 	}
 

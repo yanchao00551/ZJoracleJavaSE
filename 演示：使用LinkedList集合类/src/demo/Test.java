@@ -9,36 +9,36 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//1 ´´½¨4¸ö¹·¶ÔÏó
-		Dog ououDog = new Dog("Å·Å·","Ñ©ÄÉÈğ");
-		Dog yayaDog = new Dog("ÑÇÑÇ","À­²¼À­¶à");
-		Dog meimeiDog = new Dog("ÃÀÃÀ","Ñ©ÄÉÈğ");
-		Dog feifeiDog = new Dog("·Æ·Æ","À­²¼À­¶à");
+		//1 åˆ›å»º4ä¸ªç‹—å¯¹è±¡
+		Dog ououDog = new Dog("æ¬§æ¬§","é›ªçº³ç‘");
+		Dog yayaDog = new Dog("äºšäºš","æ‹‰å¸ƒæ‹‰å¤š");
+		Dog meimeiDog = new Dog("ç¾ç¾","é›ªçº³ç‘");
+		Dog feifeiDog = new Dog("è²è²","æ‹‰å¸ƒæ‹‰å¤š");
 		
 		
-		//2  ´´½¨LinkedList¼¯ºÏ¶ÔÏó ²¢°Ñ ËÄ¸ö¹·¹·¶ÔÏó·ÅÈëÆäÖĞ
+		//2  åˆ›å»ºLinkedListé›†åˆå¯¹è±¡ å¹¶æŠŠ å››ä¸ªç‹—ç‹—å¯¹è±¡æ”¾å…¥å…¶ä¸­
 		LinkedList<Dog> dogs = new LinkedList<Dog>();
 		dogs.add(ououDog);
 		dogs.add(yayaDog);
 		dogs.addLast(meimeiDog);
 		dogs.addFirst(feifeiDog);
 		
-		//3  ²é¿´¼¯ºÏÖĞµÚÒ»Ìõ¹·¹·µÄêÇ³Æ
+		//3  æŸ¥çœ‹é›†åˆä¸­ç¬¬ä¸€æ¡ç‹—ç‹—çš„æ˜µç§°
 		Dog dogFirst = (Dog)dogs.getFirst();
-		System.out.println("µÚÒ»Ìõ¹·¹·µÄêÇ³ÆÊÇ£º"+ dogFirst.getName() + "¡£");
-		//4  ²é¿´¼¯ºÏÖĞ×îºóÒ»Ìõ¹·¹·µÄêÇ³Æ
+		System.out.println("ç¬¬ä¸€æ¡ç‹—ç‹—çš„æ˜µç§°æ˜¯ï¼š"+ dogFirst.getName() + "ã€‚");
+		//4  æŸ¥çœ‹é›†åˆä¸­æœ€åä¸€æ¡ç‹—ç‹—çš„æ˜µç§°
 		Dog dogLast = dogs.getLast();
-		System.out.println("×îºóÒ»Ìõ¹·¹·µÄêÇ³ÆÊÇ£º" + dogLast.getName() + "¡£");
-		//5  É¾³ı½Ó»õÖĞµÚÒ»¸ö¹·¹·ºÍ×îºóÒ»¸ö¹·¹·
+		System.out.println("æœ€åä¸€æ¡ç‹—ç‹—çš„æ˜µç§°æ˜¯ï¼š" + dogLast.getName() + "ã€‚");
+		//5  åˆ é™¤æ¥è´§ä¸­ç¬¬ä¸€ä¸ªç‹—ç‹—å’Œæœ€åä¸€ä¸ªç‹—ç‹—
 		dogs.removeFirst();
 		dogs.removeLast();
 		
 		
-		//6 Êä³ö¼¯ºÏÖĞ¹·¹·µÄÊıÁ¿
-		System.out.println("¹²¼ÆÓĞ£º" + dogs.size() + "Ìõ¹·¹·");
+		//6 è¾“å‡ºé›†åˆä¸­ç‹—ç‹—çš„æ•°é‡
+		System.out.println("å…±è®¡æœ‰ï¼š" + dogs.size() + "æ¡ç‹—ç‹—");
 		
-	    //7 Í¨¹ı±éÀú¼¯ºÏÏÔÊ¾¸÷Ìõ¹·¹·
-		System.out.println("·Ö±ğÊÇ£º");
+	    //7 é€šè¿‡éå†é›†åˆæ˜¾ç¤ºå„æ¡ç‹—ç‹—
+		System.out.println("åˆ†åˆ«æ˜¯ï¼š");
 		Iterator<Dog> itr = dogs.iterator();
 		while(itr.hasNext()){
 			Dog d = itr.next();

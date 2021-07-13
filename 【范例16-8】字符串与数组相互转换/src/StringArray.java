@@ -6,13 +6,13 @@ public class StringArray {
 //		String str = "hellojava";
 //		char data[] = str.toCharArray();
 //		for(int i=0;i<data.length;i++) {
-//			System.out.print(data[i]+"¡¢");
-//			data[i] -= 32;  //Ð¡Ð´±äÎª´óÐ´
+//			System.out.print(data[i]+"ã€");
+//			data[i] -= 32;  //å°å†™å˜ä¸ºå¤§å†™
 //		}
 //		System.out.println();
-//		System.out.println("½«È«²¿×Ö·ûÊý×é±äÎª×Ö·û´®£º"+new String(data));
-//		//È¡µÃ²¿·ÖÄÚÈÝµÄÊ±ºòÐèÒªÉèÖÃÆðÊ¼µãºÍÈ¡µÃµÄ³¤¶È
-//		System.out.println("½«²¿·Ö×Ö·ûÊý×é±äÎª×Ö·û´®£º"+new String(data,5,4));
+//		System.out.println("å°†å…¨éƒ¨å­—ç¬¦æ•°ç»„å˜ä¸ºå­—ç¬¦ä¸²ï¼š"+new String(data));
+//		//å–å¾—éƒ¨åˆ†å†…å®¹çš„æ—¶å€™éœ€è¦è®¾ç½®èµ·å§‹ç‚¹å’Œå–å¾—çš„é•¿åº¦
+//		System.out.println("å°†éƒ¨åˆ†å­—ç¬¦æ•°ç»„å˜ä¸ºå­—ç¬¦ä¸²ï¼š"+new String(data,5,4));
 		String a = "ab";
 		String b = "a" + "b";
 		System.out.println(a == b);

@@ -4,34 +4,34 @@ public class LinkedListDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨LinkedList¶ÔÏó
+		//åˆ›å»ºLinkedListå¯¹è±¡
 		LinkedList<String> LL = new LinkedList<String>();
-		//¼ÓÈëÔªËØµ½LinkedListÖĞ
+		//åŠ å…¥å…ƒç´ åˆ°LinkedListä¸­
 		LL.add("F");
 		LL.add("F");
 		LL.add("D");
 		LL.add("E");
 		LL.add("C");
-		//ÔÚÁ´±íµÄ×îºóÒ»¸öÎ»ÖÃ¼ÓÉÏÊı¾İ
+		//åœ¨é“¾è¡¨çš„æœ€åä¸€ä¸ªä½ç½®åŠ ä¸Šæ•°æ®
 		LL.addLast("Z");
-		//ÔÚÁ´±íµÄµÚÒ»¸öÎ»ÖÃÉÏ¼ÓÉÏÊı¾İ
+		//åœ¨é“¾è¡¨çš„ç¬¬ä¸€ä¸ªä½ç½®ä¸ŠåŠ ä¸Šæ•°æ®
 		LL.addFirst("A");
-		//ÔÚÁ´±íµÄµÚ¶ş¸öÔªËØµÄÎ»ÖÃÉÏ¼ÓÈëÊı¾İ
+		//åœ¨é“¾è¡¨çš„ç¬¬äºŒä¸ªå…ƒç´ çš„ä½ç½®ä¸ŠåŠ å…¥æ•°æ®
 		LL.add(1, "A2");
-		System.out.println("LL×î³õµÄÄÚÈİ£º"+LL);
-		//´ÓLinkedListÖĞÒÆ³ıÔªËØ
+		System.out.println("LLæœ€åˆçš„å†…å®¹ï¼š"+LL);
+		//ä»LinkedListä¸­ç§»é™¤å…ƒç´ 
 		LL.remove("F");
-		System.out.println("É¾³ıÔªËØFºóµÄLLÄÚÈİ£º"+LL);
+		System.out.println("åˆ é™¤å…ƒç´ Fåçš„LLå†…å®¹ï¼š"+LL);
 		LL.remove(2);
-		System.out.println("´ÓLLÖĞÒÆ³ıµÚ¶ş¸öÔªËØµÄÄÚÈİÖ®ºó£º"+LL);
-		//ÒÆ³ıµÚÒ»¸öºÍ×îºóÒ»¸öÔªËØ
+		System.out.println("ä»LLä¸­ç§»é™¤ç¬¬äºŒä¸ªå…ƒç´ çš„å†…å®¹ä¹‹åï¼š"+LL);
+		//ç§»é™¤ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ªå…ƒç´ 
 		LL.removeFirst();
 		LL.removeLast();
-		System.out.println("LLÒÆ³ıµÚÒ»¸öºÍ×îºóÒ»¸öÔªËØÖ®ºóµÄÄÚÈİ"+LL);
-		//È¡µÃ²¢ÉèÖÃÖµ
+		System.out.println("LLç§»é™¤ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ªå…ƒç´ ä¹‹åçš„å†…å®¹"+LL);
+		//å–å¾—å¹¶è®¾ç½®å€¼
 		Object val = LL.get(2);
 		LL.set(2, (String)val+" changed");
-		System.out.println("LL±»¸Ä±äÖ®ºó£º"+LL);
+		System.out.println("LLè¢«æ”¹å˜ä¹‹åï¼š"+LL);
 	}
 
 }

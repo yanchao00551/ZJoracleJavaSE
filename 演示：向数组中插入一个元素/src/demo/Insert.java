@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Insert {
 	public static void main(String[] args) {
-		int[] list = new int[6];    //³¤¶ÈÎª6µÄÊı×é
+		int[] list = new int[6];    //é•¿åº¦ä¸º6çš„æ•°ç»„
 		list[0] = 99;
 		list[1] = 85;
 		list[2] = 82;
 		list[3] = 63;
 		list[4] = 60;
-		int index = list.length;   //±£´æĞÂÔö³É¼¨²åÈëÎ»ÖÃ 6
+		int index = list.length;   //ä¿å­˜æ–°å¢æˆç»©æ’å…¥ä½ç½® 6
 		
 		
-		System.out.println("ÇëÊäÈëĞÂÔö³É¼¨£º");
+		System.out.println("è¯·è¾“å…¥æ–°å¢æˆç»©ï¼š");
 		Scanner input = new Scanner(System.in);
-		int num = input.nextInt();  //ÊäÈëÒª²åÈëµÄÎ»ÖÃ
+		int num = input.nextInt();  //è¾“å…¥è¦æ’å…¥çš„ä½ç½®
 		
-	    //ÕÒµ½ÔªËØµÄ²åÈëÎ»ÖÃ
+	    //æ‰¾åˆ°å…ƒç´ çš„æ’å…¥ä½ç½®
 		for(int i=0; i< list.length; i++) {
 			if(num > list[i]) {
 				index = i;
@@ -25,17 +25,17 @@ public class Insert {
 			}
 		}
 		
-		//ÔªËØºóÒÆ
+		//å…ƒç´ åç§»
 		for(int j = list.length -1 ; j> index; j--) {
 			list[j] = list[j-1];
 		}
 		
-		list[index] = num;   //²åÈëÔªËØ
+		list[index] = num;   //æ’å…¥å…ƒç´ 
 		
 		
-		System.out.println("²åÈë³É¼¨µÄÏÂ±êÊÇ£º" + index);
+		System.out.println("æ’å…¥æˆç»©çš„ä¸‹æ ‡æ˜¯ï¼š" + index);
 		
-		System.out.println("²åÈëºóµÄĞÅÏ¢ÊÇ£º");
+		System.out.println("æ’å…¥åçš„ä¿¡æ¯æ˜¯ï¼š");
 		
 		
 		for(int k = 0; k < list.length; k++) {

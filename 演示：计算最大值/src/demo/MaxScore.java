@@ -7,14 +7,14 @@ public class MaxScore {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] scores = new int[5];
-		int max = 0;  //¼ÇÂ¼×î´óÖµ
-		System.out.println("ÇëÊäÈë5Î»Ñ§Ô±µÄ³É¼¨£º");
+		int max = 0;  //è®°å½•æœ€å¤§å€¼
+		System.out.println("è¯·è¾“å…¥5ä½å­¦å‘˜çš„æˆç»©ï¼š");
 		Scanner input = new Scanner(System.in);
 		for(int i = 0; i<scores.length; i++) {
 			scores[i] = input.nextInt();
 		}
 		
-		//¼ÆËã×î´óÖµ
+		//è®¡ç®—æœ€å¤§å€¼
 		max = scores[0];
 		for(int i=1; i<scores.length; i++) {
 			if(scores[i] > max) {
@@ -22,7 +22,7 @@ public class MaxScore {
 			}
 		}
 		
-		System.out.println("¿¼ÊÔ³É¼¨×î¸ß·ÖÎª£º" + max);
+		System.out.println("è€ƒè¯•æˆç»©æœ€é«˜åˆ†ä¸ºï¼š" + max);
 	}
 
 }

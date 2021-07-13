@@ -4,7 +4,7 @@ public class MathBook implements Book {
 	@Override
 	public String getTitle() {
 		// TODO Auto-generated method stub
-		return "数学类书";
+		return "鏁板绫讳功";
 	}
 
 }

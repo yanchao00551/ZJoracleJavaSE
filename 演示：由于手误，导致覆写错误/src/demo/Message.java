@@ -3,9 +3,9 @@ package demo;
 class Message {
 	
 	
-	 //¿ÉÒÔÊ¡ÂÔ,½¨Òé²»Ê¡ÂÔ
+	 //å¯ä»¥çœç•¥,å»ºè®®ä¸çœç•¥
 	@Override
-	public String toString() {   //Ô­±¾ÊÇ´òËã¸²Ğ´toString()
+	public String toString() {   //åŸæœ¬æ˜¯æ‰“ç®—è¦†å†™toString()
 		return "Hello World!";
 	}
 	

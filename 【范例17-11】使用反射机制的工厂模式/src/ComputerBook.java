@@ -4,7 +4,7 @@ public class ComputerBook implements Book {
 	@Override
 	public String getTitle() {
 		// TODO Auto-generated method stub
-		return "µçÄÔÀàÊé";
+		return "ÂµÃ§Ã„Ã”Ã€Ã ÃŠÃ©";
 	}
 
 }

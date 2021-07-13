@@ -5,13 +5,13 @@ public class OrderDaoImpl implements OrderDao{
 	@Override
 	public void save() {
 		// TODO Auto-generated method stub
-		System.out.println("ĞÂÔö1ÌõÊı¾İ³É¹¦£¡");
+		System.out.println("æ–°å¢1æ¡æ•°æ®æˆåŠŸï¼");
 	}
 
 	@Override
 	public void save2() {
 		// TODO Auto-generated method stub
-		System.out.println("ÊµÏÖÁË2.0°æ±¾");
+		System.out.println("å®ç°äº†2.0ç‰ˆæœ¬");
 	}
 	
 	

@@ -8,26 +8,26 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//1 ´´½¨4¸ö¹·¶ÔÏó
-		Dog ououDog = new Dog("Å·Å·","Ñ©ÄÉÈğ");
-		Dog yayaDog = new Dog("ÑÇÑÇ","À­²¼À­¶à");
-		Dog meimeiDog = new Dog("ÃÀÃÀ","Ñ©ÄÉÈğ");
-		Dog feifeiDog = new Dog("·Æ·Æ","À­²¼À­¶à");
+		//1 åˆ›å»º4ä¸ªç‹—å¯¹è±¡
+		Dog ououDog = new Dog("æ¬§æ¬§","é›ªçº³ç‘");
+		Dog yayaDog = new Dog("äºšäºš","æ‹‰å¸ƒæ‹‰å¤š");
+		Dog meimeiDog = new Dog("ç¾ç¾","é›ªçº³ç‘");
+		Dog feifeiDog = new Dog("è²è²","æ‹‰å¸ƒæ‹‰å¤š");
 		
 		
-		//2  ´´½¨ArrayList¼¯ºÏ¶ÔÏó ²¢°Ñ ËÄ¸ö¹·¹·¶ÔÏó·ÅÈëÆäÖĞ
+		//2  åˆ›å»ºArrayListé›†åˆå¯¹è±¡ å¹¶æŠŠ å››ä¸ªç‹—ç‹—å¯¹è±¡æ”¾å…¥å…¶ä¸­
 		List<Dog> dogs = new ArrayList<Dog>();
 		dogs.add(ououDog);
 		dogs.add(yayaDog);
 		dogs.add(meimeiDog);
-		dogs.add(2, feifeiDog);  //Ìí¼ÓfeifeiDogµ½Ö¸¶¨Î»ÖÃ
+		dogs.add(2, feifeiDog);  //æ·»åŠ feifeiDogåˆ°æŒ‡å®šä½ç½®
 		
 		
-		//3 Êä³ö¼¯ºÏÖĞ¹·¹·µÄÊıÁ¿
-		System.out.println("¹²¼ÆÓĞ£º" + dogs.size() + "Ìõ¹·¹·");
+		//3 è¾“å‡ºé›†åˆä¸­ç‹—ç‹—çš„æ•°é‡
+		System.out.println("å…±è®¡æœ‰ï¼š" + dogs.size() + "æ¡ç‹—ç‹—");
 		
-	    //4 Í¨¹ı±éÀú¼¯ºÏÏÔÊ¾¸÷Ìõ¹·¹·
-		System.out.println("·Ö±ğÊÇ£º");
+	    //4 é€šè¿‡éå†é›†åˆæ˜¾ç¤ºå„æ¡ç‹—ç‹—
+		System.out.println("åˆ†åˆ«æ˜¯ï¼š");
 		Iterator<Dog> itr = dogs.iterator();
 		while(itr.hasNext()){
 			Dog d = itr.next();

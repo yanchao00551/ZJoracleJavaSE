@@ -4,16 +4,16 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Dog dog = new Dog("Å·Å·", "Ñ©ÄÈÈğ");
-		Penguin pgn = new Penguin("éªéª", "QÃÃ");
-		Cat cat=new Cat("Tomcat","»ÆÉ«");
-		dog.setHealth(80); //ÉèÖÃ½¡¿µÖµ£¬ÒÔ±ãÕı³£Î¹Ê³
-		pgn.setHealth(80); //ÉèÖÃ½¡¿µÖµ£¬ÒÔ±ãÕı³£Î¹Ê³
-		cat.setHealth(80); //ÉèÖÃ½¡¿µÖµ£¬ÒÔ±ãÕı³£Î¹Ê³
-		Master master=new Master("ÍõÏÈÉú",100);
-		master.feed(dog);//Ö÷ÈË¸ø¹·¹·Î¹Ê³
-		master.feed(pgn);//Ö÷ÈË¸øÆó¶ìÎ¹Ê³
-		master.feed(cat);//Ö÷ÈË¸øÃ¨Î¹Ê³
+		Dog dog = new Dog("æ¬§æ¬§", "é›ªå¨œç‘");
+		Penguin pgn = new Penguin("æ¥ æ¥ ", "Qå¦¹");
+		Cat cat=new Cat("Tomcat","é»„è‰²");
+		dog.setHealth(80); //è®¾ç½®å¥åº·å€¼ï¼Œä»¥ä¾¿æ­£å¸¸å–‚é£Ÿ
+		pgn.setHealth(80); //è®¾ç½®å¥åº·å€¼ï¼Œä»¥ä¾¿æ­£å¸¸å–‚é£Ÿ
+		cat.setHealth(80); //è®¾ç½®å¥åº·å€¼ï¼Œä»¥ä¾¿æ­£å¸¸å–‚é£Ÿ
+		Master master=new Master("ç‹å…ˆç”Ÿ",100);
+		master.feed(dog);//ä¸»äººç»™ç‹—ç‹—å–‚é£Ÿ
+		master.feed(pgn);//ä¸»äººç»™ä¼é¹…å–‚é£Ÿ
+		master.feed(cat);//ä¸»äººç»™çŒ«å–‚é£Ÿ
 	}
 
 }

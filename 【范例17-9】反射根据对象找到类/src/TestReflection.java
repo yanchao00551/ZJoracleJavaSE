@@ -16,7 +16,7 @@ class Book{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Í¼ÊéÃû³Æ£º" + this.title +"¼Û¸ñ£º"+this.price;
+		return "å›¾ä¹¦åç§°ï¼š" + this.title +"ä»·æ ¼ï¼š"+this.price;
 	}
 	
 }
@@ -25,8 +25,8 @@ public class TestReflection {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Class<?> cls = Class.forName("Book");
-		Book book = (Book) cls.newInstance();   //ÊµÀı»¯Ò»¸ö¶ÔÏó
-		book.setTitle("java¿ª·¢ÊµÕ½");
+		Book book = (Book) cls.newInstance();   //å®ä¾‹åŒ–ä¸€ä¸ªå¯¹è±¡
+		book.setTitle("javaå¼€å‘å®æˆ˜");
 		book.setPrice(79.8);
 		System.out.println(book);
 	}

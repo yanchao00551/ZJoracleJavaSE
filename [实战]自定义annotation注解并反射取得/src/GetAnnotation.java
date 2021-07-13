@@ -8,15 +8,15 @@ public class GetAnnotation {
 			//Method loginMethod = c.getMethod("login",String.class,String.class);
 			Method loginMethod = c.getDeclaredMethod("login", String.class,String.class);
 			
-			if(loginMethod.isAnnotationPresent(Logininfo.class)) { //·µ»Øtrue
+			if(loginMethod.isAnnotationPresent(Logininfo.class)) { //è¿”å›true
 				Logininfo my = null;
 				my = loginMethod.getAnnotation(Logininfo.class);
 				String username = my.name();
 				String pwd = my.password();
 				if(User.login(username, pwd)) {
-					System.out.println("ÓÃ»§ÃûºÍÃÜÂëÕıÈ·!");
+					System.out.println("ç”¨æˆ·åå’Œå¯†ç æ­£ç¡®!");
 				}else {
-					System.out.println("ÓÃ»§ÃûºÍÃÜÂë´íÎó£¡!");
+					System.out.println("ç”¨æˆ·åå’Œå¯†ç é”™è¯¯ï¼!");
 				}
 			}
 			

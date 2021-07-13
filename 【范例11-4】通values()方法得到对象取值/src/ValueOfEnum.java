@@ -1,4 +1,4 @@
-enum MyColor {��ɫ,��ɫ,��ɫ};
+enum MyColor {ºìÉ«,ÂÌÉ«,À¶É«};
 public class ValueOfEnum {
 	public static void main(String[] args) {
 		MyColor[] c1 = MyColor.values();

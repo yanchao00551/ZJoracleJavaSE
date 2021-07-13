@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ²âÊÔÀà
+ * æµ‹è¯•ç±»
  * @author 10947
  *
  */
@@ -12,22 +12,22 @@ public class DoorTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨¾ßÌå·ÀµÁÃÅ¶ÔÏó
+		//åˆ›å»ºå…·ä½“é˜²ç›—é—¨å¯¹è±¡
 		TheftproofDoor tfd = new TheftproofDoor();
 
 	
-		tfd.close();  //¹ØÃÅ
-		tfd.lockUp();   // ËøÃÅ
-		tfd.takePrictures();   //À´·Ã¿ÍÈËÅÄÕÕ´æ´¢
-		tfd.openLock();   //¿ªËø
-		tfd.open();   //¿ªÃÅ
+		tfd.close();  //å…³é—¨
+		tfd.lockUp();   // é”é—¨
+		tfd.takePrictures();   //æ¥è®¿å®¢äººæ‹ç…§å­˜å‚¨
+		tfd.openLock();   //å¼€é”
+		tfd.open();   //å¼€é—¨
 
 	
 		
-		//ÒòÎªÎÒÃÇ×ó±ßĞ´µÄÊÇ  Lock½Ó¿ÚÀàĞÍ  ¶àÌ¬Ğ´·¨ 
-		//ËùÒÔ ÎÒÃÇ¶ÔÏótfdÖ»ÄÜÓĞ  Lock½Ó¿ÚµÄ  2¸ö  ·½·¨  lockUp openLock  
-		//È»ºó ÎÒÃÇ»¹ĞèÒªµ÷ÓÃ  ¿ªÃÅopen ºÍ ¹ØÃÅcloseµÄ·½·¨ 
-		// tfd²»´æÔÚ Õâ2¸ö·½·¨  ËùÒÔ¶àÌ¬Ğ´·¨  Òª¸ù¾İÊµ¼ÊÇé¿öÀ´¶¨
+		//å› ä¸ºæˆ‘ä»¬å·¦è¾¹å†™çš„æ˜¯  Lockæ¥å£ç±»å‹  å¤šæ€å†™æ³• 
+		//æ‰€ä»¥ æˆ‘ä»¬å¯¹è±¡tfdåªèƒ½æœ‰  Lockæ¥å£çš„  2ä¸ª  æ–¹æ³•  lockUp openLock  
+		//ç„¶å æˆ‘ä»¬è¿˜éœ€è¦è°ƒç”¨  å¼€é—¨open å’Œ å…³é—¨closeçš„æ–¹æ³• 
+		// tfdä¸å­˜åœ¨ è¿™2ä¸ªæ–¹æ³•  æ‰€ä»¥å¤šæ€å†™æ³•  è¦æ ¹æ®å®é™…æƒ…å†µæ¥å®š
 		
 		
 	}

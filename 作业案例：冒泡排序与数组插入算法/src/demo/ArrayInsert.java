@@ -5,10 +5,10 @@ public class ArrayInsert {
 	
 
 	/*
-	 * ºóÒÆËã·¨ ÒÆ¶¯Ö¸¶¨Î»ÖÃ
-	 * arr ´ı²åÈëÊı×é
-	 * index ²åÈëÆğÊ¼Î»ÖÃÏÂ±ê
-	 * num ²åÈëÎ»ÖÃ
+	 * åç§»ç®—æ³• ç§»åŠ¨æŒ‡å®šä½ç½®
+	 * arr å¾…æ’å…¥æ•°ç»„
+	 * index æ’å…¥èµ·å§‹ä½ç½®ä¸‹æ ‡
+	 * num æ’å…¥ä½ç½®
 	 */
 	public static void arrInsert(int[] arr,int index,int num) {
 		for(int j = arr.length-1;j >= index + num; j--) {
@@ -18,7 +18,7 @@ public class ArrayInsert {
 	
 	
 	/*
-	 * ºóÒÆËã·¨ ÒÆ¶¯1¸öÎ»ÖÃ
+	 * åç§»ç®—æ³• ç§»åŠ¨1ä¸ªä½ç½®
 	 */
 	public static void arrInsert(int[] arr,int index) {
 		for(int j = arr.length;j < index; j--) {
@@ -27,9 +27,9 @@ public class ArrayInsert {
 	}
 	
 	/*
-	 * ½«Êı×éaµÄÖ¸¶¨³¤¶ÈÄÚÈİ¸³Öµ¸øÊı×éb 
-	 * len ³¤¶È
-	 * index ÆğÊ¼Î»ÖÃ
+	 * å°†æ•°ç»„açš„æŒ‡å®šé•¿åº¦å†…å®¹èµ‹å€¼ç»™æ•°ç»„b 
+	 * len é•¿åº¦
+	 * index èµ·å§‹ä½ç½®
 	 * 
 	 * 
 	 */
@@ -40,10 +40,10 @@ public class ArrayInsert {
 	}
 	
 	/*
-	 * ½«Êı×éaµÄÖ¸¶¨³¤¶ÈÄÚÈİ¸³Öµ¸øÊı×éb Êı×é¾Ö²¿¸²¸Ç  
-	 * len ³¤¶È
-	 * index ÆğÊ¼Î»ÖÃ
-	 * n ÏÂ±ê²»Ò»ÖÂÇé¿öÏÂ ÆôÓÃnÏÂ±êÎªÊı×éaµÄÏÂ±ê
+	 * å°†æ•°ç»„açš„æŒ‡å®šé•¿åº¦å†…å®¹èµ‹å€¼ç»™æ•°ç»„b æ•°ç»„å±€éƒ¨è¦†ç›–  
+	 * len é•¿åº¦
+	 * index èµ·å§‹ä½ç½®
+	 * n ä¸‹æ ‡ä¸ä¸€è‡´æƒ…å†µä¸‹ å¯ç”¨nä¸‹æ ‡ä¸ºæ•°ç»„açš„ä¸‹æ ‡
 	 */
 	public static void arrToDetails(int[] a ,int[] b,int len,int index,int n) {
 		for(int i=index; i<=len; i++) {

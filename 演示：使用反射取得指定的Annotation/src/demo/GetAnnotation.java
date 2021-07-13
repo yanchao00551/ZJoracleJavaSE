@@ -8,9 +8,9 @@ public class GetAnnotation {
 		// TODO Auto-generated method stub
 		Class<?> cls = Class.forName("demo.Info");
 		Method toStringMethod = cls.getMethod("toString");
-		//ÅĞ¶Ï¸Ã·½·¨ÉÏÊÇ·ñÓĞÖ¸¶¨ÀàĞÍµÄAnnotation´æÔÚ
+		//åˆ¤æ–­è¯¥æ–¹æ³•ä¸Šæ˜¯å¦æœ‰æŒ‡å®šç±»å‹çš„Annotationå­˜åœ¨
 		if(toStringMethod.isAnnotationPresent(MyAnnotation.class)) {
-			MyAnnotation my = null;   //ÉùÃ÷AnnotationµÄ¶ÔÏó
+			MyAnnotation my = null;   //å£°æ˜Annotationçš„å¯¹è±¡
 			my  = toStringMethod.getAnnotation(MyAnnotation.class);
 			String key = my.key();
 			String value = my.value();

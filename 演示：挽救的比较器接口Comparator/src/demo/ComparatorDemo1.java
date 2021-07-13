@@ -7,13 +7,13 @@ public class ComparatorDemo1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Book book[] = new Book[] {
-				new Book("OracleÊµÕ½",60),
-				new Book("Java¿ª·¢",69.8),
-				new Book("Java Web¿ª·¢",59.8),
-				new Book("Android¿ª·¢",58)
+				new Book("Oracleå®æˆ˜",60),
+				new Book("Javaå¼€å‘",69.8),
+				new Book("Java Webå¼€å‘",59.8),
+				new Book("Androidå¼€å‘",58)
 		};
 		
-		Arrays.sort(book, new BookComparator());   //Îª¶ÔÏóÊı×éÅÅĞò
+		Arrays.sort(book, new BookComparator());   //ä¸ºå¯¹è±¡æ•°ç»„æ’åº
 		System.out.println(Arrays.toString(book));
 		
 	}

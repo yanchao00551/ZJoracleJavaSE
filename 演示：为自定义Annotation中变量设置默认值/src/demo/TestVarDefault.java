@@ -3,8 +3,8 @@ package demo;
 public class TestVarDefault {
 
 	/**
-	 * ÕâÖÖÇé¿ö±àÒëÊ±ºò,JVM»áÉ¨ÃèÎÄ¼ş°Ñ×Ô¶¨Òå×¢½âÈ«¸øÌŞ³ı£¡
-	 * @Retention(value=RetentionPolicy.RUNTIME)   JVM»á±£ÁôÔÚclass×Ö½ÚÂëÎÄ¼şÀï
+	 * è¿™ç§æƒ…å†µç¼–è¯‘æ—¶å€™,JVMä¼šæ‰«ææ–‡ä»¶æŠŠè‡ªå®šä¹‰æ³¨è§£å…¨ç»™å‰”é™¤ï¼
+	 * @Retention(value=RetentionPolicy.RUNTIME)   JVMä¼šä¿ç•™åœ¨classå­—èŠ‚ç æ–‡ä»¶é‡Œ
 	 * @param args
 	 */
 	@VarDefault()

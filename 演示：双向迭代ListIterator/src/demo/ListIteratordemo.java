@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 
 /*
- * ListIteratorË«Ïòµü´úÆ÷À©Õ¹ÁËIterator
- * ÔÊĞíË«Ïò±éÀúÁĞ±í
+ * ListIteratoråŒå‘è¿­ä»£å™¨æ‰©å±•äº†Iterator
+ * å…è®¸åŒå‘éå†åˆ—è¡¨
  */
 
 public class ListIteratordemo {
@@ -13,7 +13,7 @@ public class ListIteratordemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<String> al = new ArrayList<String>();
-		//¼ÓÈëÔªËØ
+		//åŠ å…¥å…ƒç´ 
 		al.add("Welcome");
 		al.add("to");
 		al.add("TianYan");
@@ -21,11 +21,11 @@ public class ListIteratordemo {
 		ListIterator<String> litr = al.listIterator();
 		while(litr.hasNext()) {
 			Object element = litr.next();
-			//ÓÃset·½·¨ĞŞ¸ÄÆäÄÚÈİ
+			//ç”¨setæ–¹æ³•ä¿®æ”¹å…¶å†…å®¹
 			litr.set(element + "+") ;
 		}
 		
-		//ÏÂÃæÊÇ½«ÁĞ±íµÄÄÚÈİ·´ÏòÊä³ö
+		//ä¸‹é¢æ˜¯å°†åˆ—è¡¨çš„å†…å®¹åå‘è¾“å‡º
 		while(litr.hasPrevious()) {
 			Object element = litr.previous();
 			System.out.println(element + " ");

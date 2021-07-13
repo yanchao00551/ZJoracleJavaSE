@@ -15,9 +15,9 @@ public class GetAnnotatoin {
 				String username = my.name();
 				String pwd = my.password();
 				if(User.login(username, pwd)) {
-					System.out.println("��¼�ɹ���");
+					System.out.println("µÇÂ¼³É¹¦£¡");
 				}else {
-					System.out.println("��¼ʧ�ܣ�");
+					System.out.println("µÇÂ¼Ê§°Ü£¡");
 				}
 			}
 		}catch(Exception e) {

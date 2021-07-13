@@ -3,7 +3,7 @@ package demo;
 public class Test {
 
 	
-	//使用自定义的MyAnnotation  annotation
+	//浣跨敤鑷畾涔夌殑MyAnnotation  annotation
 	
 	
 	@MyAnnotation

@@ -3,7 +3,7 @@ package demo;
 public class Info {
 	
 	/*
-	 * 系统内置注解
+	 * 绯荤粺鍐呯疆娉ㄨВ
 	 */
 	
 	@Override

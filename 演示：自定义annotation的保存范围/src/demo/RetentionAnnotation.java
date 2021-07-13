@@ -4,7 +4,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 
-//定义该自定义Annotation的保存范围是 RUNTIME
+//瀹氫箟璇ヨ嚜瀹氫箟Annotation鐨勪繚瀛樿寖鍥存槸 RUNTIME
 @Retention(value = RetentionPolicy.RUNTIME)
 @interface RetentionAnnotation {
 	public String value();

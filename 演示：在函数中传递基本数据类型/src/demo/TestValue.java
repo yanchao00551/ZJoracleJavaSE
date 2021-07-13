@@ -3,10 +3,10 @@ package demo;
 public class TestValue {
 	
 	/*
-	 * ½»»»²ÎÊıµÄÖµ iÎª1 jÎª2
+	 * äº¤æ¢å‚æ•°çš„å€¼ iä¸º1 jä¸º2
 	 */
 	public static void change(int i,int j) {
-		int temp = i;     //Íê³ÉÁËÁ½¸ö±äÁ¿ÖµµÄ½»»»
+		int temp = i;     //å®Œæˆäº†ä¸¤ä¸ªå˜é‡å€¼çš„äº¤æ¢
 		i = j;
 		j = temp;
 	}	

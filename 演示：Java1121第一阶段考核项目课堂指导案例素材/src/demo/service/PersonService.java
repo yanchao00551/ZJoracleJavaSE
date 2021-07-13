@@ -15,7 +15,7 @@ import demo.domain.Menu;
 import demo.domain.Person;
 
 /**
- * ҵ���߼�
+ * ÒµÎñÂß¼­
  * @author 10947
  *
  */

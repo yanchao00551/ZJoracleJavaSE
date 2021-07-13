@@ -1,23 +1,23 @@
 package demo;
 
 /**
- * ³èÎï¹·Àà
+ * å® ç‰©ç‹—ç±»
  * @author 10947
  *
  */
 public class Dog {
-	String name = "ÎŞÃûÊÏ";   //êÇ³Æ¡¢Ä¬ÈÏÖµÊÇ¡°ÎŞÃûÊÏ¡±
-	int health = 100;    //½¡¿µÖµ£¬Ä¬ÈÏÖµ100
-	int love = 0;        //Ç×ÃÜ¶È
-	String strain = "´ÏÃ÷µÄÀ­²¼À­¶àÈ®";    //Æ·ÖÖ
+	String name = "æ— åæ°";   //æ˜µç§°ã€é»˜è®¤å€¼æ˜¯â€œæ— åæ°â€
+	int health = 100;    //å¥åº·å€¼ï¼Œé»˜è®¤å€¼100
+	int love = 0;        //äº²å¯†åº¦
+	String strain = "èªæ˜çš„æ‹‰å¸ƒæ‹‰å¤šçŠ¬";    //å“ç§
 	
 	
 	/**
-	 * Êä³ö¹·µÄĞÅÏ¢
+	 * è¾“å‡ºç‹—çš„ä¿¡æ¯
 	 */
 	public void print() {
-		System.out.println("³èÎïµÄ×Ô°×£º\nÎÒµÄÃû×Ö½Ğ" + this.name +
-				",½¡¿µÖµÊÇ" + this.health + ",ºÍÖ÷ÈÎµÄÇ×ÃÜ¶ÈÊÇ"
-				+ this.love +",ÎÒÊÇÒ»Ö» " + this.strain + ".");
+		System.out.println("å® ç‰©çš„è‡ªç™½ï¼š\næˆ‘çš„åå­—å«" + this.name +
+				",å¥åº·å€¼æ˜¯" + this.health + ",å’Œä¸»ä»»çš„äº²å¯†åº¦æ˜¯"
+				+ this.love +",æˆ‘æ˜¯ä¸€åª " + this.strain + ".");
 	}
 }

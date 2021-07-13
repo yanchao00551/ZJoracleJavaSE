@@ -3,14 +3,14 @@ package demo;
 public class ArraySort {
 	
 	/*
-	 * Ã°ÅİÅÅĞòËùÓĞ ¾­µäÃ°Åİ  
-	 * sortType  1¡¢ÉıĞò¡¢ 2 ½µĞò
+	 * å†’æ³¡æ’åºæ‰€æœ‰ ç»å…¸å†’æ³¡  
+	 * sortType  1ã€å‡åºã€ 2 é™åº
 	 */
 	public static void bubbleSort(int[] arr,int sortType) {
-		for (int i = 0; i < arr.length - 1; i++) {				//ÍâÑ­»·Ö»ĞèÒª±È½Ïarr.length-1´Î¾Í¿ÉÒÔÁË
-			for (int j = 0; j < arr.length - 1 - i; j++) {		//-1ÎªÁË·ÀÖ¹Ë÷ÒıÔ½½ç,-iÎªÁËÌá¸ßĞ§ÂÊ
+		for (int i = 0; i < arr.length - 1; i++) {				//å¤–å¾ªç¯åªéœ€è¦æ¯”è¾ƒarr.length-1æ¬¡å°±å¯ä»¥äº†
+			for (int j = 0; j < arr.length - 1 - i; j++) {		//-1ä¸ºäº†é˜²æ­¢ç´¢å¼•è¶Šç•Œ,-iä¸ºäº†æé«˜æ•ˆç‡
 				if(sortType == 1) {
-					/*ÉıĞò*/
+					/*å‡åº*/
 					if(arr[j] > arr[j+1]) {
 						int temp = arr[j];
 						arr[j] = arr[j + 1];
@@ -18,7 +18,7 @@ public class ArraySort {
 					}
 				}
 				if(sortType == 2) {
-					/*½µĞò*/
+					/*é™åº*/
 					if(arr[j]<arr[j+1]){
 						int temp=arr[j];
 						arr[j]=arr[j+1];
@@ -32,16 +32,16 @@ public class ArraySort {
 	
 	
 	/*
-	 * ±äÖÖÃ°Åİ
-	 * startIndex:ÆğÊ¼Î»ÖÃ£¨°üº¬)
-	 * endIndex:ÖÕÖ¹Î»ÖÃ£¨°üº¬£©
-	 * sortType  1¡¢ÉıĞò¡¢ 2 ½µĞò
+	 * å˜ç§å†’æ³¡
+	 * startIndex:èµ·å§‹ä½ç½®ï¼ˆåŒ…å«)
+	 * endIndex:ç»ˆæ­¢ä½ç½®ï¼ˆåŒ…å«ï¼‰
+	 * sortType  1ã€å‡åºã€ 2 é™åº
 	 */
 	public static void bubbleSort(int[] arr,int startIndex,int endIndex,int sortType) {
 		for (int i = 0; i <= endIndex; i++) {				
 			for (int j = startIndex; j <= endIndex - i - 1; j++) {		
 				if(sortType == 1) {
-					/*ÉıĞò*/
+					/*å‡åº*/
 					if(arr[j] > arr[j+1]) {
 						int temp = arr[j];
 						arr[j] = arr[j + 1];
@@ -49,7 +49,7 @@ public class ArraySort {
 					}
 				}
 				if(sortType == 2) {
-					/*½µĞò*/
+					/*é™åº*/
 					if(arr[j]<arr[j+1]){
 						int temp=arr[j];
 						arr[j]=arr[j+1];

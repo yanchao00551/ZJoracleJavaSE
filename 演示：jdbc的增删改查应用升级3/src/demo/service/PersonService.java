@@ -6,7 +6,7 @@ import demo.dao.PersonDao;
 import demo.domain.Person;
 
 /**
- * ҵ���߼�
+ * ÒµÎñÂß¼­
  * @author 10947
  *
  */

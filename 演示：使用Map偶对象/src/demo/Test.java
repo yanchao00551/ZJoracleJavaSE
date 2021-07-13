@@ -12,8 +12,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨MapÅ¼¶ÔÏó  ×ó±ßÖ¸¶¨·ºĞÍ  ÓÒ±ß¿ÉÒÔÊ¡ÂÔ  
-		Map<String,List<Object>> m = new HashMap<>();   //×îºÏÊÊµÄ  
+		//åˆ›å»ºMapå¶å¯¹è±¡  å·¦è¾¹æŒ‡å®šæ³›å‹  å³è¾¹å¯ä»¥çœç•¥  
+		Map<String,List<Object>> m = new HashMap<>();   //æœ€åˆé€‚çš„  
 
 	    Map<String,Object> j = new HashMap<>();
 	    
@@ -22,46 +22,46 @@ public class Test {
 	    
 		
 		
-		//1 ´´½¨4¸ö¹·¶ÔÏó
-		Dog ououDog = new Dog("Å·Å·","Ñ©ÄÉÈğ");
-		Dog yayaDog = new Dog("ÑÇÑÇ","À­²¼À­¶à");
-		Dog meimeiDog = new Dog("ÃÀÃÀ","Ñ©ÄÉÈğ");
-		Dog feifeiDog = new Dog("·Æ·Æ","À­²¼À­¶à");
+		//1 åˆ›å»º4ä¸ªç‹—å¯¹è±¡
+		Dog ououDog = new Dog("æ¬§æ¬§","é›ªçº³ç‘");
+		Dog yayaDog = new Dog("äºšäºš","æ‹‰å¸ƒæ‹‰å¤š");
+		Dog meimeiDog = new Dog("ç¾ç¾","é›ªçº³ç‘");
+		Dog feifeiDog = new Dog("è²è²","æ‹‰å¸ƒæ‹‰å¤š");
 		
 		
-		//2  ´´½¨ArrayList¼¯ºÏ¶ÔÏó ²¢°Ñ ËÄ¸ö¹·¹·¶ÔÏó·ÅÈëÆäÖĞ
+		//2  åˆ›å»ºArrayListé›†åˆå¯¹è±¡ å¹¶æŠŠ å››ä¸ªç‹—ç‹—å¯¹è±¡æ”¾å…¥å…¶ä¸­
 		List<Object> dogs = new ArrayList<>();
 		dogs.add(ououDog);
 		dogs.add(yayaDog);
 		dogs.add(meimeiDog);
-		dogs.add(2, feifeiDog);  //Ìí¼ÓfeifeiDogµ½Ö¸¶¨Î»ÖÃ
+		dogs.add(2, feifeiDog);  //æ·»åŠ feifeiDogåˆ°æŒ‡å®šä½ç½®
 		
 		
-		m.put("4Ìõ¹·", dogs);
+		m.put("4æ¡ç‹—", dogs);
 		
 		j.put("m", m);
-	    //¿ÎÌÃÁ·Ï°  £¬½«j ¶ÁÈ¡  °Ñ4Ìõ¹·µÄÃû³Æ±éÀú³öÀ´
+	    //è¯¾å ‚ç»ƒä¹   ï¼Œå°†j è¯»å–  æŠŠ4æ¡ç‹—çš„åç§°éå†å‡ºæ¥
 		Object mObj = j.get("m");
 		Map<String,List<Object>> mValue = (Map<String, List<Object>>) mObj;
-		List<Object> dogList = mValue.get("4Ìõ¹·");
-		m.put("4Ìõ¹·", dogList);
+		List<Object> dogList = mValue.get("4æ¡ç‹—");
+		m.put("4æ¡ç‹—", dogList);
 
 		
 		
 		
-		//ËùÓĞKeyÈ¡µ½
+		//æ‰€æœ‰Keyå–åˆ°
 		Set<String> keys =  m.keySet();
 		for(String s:keys) {
 			System.out.println(s);
 		}
 		Collection<List<Object>> values= m.values();
 		
-		//È¡µÃ¶ÔÏó´òÓ¡
+		//å–å¾—å¯¹è±¡æ‰“å°
 		Iterator<List<Object>> itrValue = values.iterator();
 		List<Object> v = null;
 		while(itrValue.hasNext()) {
-			v = itrValue.next(); //Ã¿´Îµü´ú ÄÃµ½ÖµµÄList¶ÔÏó
-			for(Object d:v) {   //±éÀúÄÃµ½µÄ¶ÔÏó list  
+			v = itrValue.next(); //æ¯æ¬¡è¿­ä»£ æ‹¿åˆ°å€¼çš„Listå¯¹è±¡
+			for(Object d:v) {   //éå†æ‹¿åˆ°çš„å¯¹è±¡ list  
 				if(d instanceof Dog) {
 					Dog s = (Dog)d;
 					System.out.println(s.getStrain());
@@ -70,26 +70,26 @@ public class Test {
 		}
 	
 		
-		//3 Êä³öÉ¾³ıÇ°¼¯ºÏÖĞ¹·¹·µÄÊıÁ¿
-		System.out.println("É¾³ıÖ®Ç°¹²¼ÆÓĞ£º" + dogs.size() + "Ìõ¹·¹·");
+		//3 è¾“å‡ºåˆ é™¤å‰é›†åˆä¸­ç‹—ç‹—çš„æ•°é‡
+		System.out.println("åˆ é™¤ä¹‹å‰å…±è®¡æœ‰ï¼š" + dogs.size() + "æ¡ç‹—ç‹—");
 		
-		//4¡¢É¾³ı½áºÏÖĞµÚÒ»¸ö¹·¹·ºÍfeifeiDog¹·¹·
+		//4ã€åˆ é™¤ç»“åˆä¸­ç¬¬ä¸€ä¸ªç‹—ç‹—å’ŒfeifeiDogç‹—ç‹—
 		dogs.remove(0);
 		dogs.remove(feifeiDog);
-		//5¡¢ÏÔÊ¾É¾³ıºó¼¯ºÏÖĞ¸÷Ìõ¹·¹·ĞÅÏ¢
-		System.out.println("\nÉ¾³ıÖ®ºó»¹ÓĞ" + dogs.size() + "Ìõ¹·¹·");
-		System.out.println("·Ö±ğÊÇ£º");
-	    // Í¨¹ı±éÀú¼¯ºÏÏÔÊ¾¸÷Ìõ¹·¹·
+		//5ã€æ˜¾ç¤ºåˆ é™¤åé›†åˆä¸­å„æ¡ç‹—ç‹—ä¿¡æ¯
+		System.out.println("\nåˆ é™¤ä¹‹åè¿˜æœ‰" + dogs.size() + "æ¡ç‹—ç‹—");
+		System.out.println("åˆ†åˆ«æ˜¯ï¼š");
+	    // é€šè¿‡éå†é›†åˆæ˜¾ç¤ºå„æ¡ç‹—ç‹—
 		for(int i=0; i < dogs.size(); i++) {
 			Dog dog = (Dog)dogs.get(i);
 			System.out.println(dog.getName() + "\t" + dog.getStrain());
 		}
 		
-		//6  ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñ°üº¬Ö¸¶¨¹·¹·ĞÅÏ¢
+		//6  åˆ¤æ–­é›†åˆä¸­æ˜¯å¦åŒ…å«æŒ‡å®šç‹—ç‹—ä¿¡æ¯
 		if(dogs.contains(meimeiDog)){
-			System.out.println("\n¼¯ºÏÖĞ°üº¬ÃÀÃÀµÄĞÅÏ¢");
+			System.out.println("\né›†åˆä¸­åŒ…å«ç¾ç¾çš„ä¿¡æ¯");
 		}else {
-			System.out.println("\n¼¯ºÏÖĞ²»°üº¬ÃÀÃÀµÄĞÅÏ¢");
+			System.out.println("\né›†åˆä¸­ä¸åŒ…å«ç¾ç¾çš„ä¿¡æ¯");
 		}
 		
 		

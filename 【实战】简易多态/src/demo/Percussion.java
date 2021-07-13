@@ -5,7 +5,7 @@ public class Percussion extends Instrument {
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
-		System.out.println("´ò»÷ÀÖÆ÷¸²Ğ´£¡");
+		System.out.println("Â´Ã²Â»Ã·Ã€Ã–Ã†Ã·Â¸Â²ÃÂ´Â£Â¡");
 	}
 
 }

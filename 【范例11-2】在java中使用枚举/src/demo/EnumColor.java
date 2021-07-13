@@ -1,17 +1,17 @@
 package demo;
 
-enum MyColor {红色,绿色,蓝色};
+enum MyColor {绾㈣壊,缁胯壊,钃濊壊};
 public class EnumColor {
 	public static void main(String[] args) {
-		MyColor c1 = MyColor.红色; //获得红色
+		MyColor c1 = MyColor.绾㈣壊; //鑾峰緱绾㈣壊
 		System.out.println(c1);
 		
-		//获得绿色
-		MyColor c2 = MyColor.绿色;
+		//鑾峰緱缁胯壊
+		MyColor c2 = MyColor.缁胯壊;
 		System.out.println(c2);
 		
-		//获得蓝色
-		MyColor c3 = MyColor.蓝色;
+		//鑾峰緱钃濊壊
+		MyColor c3 = MyColor.钃濊壊;
 		System.out.println(c3);
 	}
 }

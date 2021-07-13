@@ -1,11 +1,11 @@
 package demo;
 
 /**
- * ÃÅ
+ * Ñ†Ðµ
  * @author 10947
  *
  */
 public abstract class Door {
-	public abstract void open();   //¿ª
-	public abstract void close();  //¹Ø
+	public abstract void open();   //Â©â•™
+	public abstract void close();  //â•§ÑŒ
 }

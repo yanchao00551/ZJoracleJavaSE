@@ -1,7 +1,7 @@
 package demo;
 
 /**
- * Ô²Öù
+ * åœ†æŸ±
  * @author 10947
  *
  */
@@ -14,7 +14,7 @@ public class Cylinder extends Circle implements CircleShape{
 	}
 	
 	/**
-	 * Ô²Öù±íÃæ»ı
+	 * åœ†æŸ±è¡¨é¢ç§¯
 	 * @return
 	 */
 	public double periphery() {
@@ -22,7 +22,7 @@ public class Cylinder extends Circle implements CircleShape{
 	}
 	
 	/**
-	 * Ìå»ı
+	 * ä½“ç§¯
 	 * @return
 	 */
 	public double volume() {

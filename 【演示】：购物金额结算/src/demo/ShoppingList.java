@@ -7,23 +7,23 @@ public class ShoppingList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		double[] cashes = new double[5]; 
-		double sum = 0.0;    //×Ü½ğ¶î
-		System.out.println("ÇëÊäÈë»áÔ±±¾ÔÂµÄÏû·Ñ¼ÇÂ¼");
+		double sum = 0.0;    //æ€»é‡‘é¢
+		System.out.println("è¯·è¾“å…¥ä¼šå‘˜æœ¬æœˆçš„æ¶ˆè´¹è®°å½•");
 		Scanner input = new Scanner(System.in);
-		//Ñ­»·ÊäÈë½ğ¶î
+		//å¾ªç¯è¾“å…¥é‡‘é¢
 		for(int i=0; i<cashes.length; i++) {
-			System.out.print("ÇëÊäÈëµÚ" + (i+1) + "±Ê¹ºÎï½ğ¶î£º");
+			System.out.print("è¯·è¾“å…¥ç¬¬" + (i+1) + "ç¬”è´­ç‰©é‡‘é¢ï¼š");
 			cashes[i] = input.nextDouble();
-			sum = sum + cashes[i];      //ÀÛ¼Ó×Ü½ğ¶î
+			sum = sum + cashes[i];      //ç´¯åŠ æ€»é‡‘é¢
 		}
 		
-		//Ñ­»·Êä³öÃ¿±Ê½ğ¶î
-		System.out.println("\nĞòºÅ\t\t½ğ¶î(Ôª)");
+		//å¾ªç¯è¾“å‡ºæ¯ç¬”é‡‘é¢
+		System.out.println("\nåºå·\t\té‡‘é¢(å…ƒ)");
 		for(int i=0; i <cashes.length; i++) {
 			System.out.println((i+1) + "\t\t" + cashes[i]);
 		}
 		
-		System.out.println("×Ü½ğ¶î\t\t" + sum);
+		System.out.println("æ€»é‡‘é¢\t\t" + sum);
 	}
 
 }

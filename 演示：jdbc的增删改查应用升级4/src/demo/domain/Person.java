@@ -4,12 +4,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * ±íÍø¹ØÉè¼ÆÄ£Ê½   1¸ö±í ¶ÔÓ¦ Ò»¸öÊµÌåÀà  ¶ÔÓ¦ person±í
+ * è¡¨ç½‘å…³è®¾è®¡æ¨¡å¼   1ä¸ªè¡¨ å¯¹åº” ä¸€ä¸ªå®ä½“ç±»  å¯¹åº” personè¡¨
  * @author 10947
  *
  */
 public class Person {
-	/* Ö÷±í×Ö¶Î */
+	/* ä¸»è¡¨å­—æ®µ */
 	private Integer pid;
 	private String name;
 	private Integer age;
@@ -20,7 +20,7 @@ public class Person {
 	
 	
 	
-	/* ´Ó±í×Ö¶Î  Éú³É´Ó±í×Ö¶ÎµÄsetter/getter */
+	/* ä»è¡¨å­—æ®µ  ç”Ÿæˆä»è¡¨å­—æ®µçš„setter/getter */
 	private String bName;
 	private Integer  pId;
 	private String bAuthor;

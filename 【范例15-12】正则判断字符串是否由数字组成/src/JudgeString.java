@@ -4,9 +4,9 @@ public class JudgeString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		if("123".matches("\\d+")) {
-			System.out.println("ÓÉÊı×Ö×é³É");
+			System.out.println("ç”±æ•°å­—ç»„æˆ");
 		}else {
-			System.out.println("²»ÊÇÓÉÊı×Ö×é³É");
+			System.out.println("ä¸æ˜¯ç”±æ•°å­—ç»„æˆ");
 		}
 	}
 

@@ -1,32 +1,32 @@
 package proxy;
 
 
-public class ProxySubject extends Subject{  //´úÀí½ÇÉ«£¨´úÀíÉÌ£©
+public class ProxySubject extends Subject{  //ä»£ç†è§’è‰²ï¼ˆä»£ç†å•†ï¼‰
 	
-	private RealSubject realSubject;   //ÒÔÕæÊµ½ÇÉ«×÷Îª´úÀí½ÇÉ«µÄÊôĞÔ
+	private RealSubject realSubject;   //ä»¥çœŸå®è§’è‰²ä½œä¸ºä»£ç†è§’è‰²çš„å±æ€§
 
 	@Override
 	public void request() {
 		// TODO Auto-generated method stub
-		preRequest();  //Ç°ÖÃ´¦Àí
+		preRequest();  //å‰ç½®å¤„ç†
 		
 		if(realSubject == null) {
 			realSubject = new RealSubject();
 		}
 		
-		realSubject.request();  //´Ë´¦Ö´ĞĞÕæÊµ¶ÔÏóµÄrequest·½·¨
+		realSubject.request();  //æ­¤å¤„æ‰§è¡ŒçœŸå®å¯¹è±¡çš„requestæ–¹æ³•
 		
-		postRequest();  //ºóÖÃ´¦Àí
+		postRequest();  //åç½®å¤„ç†
 	}
 
 	private void postRequest() {
 		// TODO Auto-generated method stub
-		System.out.println("¹ã¸æĞû´«£¬Ãâ·ÑÆ·³¢£¡");
+		System.out.println("å¹¿å‘Šå®£ä¼ ï¼Œå…è´¹å“å°ï¼");
 	}
 
 	private void preRequest() {
 		// TODO Auto-generated method stub
-		System.out.println("¸¶¿î¹ºÂò");
+		System.out.println("ä»˜æ¬¾è´­ä¹°");
 	}
 	
 }

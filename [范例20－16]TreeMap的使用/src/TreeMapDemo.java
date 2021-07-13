@@ -4,16 +4,16 @@ public class TreeMapDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨TreeMap¶ÔÏó
+		//åˆ›å»ºTreeMapå¯¹è±¡
 		TreeMap<Integer,String> tm = new TreeMap<Integer,String>();
-		//¼ÓÈëÔªËØµ½TreeMapÖĞ
-		tm.put(new Integer(10000-2000), "ÕÅÈı");
-		tm.put(new Integer(10000-1500), "ÀîËÄ");
-		tm.put(new Integer(10000-2500), "ÍõÎå");
-		tm.put(new Integer(10000-5000), "ÕÔÁù");
+		//åŠ å…¥å…ƒç´ åˆ°TreeMapä¸­
+		tm.put(new Integer(10000-2000), "å¼ ä¸‰");
+		tm.put(new Integer(10000-1500), "æå››");
+		tm.put(new Integer(10000-2500), "ç‹äº”");
+		tm.put(new Integer(10000-5000), "èµµå…­");
 		Collection<String> col = tm.values();
 		Iterator<String> i = col.iterator();
-		System.out.println("°´¹¤×ÊÓÉµÍµ½¸ßµÄË³ĞòÊä³ö£º");
+		System.out.println("æŒ‰å·¥èµ„ç”±ä½åˆ°é«˜çš„é¡ºåºè¾“å‡ºï¼š");
 		while(i.hasNext()) {
 			System.out.println(i.next());
 		}

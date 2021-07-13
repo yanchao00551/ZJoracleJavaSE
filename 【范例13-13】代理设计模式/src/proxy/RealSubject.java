@@ -1,12 +1,12 @@
 package proxy;
 
 
-public class RealSubject extends Subject{  //ÕæÊµ½ÇÉ« £¨ºì¾Æ³§ÉÌ)
+public class RealSubject extends Subject{  //çœŸå®è§’è‰² ï¼ˆçº¢é…’å‚å•†)
 
 	@Override
-	public void request() {                 //ÊµÏÖ³éÏó·½·¨
+	public void request() {                 //å®ç°æŠ½è±¡æ–¹æ³•
 		// TODO Auto-generated method stub
-		System.out.println("ÎÒÊÇºì¾Æ³§ÉÌ£¬»¶Ó­Æ·³¢¹ºÂò");
+		System.out.println("æˆ‘æ˜¯çº¢é…’å‚å•†ï¼Œæ¬¢è¿å“å°è´­ä¹°");
 	}
 	
 }

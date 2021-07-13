@@ -7,19 +7,19 @@ public class LinkedListDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//´´½¨Ò»¸öLinkedList¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªLinkedListå¯¹è±¡
 		LinkedList<String> LL = new LinkedList<String>();
-		//¼ÓÈëÔªËØµ½LinkedListÖĞ
+		//åŠ å…¥å…ƒç´ åˆ°LinkedListä¸­
 		LL.add("F");
 		LL.add("F");
 		LL.add("D");
 		LL.add("E");
 		LL.add("C");
-		//ÔÚÁ´±í×îºóÒ»¸öÎ»ÖÃ¼ÓÉÏÊı¾İ
+		//åœ¨é“¾è¡¨æœ€åä¸€ä¸ªä½ç½®åŠ ä¸Šæ•°æ®
 		LL.addLast("Z");
-		//ÔÚÁ´±íµÚ¶ş¸öÔªËØµÄÎ»ÖÃÉÏ¼ÓÈëÔªËØ
+		//åœ¨é“¾è¡¨ç¬¬äºŒä¸ªå…ƒç´ çš„ä½ç½®ä¸ŠåŠ å…¥å…ƒç´ 
 		LL.add(1, "A2");
-		System.out.println("LL×î³õµÄÄÚÈİ£º" + LL);
+		System.out.println("LLæœ€åˆçš„å†…å®¹ï¼š" + LL);
 		
 		
 	}

@@ -9,18 +9,18 @@ public class ComparableDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<Book> bookList  = new ArrayList<Book>();
-		bookList.add(new Book("Oracle¿ª·¢",60));
-		bookList.add(new Book("java¿ª·¢",69.8));
-		bookList.add(new Book("JavaWeb¿ª·¢ÊµÕ½",59.8));
-		bookList.add(new Book("Android¿ª·¢",58));
-	    System.out.println("------³õÊ¼»¯Êé¼®½ø¼¯ºÏ-ÎŞÅÅĞò------");
+		bookList.add(new Book("Oracleå¼€å‘",60));
+		bookList.add(new Book("javaå¼€å‘",69.8));
+		bookList.add(new Book("JavaWebå¼€å‘å®æˆ˜",59.8));
+		bookList.add(new Book("Androidå¼€å‘",58));
+	    System.out.println("------åˆå§‹åŒ–ä¹¦ç±è¿›é›†åˆ-æ— æ’åº------");
 		for(Book l:bookList) {
 			System.out.println(l);
 		}
 		
 		Object[] obj = bookList.toArray();
-		Arrays.sort(obj); //Îª¶ÔÏóÊı×éÅÅĞò
-		System.out.println("------½«Àà¼¯×ª³ÉÊı×éºóµ÷ÓÃsortÅÅĞòºóµÄÄÚÈİ-------");
+		Arrays.sort(obj); //ä¸ºå¯¹è±¡æ•°ç»„æ’åº
+		System.out.println("------å°†ç±»é›†è½¬æˆæ•°ç»„åè°ƒç”¨sortæ’åºåçš„å†…å®¹-------");
 		System.out.println(Arrays.toString(obj));
 		
 		for(int i=0; i < obj.length; i++) {
@@ -28,7 +28,7 @@ public class ComparableDemo {
 		}
 		
 	
-	   System.out.println("-----½«ÒÑÅÅĞòµÄÊı×é×ª³ÉÀà¼¯£¬ÒòÎªÊı×éÊÇÒÑÅÅĞòËùÒÔListÒ²ÊÇÅÅĞòºÃµÄ------");
+	   System.out.println("-----å°†å·²æ’åºçš„æ•°ç»„è½¬æˆç±»é›†ï¼Œå› ä¸ºæ•°ç»„æ˜¯å·²æ’åºæ‰€ä»¥Listä¹Ÿæ˜¯æ’åºå¥½çš„------");
 		List<Object> asL = new ArrayList<Object>();
 		asL = Arrays.asList(obj);
 		for(Object s:asL) {

@@ -9,7 +9,7 @@ public class Book {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Í¼ÊéÃû³Æ£º"+this.title+"¼Û¸ñ£º"+this.price;
+		return "å›¾ä¹¦åç§°ï¼š"+this.title+"ä»·æ ¼ï¼š"+this.price;
 	}
 	
 	

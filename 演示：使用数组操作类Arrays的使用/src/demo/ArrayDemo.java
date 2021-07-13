@@ -9,7 +9,7 @@ public class ArrayDemo {
 		// TODO Auto-generated method stub
 		String[] arr = new String[] {"hello","world"};  //arr.length 
 		
-		List<String> all = Arrays.asList("Hello","World","ÄãºÃ","ÊÀ½ç");
+		List<String> all = Arrays.asList("Hello","World","Ã„Ã£ÂºÃƒ","ÃŠÃ€Â½Ã§");
 		for(String s:all) {
 			System.out.println(s);
 		}

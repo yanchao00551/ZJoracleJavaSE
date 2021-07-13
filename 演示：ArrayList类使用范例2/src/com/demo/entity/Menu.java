@@ -3,7 +3,7 @@ package com.demo.entity;
 import java.io.Serializable;
 
 /*
- * ²ËÆ·ÊµÌåÀà
+ * èœå“å®ä½“ç±»
  */
 public class Menu implements Serializable{
 

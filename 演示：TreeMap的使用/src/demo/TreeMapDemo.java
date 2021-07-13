@@ -34,24 +34,24 @@ public class TreeMapDemo {
 		
 		
 		
-		//´´½¨TreeMap¶ÔÏó
+		//åˆ›å»ºTreeMapå¯¹è±¡
 		Map<Integer,String> tm = new TreeMap<Integer,String>();
-		//¼ÓÈëÔªËØµ½TreeMapÖĞ
-		tm.put(new Integer(10000 - 2000), "ÕÅÈı");
-		tm.put(new Integer(10000 - 1500), "ÀîËÄ");
-		tm.put(new Integer(10000 - 2500), "ÍõÎå");
-		tm.put(new Integer(10000 - 5000), "ÕÔÁù");
+		//åŠ å…¥å…ƒç´ åˆ°TreeMapä¸­
+		tm.put(new Integer(10000 - 2000), "å¼ ä¸‰");
+		tm.put(new Integer(10000 - 1500), "æå››");
+		tm.put(new Integer(10000 - 2500), "ç‹äº”");
+		tm.put(new Integer(10000 - 5000), "èµµå…­");
 
 		
 		 Collection<String> col = tm.values();
 		 
-		//Èç¹û´æÔÚ8000Õâ¸ökey´æÔÚ·µ»Øtrue
-		//ÇÒ  ´æÔÚ¡±ÕÅÈı¡° Õâ¸övalue´æÔÚ ·µ»Ø true
-		if(tm.containsKey(8000) && tm.containsValue("ÕÅÈı")) {  
+		//å¦‚æœå­˜åœ¨8000è¿™ä¸ªkeyå­˜åœ¨è¿”å›true
+		//ä¸”  å­˜åœ¨â€å¼ ä¸‰â€œ è¿™ä¸ªvalueå­˜åœ¨ è¿”å› true
+		if(tm.containsKey(8000) && tm.containsValue("å¼ ä¸‰")) {  
 			 tm.put(8000, "steven");
 			 
 			 Iterator<String> i = col.iterator();
-			 System.out.println("°´¹¤×ÊÓÉµÍµ½¸ßË³ĞòÊä³ö£º");
+			 System.out.println("æŒ‰å·¥èµ„ç”±ä½åˆ°é«˜é¡ºåºè¾“å‡ºï¼š");
 			 while(i.hasNext()) {
 				 System.out.println(i.next());
 			 }

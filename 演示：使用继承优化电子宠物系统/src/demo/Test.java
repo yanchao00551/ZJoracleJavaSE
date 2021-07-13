@@ -2,16 +2,16 @@ package demo;
 
 public class Test {
 	public static void main(String[] args) {
-		Pet pet =  new Pet("±´±´");
+		Pet pet =  new Pet("Â±Â´Â±Â´");
 		pet.print();
 		
 		
-		Dog dog = new Dog("Å·Å·","Ñ©ÄÉÈð");
+		Dog dog = new Dog("Ã…Â·Ã…Â·","Ã‘Â©Ã„Ã‰ÃˆÄŸ");
 		dog.print();
 		
 		
 		
-		Penguin pgn = new Penguin("À¼À¼","QÃÃ");
+		Penguin pgn = new Penguin("Ã€Â¼Ã€Â¼","QÃƒÃƒ");
 		pgn.print();
 	}
 }

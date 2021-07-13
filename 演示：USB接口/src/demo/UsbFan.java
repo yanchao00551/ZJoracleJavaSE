@@ -1,7 +1,7 @@
 package demo;
 
 /**
- * usb·çÉÈ
+ * usbé£æ‰‡
  * @author 10947
  *
  */
@@ -10,7 +10,7 @@ public class UsbFan implements UsbInterface{
 	@Override
 	public void service() {
 		// TODO Auto-generated method stub
-		System.out.println("Á¬½Óusb½Ó¿Ú£¬»ñµÃµçÁ÷£¬·çÉÈ¿ªÊ¼×ª¶¯");
+		System.out.println("è¿æ¥usbæ¥å£ï¼Œè·å¾—ç”µæµï¼Œé£æ‰‡å¼€å§‹è½¬åŠ¨");
 	}
 	
 }
