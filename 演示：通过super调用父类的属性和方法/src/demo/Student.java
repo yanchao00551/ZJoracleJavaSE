@@ -1,4 +1,4 @@
-package demo;
+ 	package demo;
 
 class Student extends Person{
 	
