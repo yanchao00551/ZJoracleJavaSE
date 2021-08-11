@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ebay/ebay.iml" filepath="$PROJECT_DIR$/ebay/ebay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/湖南商务ssm实训02.iml" filepath="$PROJECT_DIR$/.idea/湖南商务ssm实训02.iml" />
+    </modules>
+  </component>
+</project>

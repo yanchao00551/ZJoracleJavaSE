@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/rabbit
+     http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 读入外部文件 -->
+    <context:property-placeholder location="classpath:rabbitmq.properties" ignore-unresolvable="true" />
+
+
+    <rabbit:connection-factory id="connectionFactory" username="${rabbitmq.username}"
+                               password="${rabbitmq.password}" host="${rabbitmq.host}" virtual-host="${rabbitmq.vhost}" port="${rabbitmq.port}"/>
+
+
+    <rabbit:template id="rabbitTemplate"  connection-factory="connectionFactory"/>
+
+    <rabbit:admin connection-factory="connectionFactory" />
+
+    <rabbit:queue id="queue1" name="${mq.basic.info.queue.name}" durable="true" auto-delete="false" exclusive="false" />
+
+    <rabbit:direct-exchange name="exchangeTest" durable="true" auto-delete="false">
+        <rabbit:bindings>
+            <rabbit:binding queue="queue1" key="${mq.basic.info.routing.key.name}"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+    <bean id="messageReceiver" class="com.ebay.service.rabbitmq.MqReceiver"></bean>
+
+    <rabbit:listener-container acknowledge="manual" connection-factory="connectionFactory" concurrency="20" prefetch="10">
+        <rabbit:listener queues="queue1" ref="messageReceiver" method="onMessage"/>
+    </rabbit:listener-container>
+
+
+    <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+
+    <!--配置spring线程池-->
+    <bean id="taskExecutor"
+          class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- 核心线程数 -->
+        <property name="corePoolSize" value="10" />
+        <!-- 最大线程数 -->
+        <property name="maxPoolSize" value="50" />
+        <!-- 队列最大长度 >=mainExecutor.maxSize -->
+        <property name="queueCapacity" value="1000" />
+        <!-- 线程池维护线程所允许的空闲时间 -->
+        <property name="keepAliveSeconds" value="300" />
+        <!-- 线程池对拒绝任务(无线程可用)的处理策略 -->
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+        </property>
+    </bean>
+
+    <!--spring配置配置Bean，并初始化init方法-->
+    <bean id="abProcess" class="com.ebay.core.object.AbProcess" init-method="init"/>
+
+
+
+</beans>

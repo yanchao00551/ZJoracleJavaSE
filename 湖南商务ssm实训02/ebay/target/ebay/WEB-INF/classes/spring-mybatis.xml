@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- 扫描注解标注的类获取Bean的定义 -->
+    <context:component-scan base-package="com.ebay.service,com.ebay.dao,com.ebay.event"></context:component-scan>
+    
+    <!-- 读入外部文件 -->
+    <context:property-placeholder location="classpath:database.properties" ignore-unresolvable="true" />
+    <context:property-placeholder location="classpath:rabbitmq.properties" ignore-unresolvable="true" />
+
+    <!-- 配置数据源 -->
+    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+        init-method="init" destroy-method="close">
+        <property name="url" value="${url}" />
+        <property name="username" value="${user}" />
+        <property name="password" value="${password}" />
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="0" />
+        <!-- 连接池最大使用连接数量 -->
+        <property name="maxActive" value="20" />
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="0" />
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="60000" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+        <property name="testWhileIdle" value="true" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="25200000" />
+        <!-- 打开removeAbandoned功能 -->
+        <property name="removeAbandoned" value="true" />
+        <!-- 1800秒，也就是30分钟 -->
+        <property name="removeAbandonedTimeout" value="1800" />
+        <!-- 关闭abanded连接时输出错误日志 -->
+        <property name="logAbandoned" value="true" />
+        <!-- 监控数据库 -->
+        <!-- <property name="filters" value="stat" /> -->
+        <property name="filters" value="mergeStat" />
+    </bean>
+    
+    <!-- myBatis文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!-- 配置数据库表对应的java实体类 -->
+        <property name="typeAliasesPackage" value="com.ebay.entity" />
+        <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
+        <property name="mapperLocations" value="classpath*:com/ebay/mapper/**/*.xml" />
+    </bean>
+   
+  
+    <!-- 批量扫描mapper接口，并生成其对应的DAO层实现 -->
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+	    <property name="basePackage" value="com.ebay.dao" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+
+
+    <!-- 定义事务管理器 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 定义属性 ，声明事务规则 事务增强-->
+    <!-- 如果不指定transaction-manager也是可以的，定义的事务管理id为默认的就行，transaction-manager默认值为：transactionManager -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 定义AOP切面 -->
+    <aop:config>
+        <!-- 定义切入点 -->
+        <aop:pointcut id="serviceMethod" expression="execution(* com.ebay.service..*.*(..))"/>
+        <!--将事务增强与切入点组合-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod"></aop:advisor>
+    </aop:config>
+    
+    <aop:aspectj-autoproxy/>
+
+
+
+    
+</beans>
