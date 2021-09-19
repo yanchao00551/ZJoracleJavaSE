@@ -40,7 +40,7 @@ public class ProxySubject extends Subject {
 		// TODO Auto-generated method stub
 		System.out.println("付款   首先客户付款给代理商  或者 付款给厂家  广告宣传后礼品 付款   首先客户付款给代理商  或者 付款给厂家  广告宣传后礼品");
 	}
-	
+
 }
 
 

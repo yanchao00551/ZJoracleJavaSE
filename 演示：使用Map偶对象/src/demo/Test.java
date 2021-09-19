@@ -1,19 +1,27 @@
 package demo;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//创建Map偶对象  左边指定泛型  右边可以省略  
-		Map<String,List<Object>> m = new HashMap<>();   //最合适的  
+		Map<String,String> tlMap = new LinkedHashMap<>(0);
+		tlMap.put("A","a");
+		tlMap.put("C","c");
+		tlMap.put("D","d");
+		Set<Map.Entry<String, String>> entries = tlMap.entrySet();
+		Iterator<Map.Entry<String, String>> iterator = entries.iterator();
+		while (iterator.hasNext()){
+			Map.Entry<String,String> map = iterator.next();
+			String value = map.getValue();
+			String key = map.getKey();
+			System.out.println("value : " + value + ", key: " + key);
+		}
+
+		//创建Map偶对象  左边指定泛型  右边可以省略
+		//最合适的
+		Map<String,List<Object>> m = new HashMap<>();
 
 	    Map<String,Object> j = new HashMap<>();
 	    
@@ -34,7 +42,8 @@ public class Test {
 		dogs.add(ououDog);
 		dogs.add(yayaDog);
 		dogs.add(meimeiDog);
-		dogs.add(2, feifeiDog);  //添加feifeiDog到指定位置
+		//添加feifeiDog到指定位置
+		dogs.add(2, feifeiDog);
 		
 		
 		m.put("4条狗", dogs);
@@ -60,8 +69,10 @@ public class Test {
 		Iterator<List<Object>> itrValue = values.iterator();
 		List<Object> v = null;
 		while(itrValue.hasNext()) {
-			v = itrValue.next(); //每次迭代 拿到值的List对象
-			for(Object d:v) {   //遍历拿到的对象 list  
+			//每次迭代 拿到值的List对象
+			v = itrValue.next();
+			//遍历拿到的对象 list
+			for(Object d:v) {
 				if(d instanceof Dog) {
 					Dog s = (Dog)d;
 					System.out.println(s.getStrain());

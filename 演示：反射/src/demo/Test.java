@@ -15,7 +15,7 @@ public class Test {
 			Class<?> p = Class.forName(className);
 
 			//通过反射拿到对象，per1运行期时候产生了,per1非编译器产生
-			Object per1 = p.newInstance();    
+			Object per1 = p.newInstance();
 			
 			
 //			Constructor<?> con = p.getConstructor(String.class);
@@ -83,9 +83,9 @@ public class Test {
 		Method m = p.getMethod("show1",String.class);
 		System.out.println("******show1*******");
 		System.out.println(m);
-		
-		
-	    m.invoke(per2, "Hello World!");   //调用方法并传参
+
+		//调用方法并传参
+	    m.invoke(per2, "Hello World!");
 		  
 	    
 		result = per2;
@@ -100,9 +100,6 @@ public class Test {
 		// TODO Auto-generated method stub
 		Object p = objNew("demo.entity.Teacher","Hello World!");
 		System.out.println(p);
-		
-		
-		
 	}
 
 }

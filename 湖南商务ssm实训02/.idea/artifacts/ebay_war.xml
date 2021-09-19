@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ebay:war">
+    <output-path>$PROJECT_DIR$/ebay/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ebay</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ebay.war">
+      <element id="artifact" artifact-name="ebay:war exploded" />
+    </root>
+  </artifact>
+</component>

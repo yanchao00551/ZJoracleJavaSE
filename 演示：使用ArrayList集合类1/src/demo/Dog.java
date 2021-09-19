@@ -1,7 +1,8 @@
 package demo;
 
 public class Dog {
-	private String strain;    //киоо
+	//киоо
+	private String strain;
 
 	public String getStrain() {
 		return strain;

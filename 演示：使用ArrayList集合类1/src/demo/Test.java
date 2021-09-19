@@ -49,17 +49,14 @@ public class Test {
 		//获取双向迭代器
 		ListIterator<Dog> listItr = list.listIterator();
 		while(listItr.hasPrevious()) {
-			Dog d = (Dog) listItr.previous();  //获取上一个
+			//获取上一个
+			Dog d = (Dog) listItr.previous();
 			System.out.println(d);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
 	}
 }
